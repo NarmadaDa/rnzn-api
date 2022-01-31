@@ -1,0 +1,26 @@
+[
+  {
+    "first_name": "Aleks",
+    "middle_name": "G",
+    "last_name": "Beer",
+    "email_address": "aleks.beer@wove.co.nz",
+    "password": "password",
+    "roles": ["super", "personnel"]
+  },
+  {
+    "first_name": "Brenton",
+    "middle_name": "F",
+    "last_name": "Wong",
+    "email_address": "brenton.wong@wove.co.nz",
+    "password": "password",
+    "roles": ["admin", "personnel"]
+  },
+  {
+    "first_name": "Cheyne",
+    "middle_name": "C",
+    "last_name": "Cleaver",
+    "email_address": "cheyne.cleaver@wove.co.nz",
+    "password": "password",
+    "roles": ["personnel"]
+  }
+]

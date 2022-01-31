@@ -1,0 +1,66 @@
+pool:
+  name: Default
+
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily midnight build
+    branches:
+      include:
+        - master
+        - dev/*
+    always: true
+
+steps:
+  - bash: |
+      #!/bin/bash
+      SHORTCOMMITSHA=${BUILD_SOURCEVERSION:0:7}_${BUILD_SOURCEBRANCHNAME}
+      echo "##vso[task.setvariable variable=shortcommitsha]$SHORTCOMMITSHA"
+    displayName: "Generate Sha Tag"
+
+  - task: Docker@2
+    displayName: "Build Image PHP Image"
+    inputs:
+      command: build
+      containerRegistry: "Wove ACR"
+      repository: "homeport-api-php"
+      Dockerfile: "**/php.Dockerfile"
+      tags: |
+        $(shortcommitsha)
+        latest
+      arguments: --build-arg APP_VERSION=$(shortcommitsha)
+      addPipelineData: false
+
+  - task: Docker@2
+    displayName: "Push PHP Image to ACR"
+    inputs:
+      command: push
+      containerRegistry: "Wove ACR"
+      repository: "homeport-api-php"
+      tags: |
+        $(shortcommitsha)
+        latest
+      addPipelineData: false
+
+  - task: Docker@2
+    displayName: "Build Image Nginx Image"
+    inputs:
+      command: build
+      containerRegistry: "Wove ACR"
+      repository: "homeport-api-nginx"
+      Dockerfile: "**/nginx.Dockerfile"
+      tags: |
+        $(shortcommitsha)
+        latest
+      arguments: --build-arg APP_VERSION=$(shortcommitsha)
+      addPipelineData: false
+
+  - task: Docker@2
+    displayName: "Push Nginx Image to ACR"
+    inputs:
+      command: push
+      containerRegistry: "Wove ACR"
+      repository: "homeport-api-nginx"
+      tags: |
+        $(shortcommitsha)
+        latest
+      addPipelineData: false

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Super Administrator",
+    "slug": "super"
+  },
+  {
+    "name": "Administrator",
+    "slug": "admin"
+  },
+  {
+    "name": "Personnel",
+    "slug": "personnel"
+  },
+  {
+    "name": "Family",
+    "slug": "family"
+  },
+  {
+    "name": "Guest",
+    "slug": "guest"
+  }
+]

@@ -1,0 +1,954 @@
+[
+  {
+    "name": "Guest Root",
+    "slug": "root",
+    "menu_items": [
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/1-about-rnzn-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/1-about-rnzn-icon.png",
+        "slug": "about-the-rnzn",
+        "title": "About the RNZN - Te Taua Moana O Aotearoa",
+        "item_type": "menu",
+        "item": {
+          "name": "About the RNZN - Te Taua Moana O Aotearoa",
+          "slug": "about-the-rnzn",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/what-we-do-small.jpg",
+              "slug": "about-the-rnzn-overview",
+              "sort_order": 0,
+              "title": "Overview",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/what-we-do-small.jpg",
+                "slug": "about-the-rnzn-overview",
+                "title": "Overview",
+                "keywords": "RNZN,Royal New Zealand Navy,Navy",
+                "content": "<p>Our role is to contribute to the security of our nations, and the people of New Zealand. We &quot;Advance New Zealand's Interests from the Sea.&quot;</p><p>We serve New Zealand, we are experts in the maritime domain and our area of expertise is the maritime environment, the oceans and the seas.</p><p>He Heremana ahau, I am a sailor.</p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/what-we-do-small.jpg",
+              "slug": "what-we-do",
+              "title": "What we do",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/what-we-do-small.jpg",
+                "slug": "what-we-do",
+                "title": "What we do",
+                "keywords": "RNZN,Royal New Zealand Navy,Navy",
+                "content": "<h3>Protecting trade routes, preventing piracy and terrorism</h3><p>New Zealand's economic prosperity is reliant on a stable political environment and safe maritime trade routes. Nearly all of our country's exports (99% by weight) and most of our imports are transported by sea.  Threats to shipping, such as piracy or blockade, have affected our economy in the past and could do so again.</p><p>New Zealand is a valued regional security partner and our Navy works collaboratively with other Navies to protect our region's valuable maritime trade routes. In recent years Navy ships and people have deployed to the Arabian Gulf and Horn of Africa where we contribute to international efforts to protect trade routes and prevent piracy and terrorism. New Zealand continues to invest in strengthening regional architecture that helps protect the rights of small states and enhances stability, security and free access to global commons.</p><h3>Border patrol and resource protection</h3><p>Navy ships and people protect our country's interests with regular border and fisheries patrols, search and rescue operations, as well as supporting the Police, Civil Defence and the Department of Conservation.  Two Inshore Patrol Vessels work around the New Zealand coast and two Offshore Patrol Vessels do similar work in the Southern Ocean and Pacific.</p><h3>Humanitarian and Disaster Relief missions</h3><p>The Navy is ready and capable of responding to natural disasters at home and abroad.  Navy ships and people were among the first responders to the devastating Christchurch earthquake in February 2011 and again in 2016.  Navy ships are ready to undertake search and rescue missions and are active in the South Pacific where ships of the Naval Patrol Force regularly undertake fisheries patrols, visit ports and contribute to humanitarian missions such as cyclone relief or transporting supplies to remote islands, an example of this is when Cyclone Winston hit Fiji in 2015.</p><h3>Peacekeeping</h3><p>Navy personnel take part in peacekeeping operations around the world.  Navy ships and people have been deployed to Timor-Leste, Solomon Islands, Sudan, the Middle-East, South Korea and Afghanistan.</p><h3>Specialist Underwater Operations</h3><p>Navy maintains a modern, deployable specialist underwater operational and survey capability.  The Operational Dive Team and Littoral Warfare Support Force are capable of military and civilian tasks, including search and recovery, and deploy to incidents within New Zealand and overseas.</p><iframe height='300' src='https://www.youtube-nocookie.com/embed/gwUIPrERL6Y?showinfo=0&rel=0&iv_load_policy=3&color=white&disablekb=1' frameborder='0' allowfullscreen></iframe>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/who-we-are-small.jpg",
+              "slug": "who-we-are",
+              "title": "Who we are",
+              "item_type": "menu",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/who-we-are-small.jpg",
+                "name": "Who we are",
+                "slug": "who-we-are",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/our-mission-small.jpg",
+                    "slug": "our-mission",
+                    "title": "Our Mission",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/our-mission-small.jpg",
+                      "slug": "our-mission",
+                      "title": "Our Mission",
+                      "content": "<h3>Our Mission - Advance New Zealand's interests from the sea</h3><p>Our role is to contribute to the security of our nation, and the people of New Zealand. We &quot;Advance New Zealand's interests from the sea.&quot;</p><p>The Navy's people and our ships are able to respond to a range of situations and undertake tasks such as combat operations, search and rescue, underwater recovery, trade protection, peacekeeping and humanitarian aid and disaster relief.</p><p>New Zealand has an Exclusive Economic Zone (EEZ) which is approximately 15 times the land area of our country and among the largest in the world. We have the ninth longest coastline in the world. Our nearest major trading partner and ally, Australia, is 1,000 miles away. We are a vast distance from most major international markets and 99% of our trade crosses the sea. New Zealand's economic interests rest upon our ability to ensure safe passage at sea and the security of the waters over which we have a sovereign right. Through our geographical isolation and dependence on maritime trade, it is clear that New Zealand is a maritime nation.</p><p>The Navy's readiness to deploy provides the Government with an important tool to respond quickly to emergency situations around New Zealand's 15,000-kilometre coastline, the Southern Ocean and into the Asia-Pacific region.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/our-vision-small.jpg",
+                    "slug": "our-vision",
+                    "title": "Our Vision",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/our-vision-small.jpg",
+                      "slug": "our-vision",
+                      "title": "Our Vision",
+                      "content": "<h3>Our Vision - To be a world-class Navy for a large maritime nation</h3><p>The term 'world-class' is included within the vision statement because as a Navy we  strive to be among the best in the world at all activities we undertake.</p><p>Although New Zealand has a relatively small land mass, the country has a large maritime area of responsibility, including a significant EEZ, extended continental shelf, and Search and Rescue area. As 96% of New Zealand's land is underwater, we are very much a large maritime nation.  Furthermore, our maritime interests extend far beyond these boundaries, and include assisting our South Pacific neighbours and ensuring safety and security of global trade routes, highlighting the importance of the Navy's role.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/our-values-small.jpg",
+                    "slug": "our-values",
+                    "title": "Our Values",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/our-values-small.jpg",
+                      "slug": "our-values",
+                      "title": "Our Values",
+                      "keywords": "3 Cs,3Cs,Courage,Commitment,Comradeship,Integrity,Values,Core Values",
+                      "content": "<p><strong>Courage | Tū Kaha</strong> – Taking action despite your fears</p><p>Courage is having the moral and physical strength to do what is right, even in the face of adversity. It is stepping up when things get hard. It is speaking up when you see things that are wrong. Courage is enforcing our standards and discipline. It is not giving in to peer pressure.</p><p><strong>Commitment | Tū Tika</strong> – Giving your best</p><p>Commitment is doing your best. It is always looking for ways to achieve the task, and persevering even when the going gets tough. Commitment is accepting and living our values and standards. It is serving New Zealand.</p><p><strong>Comradeship | Tū Tira</strong> – Respecting and looking out for each other</p><p>Comradeship is respecting the differences of the people around you and treating others as you'd like to be treated. It is working together as a team, being inclusive, recognising we are stronger together. Comradeship is never an excuse for covering up other people's wrong doing.</p><p><strong>Integrity | Tū Maia</strong> – Doing the right thing – always!</p><p>Integrity is conducting yourself honestly, ethically and to the highest professional standards -- even when no one is watching. It is doing the things that you say you are going to do. Integrity is accepting responsibility for your decisions and actions.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/our-creed-small.jpg",
+                    "slug": "our-creed",
+                    "title": "Our Creed",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/our-creed-small.jpg",
+                      "slug": "our-creed",
+                      "title": "Our Creed",
+                      "keywords": "I am a sailor,Navy Creed,Creed,He Heremana Ahau",
+                      "content": "<p>The Navy Creed was introduced in 2014.  It represents all of the Navy's sailors as well as the Crown, our Maori culture, our past; the present time, personal accountability and our Navy's values.  It is an affirmation of who we are.</p><p><i>I am a sailor of the Royal New Zealand Navy<br/>Te Taua Moana o Aotearoa<br/>I represent the proud heritage of those who have gone before me<br/>I serve to protect our people and our whanau with mana<br/>I will follow those above me and lead those below me<br/>I embody the Navy's Core Values – TŪ KAHA - Courage, TŪ TIKA - Commitment, TŪ TIRA - Comradeship, TŪ MAIA - Integrity, and will challenge those who do not<br/>He heramana ahau, I am a sailor.</i></p><iframe height='300' src='https://www.youtube-nocookie.com/embed/2ceNjTh6f7Q?showinfo=0&rel=0&iv_load_policy=3&color=white&disablekb=1' frameborder='0' allowfullscreen></iframe>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/our-haka-small.jpg",
+                    "slug": "our-haka",
+                    "title": "Our Haka",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/our-haka-small.jpg",
+                      "slug": "our-haka",
+                      "title": "Our Haka",
+                      "keywords": "Haka,RNZN Haka,Navy Haka,Te Tumu Herenga Waka",
+                      "content": "<h3>RNZN Haka - Te Tumu Herenga Waka</h3><img src='https://oracle-static.aviato.co.nz/content/our-haka-table-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/2-our-fleet-small.jpg",
+                    "slug": "our-fleet",
+                    "title": "Our Fleet",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/2-our-fleet-small.jpg",
+                      "slug": "our-fleet",
+                      "title": "Our Fleet",
+                      "keywords": "Ships,ANZAC,Frigates,Boats,Vessels,Fleet,Warship,Helicopter,HMNZS,Combat,Support,Littoral,Warfare,TEK,TEM,CAN,MAN,AOT,TAU,HAW,OTA,WGN,6SQN,PHL,WAK,Seasprite,TE KAHA,TE MANA,CANTERBURY,AOTEAROA,MANAWANUI,TAUPO,HAWEA,OTAGO,WELLINGTON,6 SQUADRON,RNZAF,PHILOMEL,WAKEFIELD",
+                      "content": "<p>The fleet is organised into four forces:<ul><li>Combat</li><li>Support</li><li>Patrol and</li><li>Littoral Warfare</li></ul>The ships in each force have specific roles and capabilities that contribute to the wider capability of the Navy and NZDF.</p><hr/><h3>Combat Force</h3><p>The Combat Force is comprised of two Anzac class frigates.  They provide combat capability and work with New Zealand's friends and allies to maintain regional security.  Ships of the Naval Combat and Support Forces regularly deploy to Asia and around the globe to work with our friends and allies.  They are also capable of operating the Navy's Kaman SH-2G(I) Super Seasprite helicopters.</p><h4>HMNZS TE KAHA - F77</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20TE%20KAHA%20-%20F77.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-tekaha-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> An ANZAC class frigate which is one of the key fighting units of the RNZN.<br/><strong>Homeport:</strong> Napier<br /><strong>Armament:</strong> a 5&quot; gun, vertical launch missile system, torpedoes and a close in weapon system for protection. When deployed each Ship will have a Super Seasprite helicopter embarked from 6 Squadron.</p><h4>HMNZS TE MANA - F111</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20TE%20MANA%20-%20F111.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-temana-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> An ANZAC class frigate which is one of the key fighting units of the RNZN.<br /><strong>Homeport:</strong> Tauranga<br /><strong>Armament:</strong> a 5&quot; gun, vertical launch missile system, torpedoes and a close in weapon system for protection. When deployed each Ship will have a Super Seasprite helicopter embarked from 6 Squadron.</p><hr/><h3>Support Force</h3><h4>HMNZS CANTERBURY - L421</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20CANTERBURY%20-%20L421.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/Navy%20Canterbury%20DL%20Brochure%20Proof.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Amphibious support and military sea lift vessel.<br/><strong>Homeport:</strong> Christchurch</p><h4>HMNZS AOTEAROA - A11</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20AOTEAROA%20-%20A11.png' /><p><a href='https://oracle-static.aviato.co.nz/content/20-115%20Navy%20Aotearoa%20DL%20Brochure%20Proof%20v3.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Tanker and replenishment ship.<br/><strong>Homeport:</strong> New Plymouth</p><h4>HMNZS MANAWANUI - A09</h4><p><a href='https://oracle-static.aviato.co.nz/content/Navy%20Manawanui%20DL%20Brochure%2001.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Dive and hydrographic support vessel.<br/><strong>Homeport:</strong> Gisborne</p><iframe height='300' src='https://www.youtube-nocookie.com/embed/uCzHs0j0pYs?showinfo=0&rel=0&iv_load_policy=3&color=white&disablekb=1' frameborder='0' allowfullscreen></iframe><hr/><h3>Patrol Force</h3><p>The Patrol Force is comprised of two Offshore Patrol (OPV) and two Inshore Patrol Vessels (IPV). As well as military tasks the ships of the Patrol Force undertake civilian-support tasks including border and fisheries patrols, search and rescue, and provide support for the Police, Civil Defence and the Department of Conservation.</p><hr /><h3>Offshore Patrol Vessels</h3><h4>HMNZS OTAGO - P148</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20OTAGO%20-%20P148.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-otago-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Undertake long-range patrol around New Zealand, the Pacific and Southern Oceans.<br/><strong>Homeport:</strong> Dunedin</p><h4>HMNZS WELLINGTON - P55</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20WELLINGTON%20-%20P55.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-wellington-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Undertake long-range patrol around New Zealand, the Pacific and Southern Oceans.<br/><strong>Homeport:</strong> Wellington</p><h3>Inshore Patrol Vessels</h3><h4>HMNZS HAWEA - P3571</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20HAWEA%20-%20P3571.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-hawea-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Conduct border patrol, maritime surveillance and interdiction in support of civil agencies.<br/><strong>Homeport:</strong> Greymouth/Westport </p><h4>HMNZS TAUPO - P3570</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20TAUPO%20-%20P3570.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/hmnzs-taupo-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Conduct border patrol, maritime surveillance and interdiction in support of civil agencies.<br/><strong>Homeport:</strong> Whangarei</p><hr /><h3>Littoral Warfare</h3><h4>HMNZS MATATAUA - LWU</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/HMNZS%20MATATAUA%20-%20LWU.jpg' /><p><strong>Description:</strong> The purpose of the Littoral Warfare Unit (LWU) is to ensure access to and the use of harbours, inshore waters and associated coastal zones. The component parts of the LWU can be quickly assembled into a composite force and deployed by sea, land or air.<br/>strong>Homeport:</strong> Whakatane</p><hr /><h3>Naval Aviation</h3><h4>RNZAF 6 Squadron - Seasprite</h4><img width='48' src='https://oracle-static.aviato.co.nz/content/RNZAF%206%20Squadron%20-%20Seasprite.jpg' /><p><a href='https://oracle-static.aviato.co.nz/content/naval-aviation-factsheet-web.pdf'><strong>View PDF Fact Sheet</strong></a></p><p><strong>Description:</strong> Naval aviation comprises a mix of Navy and Air Force personnel who operate and maintain a fleet of ten Super Seasprite SN-2G(I) helicopters, known as No 6 Squadron. No. 6 Squadron is based at RNZAF Base Auckland in Whenuapai, Auckland.</p><hr /><h3>Establishments</h3><p>The Royal New Zealand Navy follows the Royal Navy tradition of commissioning land naval bases as though they were ships. The administration structures that work for a ship work just as well for land establishments. For this reason, naval bases are sometimes referred to as stone frigates.</p><p>In earlier times or in wartime, naval bases actually were ships. HMS PHILOMEL was an older cruiser and functioned as a New Zealand's first naval training platform.</p><h3>HMNZS PHILOMEL</h3><p>Devonport Naval Base, Auckland</p><p><strong>Description:</strong> HMNZS PHILOMEL is the name for Naval Support Services within Devonport Naval Base, which is responsible for the logistics and organisation of Naval personnel, and for any visits to the base by foreign ships. PHILOMEL was the name of an old light cruiser assigned to the New Zealand Division of the Royal Navy in 1921 as a training base. After the ship was decommissioned in 1947 the ship's name transferred to the land base.</p><h4>HMNZS WAKEFIELD</h4><p>Naval Staff Headquarters New Zealand Defence Force, Wellington</p><p><strong>Description:</strong> Formally known as HMNZS PHILOMEL II (1948-53) was renamed HMNZS WAKEFIELD in 1954. It is the name for Naval Staff within the Defence Headquarters, which is responsible for Naval Command and administration for naval personnel resident outside Greater Auckland.</p>"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/5-dress-appearance-icon.png",
+        "slug": "dress-appearance",
+        "title": "Dress & Appearance",
+        "item_type": "menu",
+        "item": {
+          "name": "Dress & Appearance",
+          "slug": "dress-appearance",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+              "slug": "uniform",
+              "title": "Uniform",
+              "item_type": "menu",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                "name": "Uniform",
+                "slug": "uniform",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                    "slug": "summer-uniforms",
+                    "title": "Summer Uniforms",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                      "slug": "summer-uniforms",
+                      "title": "Summer Uniforms",
+                      "keywords": "Uniform,Summer,Whites",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/summer-uniforms-diagram-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                    "slug": "winter-uniforms",
+                    "title": "Winter Uniforms",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                      "slug": "winter-uniforms",
+                      "title": "Winter Uniforms",
+                      "keywords": "Uniform,Winter",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/winter-uniforms-diagram-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                    "slug": "working-uniforms",
+                    "title": "Working Uniforms",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                      "slug": "working-uniforms",
+                      "title": "Working Uniforms",
+                      "keywords": "Uniform,Working",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/working-uniforms-diagram-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                    "slug": "tying-a-cap-ribbon",
+                    "title": "Tying A Cap Ribbon",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                      "slug": "tying-a-cap-ribbon",
+                      "title": "Tying A Cap Ribbon",
+                      "keywords": "Uniform,Cap,Cap tally,Headdress",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/tying-a-cap-ribbon-diagram-1.png' /><img src='https://oracle-static.aviato.co.nz/content/tying-a-cap-ribbon-diagram-2.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                    "slug": "wearing-medals-badges",
+                    "title": "Wearing Medals & Badges",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/5-dress-appearance-small.jpg",
+                      "slug": "wearing-medals-badges",
+                      "title": "Wearing Medals & Badges",
+                      "keywords": "Uniform,Medals,Badges,Name badges,Pins,Commendations,Insignia",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/wearing-medals-badges-diagram-1.png' /><img src='https://oracle-static.aviato.co.nz/content/wearing-medals-badges-diagram-2.png' />"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+              "slug": "ranks-badges",
+              "title": "Ranks & Badges",
+              "item_type": "menu",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                "name": "Ranks & Badges",
+                "slug": "ranks-badges",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                    "slug": "ranks",
+                    "title": "Ranks",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                      "slug": "ranks",
+                      "title": "Ranks",
+                      "keywords": "Ranks,Epaulette,Rank slide,Boards",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/ranks-diagram-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                    "slug": "badges",
+                    "title": "Badges",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                      "slug": "badges",
+                      "title": "Badges",
+                      "keywords": "Badges,Trades,Patches",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/badges-diagram-1.png' />"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+              "slug": "appearance",
+              "title": "Appearance",
+              "item_type": "menu",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                "name": "Appearance",
+                "slug": "appearance",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                    "slug": "jewellery-accessories",
+                    "title": "Jewellery & Accessories",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                      "slug": "jewellery-accessories",
+                      "title": "Jewellery & Accessories",
+                      "keywords": "Jewellery,Rings,Necklaces,Taonga,Greenstone,Jade,Bracelet,Earring",
+                      "content": "<p>The following jewellery and accessories can be worn with uniform:</p><ul><li>A wedding/civil union, engagement/commitment, eternity and signet ring. Rings may be worn on a maximum of two fingers.</li><li>One pair of stud/sleeper type earrings, one in each earlobe. Earrings are to be of a natural colour to a maximum of five millimetres in diameter. The earrings are to be metal or natural stone, specifically gold, silver, jade, pounamu, diamond or pearl.</li><li>Cuff-links and tie pins, but are to be non-garish and conservative by design.</li><li>Wristwatches may be worn with uniform, however their removal may be ordered for parades.</li><li>Cultural (taonga) or religious (pendants) neck adornments may be worn but must not be visually displayed.</li></ul>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                    "slug": "makeup-cosmetics",
+                    "title": "Makeup & Cosmetics",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                      "slug": "makeup-cosmetics",
+                      "title": "Makeup & Cosmetics",
+                      "keywords": "Make-up,Cosmetics,Eyelashes,Nail polish,Nail",
+                      "content": "<ul><li>Personnel can wear discreet make up i.e. natural in appearance.</li><li>A clear or pale nail varnish may be worn whilst in uniform, except for those personnel involved with food preparation.</li><li>False eye lashes may be worn provided that they are trimmed, neat and natural in appearance.</li></ul>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                    "slug": "tattoos",
+                    "title": "Tattoos",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                      "slug": "tattoos",
+                      "title": "Tattoos",
+                      "keywords": "Tattoos,Moko,Ink,Cuff,Sleeve",
+                      "content": "<p>Tattoos which are visible when formal dress uniform is being worn (i.e. they extend beyond the collar or cuff, or they are on the face/neck/hands), are not acceptable and must not be acquired without approval.</p><p>Tattoos in the areas of the forearms and lower upper arms are permitted, provided they conform to the rules below.</p><p>The following rules govern all tattoos, wherever they may be:</p><ul><li>Not to undermine the authority or dignity of the Service or bring discredit to the Service.</li><li>Not to offend others or invite provocation.</li><li>Not to affect the employability of the wearer i.e. by making it unacceptable for that person to parade or stand guard in public, or engage in certain operations.</li></ul>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                    "slug": "hair-facial-hair",
+                    "title": "Hair/Facial Hair",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                      "slug": "hair-facial-hair",
+                      "title": "Hair/Facial Hair",
+                      "keywords": "Beard,Moustache,Hair,Facial hair",
+                      "content": "<h3>Hair</h3><p>The primary consideration for hair is that it is maintained in a natural, neatly and groomed appearance. Hair is to be neat, of one colour or lightly tipped and clean. Exaggerated hairstyles i.e. having partially shaven head, mohawks, mullets, undercuts and zigzagging of hair is not permitted.</p><ul><li>Hair is not to be cut shorter than a number one comb i.e. shaved head, unless a request has been submitted to your DO. The approval process is outlined below. Once approved, and if you wish to grow your hair again, you must seek permission by following the approval process again..Short hair is not to be worn in styles that extend below the lower edge of the collar.</li><li>Long hair is to be worn in a bun with a bun net, in a french roll variant of a bun, or in a single plait that extends below the collar line. Note: A single plait is not to be worn when on parade or wearing uniforms 1A/1AW, 1B/1BW, and 1C/1CW.</li></ul><h3>Facial hair</h3><p>You may request to grow a beard, moustache or both. When permission to grow facial hair has been given by your DO, the use of the razor is to be discontinued except for the removal of untidy growth at the extremities of the beard or moustache, in particular on the lower neck region. Your DO will then review the growth after three weeks and, based on appearance, either approve the facial hair to remain or order the removal of facial hair.</p><img src='https://oracle-static.aviato.co.nz/content/hair-facial-hair-diagram-1.png' /><img src='https://oracle-static.aviato.co.nz/content/hair-facial-hair-table-1.png' /><p>Once approved, and if you wish to commence shaving again, you must seek permission by following the approval process again.</p>"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/7-career-icon.png",
+        "slug": "career",
+        "title": "Career",
+        "item_type": "menu",
+        "item": {
+          "name": "Career",
+          "slug": "career",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+              "slug": "career-management",
+              "title": "Career Management",
+              "item_type": "menu",
+              "item": {
+                "name": "Career Management",
+                "slug": "career-management",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                    "slug": "career-management-model",
+                    "title": "Career Management Model",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                      "slug": "career-management-model",
+                      "title": "Career Management Model",
+                      "keywords": "Career,Career management,CM,FPTO,HoT,Head of Trade,CNRCM,CNOCM,NOCM",
+                      "content": "<p><img src='https://oracle-static.aviato.co.nz/content/career-management-diagram-1.png' /></p><p>Divisional members, Branch Heads or Heads of Trade, DO/CO and career managers are important elements of the career management model, but also of the divisional system.  The Career Management Cells (Fleet Personnel Training Organisation, Naval Officer Career Management and Junior Officer Career Management Cell) work alongside branch/trade coordinators to provide professional and divisional support.  A Branch Commander (officers) and Head of Trade (ratings) acts in an advisory role to ensure the management and welfare of personnel within the Operations, Support and Technical branches and trades.</p><p>Through consultation, all parties work together to balance professional development, career aspirations and personal circumstances with overall branch/trade staffing and development requirements, to develop a career path for divisional members.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                    "slug": "responsibilities",
+                    "title": "Responsibilities",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                      "slug": "responsibilities",
+                      "title": "Responsibilities",
+                      "keywords": "Career,Career management,CM,FPTO,HoT,Head of Trade,CNRCM,CNOCM,NOCM",
+                      "content": "<p><strong>Divisional members.</strong> Need to offer realistic preferences, be prepared to undertake professional development courses, and accept liability for sea service when appropriate. Contact with trade coordinators or career managers is to be initiated through the divisional chain.</p><p><strong>Trade coordinators (Branch Commanders/Heads of Trade). </strong>Provides advice to the career manager on branch related issues and priorities, and consults and counsels divisional members when requested by career managers.  Trade Coordinators may make recommendations or requests for specific postings to be made but they are only to act in a liaison/advisory role.</p><p><strong>Career managers.</strong>Act on behalf of CNRCM/CNOCM/JOPO, and are the final authority on career development matters, including the authority to issue posting notices. Their role includes:<ul><li>planning career development and employment</li><li>appointing personnel to fill vacancies by matching (as much as possible) individual skills with the requirements of specific positions</li><li>providing advice to the command on employment issues related to individuals</li><li>facilitating and co-ordinating the process of consulting and counselling ratings on career matters utilising the divisional system and command structure.</li></ul></p><p><strong>DO/CO.</strong>Contact career managers with recommendations or requests for specific postings to be actioned based on their personal and professional development discussions with divisional members. They act in a liaison/advisory capacity.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                    "slug": "career-management-structure",
+                    "title": "Career Management Structure",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/7-career-small.jpg",
+                      "slug": "career-management-structure",
+                      "title": "Career Management Structure",
+                      "keywords": "Career,Career management,CM,FPTO,HoT,Head of Trade,CNRCM,CNOCM,NOCM",
+                      "content": "<h3>Ratings' Career Management</h3><p><img src='https://oracle-static.aviato.co.nz/content/career-management-structure-diagram-1.png' /></p><h3>Officers' Career Management</h3><p><img src='https://oracle-static.aviato.co.nz/content/career-management-structure-diagram-2.png' /></p>"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+              "slug": "courses",
+              "title": "Courses",
+              "item_type": "menu",
+              "item": {
+                "name": "Courses",
+                "slug": "courses",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "initial-courses",
+                    "title": "Initial Courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "initial-courses",
+                      "title": "Initial Courses",
+                      "keywords": "BCT,BBT,JOCT,OJT,DC,Development Course,Divisional Course,Damage Control,Leadership Course,LF,Leadership Framework,Staff Course,ACSC,ICSC,JWOAC",
+                      "content": "<h3>Initial courses</h3><img src='https://oracle-static.aviato.co.nz/content/initial-courses-table-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "development-courses",
+                    "title": "Development Courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "development-courses",
+                      "title": "Development Courses",
+                      "keywords": "BCT,BBT,JOCT,OJT,DC,Development Course",
+                      "content": "<p><strong>Leading Rates Development Course</strong><br/><u>Aim:</u> To provide a supportive learning environment that develops course members’ knowledge and behaviours in a manner that both supports their leadership development, and enhances their level of strategic self awareness. This includes initiating the transition from the Lead Self to the Lead Teams level of leadership.<p><strong>Petty Officer Development Course</strong><br/><u>Aim:</u> To provide a supportive learning environment that develops course members’ knowledge and behaviours in a manner that both supports their leadership development, and enhances their level of strategic self-awareness.  This includes initiating the transition from the Lead Teams to the Lead Leader level of leadership.<p><strong>Chief Petty Officer Development Course</strong><br/><u>Aims:</u><ol><li>To empower senior Petty Officers with the professional knowledge required for promotion to Chief Petty Officer. This includes initiating the transition from the Lead Leaders to the Lead Systems level of leadership.</li><li>To provide course members with a solid grounding as middle managers within the organisation; responsible for departmental supervision and management and the implementation of strategy at the operational and tactical levels; and</li><li>To enhance understanding of the resources available and where/how to source information to assist in future roles</li></ol></p><p><strong>Warrant Officer Development Course</strong><br/><u>Aim:</u> To develop and assess participants in their command, leadership philosophy and management skills required to be an effective WO in the RNZN. The course supports the continuation of the transition from the Lead Leaders to the Lead Systems level of leadership.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "damage-control-courses",
+                    "title": "Damage Control Courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "damage-control-courses",
+                      "title": "Damage Control Courses",
+                      "keywords": "Damage Control",
+                      "content": "<p><strong>Team Leader Chemical Biological Radiological Nuclear Damage Control (CBRNDC)</strong><br/><u>Aim:</u> To train Able Rates to undertake the role of Team Leader in any damage control incident.</p><p><strong>Scene Leader CBRNDC</strong><br/><u>Aim:</u> To equip Leading Ratings within the RNZN to be competent in the duties of Scene Leader in any damage control incidents that may arise onboard RNZN Ships and shore establishments.</p><p><strong>CBRNDC Instructor</strong><br/><u>Aim:</u> To provide Senior Rates with the knowledge, skills and attitudes required for maintaining CBRNDCI capabilities onboard RNZN ships and shore establishments.</p><p><strong>Incident Managers' Damage Control</strong><br/><u>Aim:</u> To train seagoing and shore based Officers of the Day (OOD) to manage damage control incidents within their duty area competently.</p><p><strong>Head of Department Damage Control</strong><br/><u>Aim:</u> To train officers and Senior Ratings to undertake the CBRNDC duties of a HOD.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "leadership-courses",
+                    "title": "Leadership Courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "leadership-courses",
+                      "title": "Leadership Courses",
+                      "keywords": "BCT,BBT,JOCT,OJT,DC,Development Course,Damage Control,Leadership Course,LF,Leadership Framework,ACSC,ICSC,JWOAC",
+                      "content": "<p>All NZDF Leadership Framework courses aim to provide target learners with enhanced strategic self-awareness, and an understanding of the NZDF expectations at each level of leadership.</p><p>Course attendance comprises RNZN personnel, RNZAF & NZ Army personnel, NZDF Civilian Staff and State Sector employees (for courses delivered by the Institute of Leader Development).</p><p>Delivered by the RNZN Leadership Development Group:<ul><li>Lead Self</li><li>Lead Teams</li><li>Lead Leaders</li></ul></p><p>Delivered by the NZDF Institute for Leader Development:<ul><li>Lead Systems</li><li>Lead Capability</li><li>Lead Integrated Capability</li><li>Lead Organisation</li></ul></p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "divisional-courses",
+                    "title": "Divisional Courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "divisional-courses",
+                      "title": "Divisional Courses",
+                      "keywords": "BCT,BBT,JOCT,OJT,DC,Development Course,Divisional Course,Damage Control,ACSC,ICSC,JWOAC",
+                      "content": "<p><strong>Divisional Management Course</strong><br/><u>Aims:</u><ul><li>To prepare the students to fulfil their respective roles and responsibilities within the Divisional Team.</li><li>To provide an understanding as to what resources are available and where to source information to assist in fulfilling divisional duties.</li><li>To provide adequate exposure to and practice in completing the predominant administrative tasks expected of a Divisional Officer.</li></ul></p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                    "slug": "staff-courses",
+                    "title": "Staff courses",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/courses-small.jpg",
+                      "slug": "staff-courses",
+                      "title": "Staff courses",
+                      "keywords": "BCT,BBT,JOCT,OJT,DC,Development Course,Staff Course,ACSC,ICSC,JWOAC",
+                      "content": "<p><strong>Intermediate Command and Staff Course (Joint)</strong><br/><i>Delivered by the NZDF Command & Staff College</i><br/><u>Aim:</u> To prepare intermediate level officers for MAJ(E) responsibilities.  Through building a foundation in critical thinking, ICSC(J) students will develop joint command and staff skills, an understanding of the leadership necessary to employ those skills and how those skills can best influence and support the NZDF within NZ's contemporary security environment.</p><p><strong>Joint Warrant Officer Advanced Course (JWOAC)</strong><br/><i>Delivered by the NZDF Command & Staff College</i><br/><u>Aim:</u> To prepare to prepare selected Warrant Officers for senior strategic advisory positions within the NZDF.</p><p><strong>Officers' Advanced Staff Courses</strong></p><p>There are a number of annual domestic and international advanced staff courses which are attended by RNZN officers of LTCDR and CDR rank:<strong><ul><li>NZDF Advanced Command & Staff Course (Joint)</li><li>ADF Command & Staff Course</li><li>Royal Brunei Armed Forces Command and Staff Course</li><li>Malaysian Armed Forces Staff Course</li><li>Singapore Armed Forces Command and Staff Course</li><li>United Kingdom Advanced Command and Staff Course</li><li>United States Naval War College</li></ul></strong></p><p>The following Higher Command and Staff courses are targeted at selected RNZN officers of CAPT rank:<strong><ul><li>Australian Defence Strategic Studies Course</li><li>Royal College of Defence Studies</li><li>Dwight D. Eisenhower School for National Security and Resource Strategy</li><li>Higher Command and Staff Course</li></ul></strong></p>"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/course-selections-small.jpg",
+              "slug": "course-selections",
+              "title": "Course Selections",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/course-selections-small.jpg",
+                "slug": "course-selections",
+                "title": "Course Selections",
+                "keywords": "Course,Selection,Nomination,Development,Leadership,Professional,DC,LF",
+                "content": "<p>A nomination signal will be released by the FPTO at least 6 weeks before a professional, development or damage control course is due to commence. The signal will outline relevant details of the course and individuals provisionally nominated for it (based on qualifications held and Service requirements i.e. availability). Units are to reply by signal stating whether the individuals are:</p><ul><li>currently recommended for the course;</li><li>has a current medical grading that specifies they are able to attend a professional course;</li><li>a volunteer(s) for the course (if the rating is not a volunteer the reason why is to be stated on the signal)</li></ul><p>On receipt of replies to the nomination signal, selection will be determined by Talent Management Specialists (ratings) and JOCMC (officers), taking into account divisional responsibilities and/or the succession requirements of the Service. FPTO will signal to ships and establishments giving the names of those selected for the course. Posting instructions will follow.</p><p>If a nominee is unavailable for a course due to exigencies of the Service the reason why is to be reported in a separate signal to the FPTO. In such situations, and provided that the nominee has remained continuously eligible, when they successfully complete the first course they can attend, the date of passing will be backdated to the last day of the course on which they would have been included.</p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/education-study-assistance-small.jpg",
+              "slug": "education-study-assistance",
+              "title": "Education Study Assistance",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/education-study-assistance-small.jpg",
+                "slug": "education-study-assistance",
+                "title": "Education Study Assistance",
+                "keywords": "VESA,ESA,Education,Study,Tertiary,Uni",
+                "content": "<p><a href='https://oracle-static.aviato.co.nz/content/VESA_information_leaflet.pdf'>VESA Information Leaflet</a></p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+              "slug": "promotions",
+              "title": "Promotions",
+              "item_type": "menu",
+              "item": {
+                "name": "Promotions",
+                "slug": "promotions",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                    "slug": "promotions-eligibility",
+                    "title": "Eligibility",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                      "slug": "promotions-eligibility",
+                      "title": "Eligibility",
+                      "keywords": "Promotion,Clearance,Promotion clearance,Promotion clearance categories,Prom clearance,Not yet cleared,Cleared for promotion,Cleared",
+                      "content": "<p>The following criteria must be met for all RNZN promotions:<ul><li>Meets actual service requirements in their current substantive rank</li><li>Meets the conduct requirements</li><li>Medically fit</li><li>Physically in-date</li><li>Security clearance in-date for the trade/rank</li><li>Professionally qualified for the higher rank</li><li>Development Course qualified for the higher rank</li><li>Damage Control Course qualified for the higher rank</li><li>PDR grade not lower than Overall Competency 'Fully Met'</li><li>RNZNVR personnel - meet the minimum 'efficiency' qualification for rank, and</li><li>Has the CO's recommendation</li><li>Holds the promotion category 'cleared for promotion' (not required to assume an Acting rank).</li></ul></p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                    "slug": "promotion-pledges",
+                    "title": "Promotion Pledges",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/ranks-badges-small.jpg",
+                      "slug": "promotion-pledges",
+                      "title": "Promotion Pledges",
+                      "keywords": "Pledge,Promotion,Promotion pledge",
+                      "content": "<p>The following promotion pledges are read aloud by Service members during their promotion ceremonies.  The pledges are a verbal acknowledgement of the expectations on them and their responsibilities in their new rank.</p><p>The Officer's Pledge is recited during Junior Officer Common Training (JOCT) by all members of the current JOCT course.</p><h3>Able Rate</h3><p>As an Able Rating I will display loyalty to the Service, my superiors, my peers and my family. In displaying loyalty I will comply with all the rules and regulations that apply to me as a Service person, and give full support to the achievement of the Navy's objectives despite other personal desires. The quality of being loyal encompasses honesty, supporting my superiors, participating in unpleasant tasks and putting others before myself.</p><p>I will acknowledge my mistakes, accept any consequences and learn from the experience. I will seek feedback from my supervisors to improve the quality of my work, and assist with the training of others. I will exploit my strengths and work to improve my weaknesses.</p><p>I will ensure that at all times I maintain a satisfactory level of appearance and bearing, whether on or off duty, in or out of uniform and conduct myself in such a manner so as to bring credit to both myself and the Service. This will include the active promotion by both word and deed of the Navy's Core Values of Courage, Commitment, Comradeship and Integrity.</p><h3>Leading Hand</h3><p>As a Leading Hand I will ensure that order and regularity are preserved in my vicinity among those ratings of whatever branch whether on duty or not, who hold an inferior rank.  I will keep myself informed of any cause of complaint or dissatisfaction among my ships company and I will inform my Command so that the matter may be investigated.  I will exercise effective lawful authority over my subordinates in accordance with the Armed Forces Discipline Act.  I will ensure that delegated duties are assigned equitably and completed to a satisfactory standard within specified timeframes.</p><p>As a Leading Hand I will set and maintain an exemplary standard of personal conduct, demeanour and displayed attitude, acting as a role model for my subordinates to follow. This will include the active promotion by both word and deed of the Navy's Core Values of Courage, Commitment, Comradeship and Integrity. In carrying out my duties I will continue to responsibly demonstrate the behaviours associated with the Navy's core values with the upmost integrity.</p><h3>Petty Officer</h3><p>As a Petty Officer I will ensure that order and regularity are preserved in my vicinity among those ratings, of whatever branch and whether on duty or not, who hold an inferior rank.  I will keep myself informed of any cause of complaint or dissatisfaction among the ships company and I will inform my superiors so that the matter may be investigated if it is beyond my authority to resolve.  I will command effectively and lawfully exercising the vested authority I hold over my subordinates in accordance with the Armed Forces Discipline Act.  I will ensure that I delegate duties and tasks equitably and that they are completed to a satisfactory standard within a specified timeframe.</p><p>As a Petty Officer I will set and maintain an exemplary standard of personal conduct, demeanour and displayed attitude, acting as a role model for my subordinates to follow.</p><p>As a Petty Officer I commit to being the vital link between junior ratings and the more senior ratings and officers in the divisional system.  My superior officers can count on my loyal support, and my juniors can look to me for guidance and assistance.</p><h3>Chief Petty Officer</h3><p>As a Chief Petty Officer in the Royal New Zealand Navy I will ensure that order and regularity are preserved in my vicinity among those ratings, of whatever branch and whether on duty or not, who hold an inferior rank to me.  I will keep myself informed of any cause of complaint or dissatisfaction among the ship's company and I will inform their divisional superiors so that the matter may be investigated if it is beyond my authority to resolve.  I will command effectively and lawfully exercising the vested authority I hold over my subordinates in accordance with the Armed Forces Discipline Act.  I will ensure that I delegate duties and tasks equitably and that they are completed to a satisfactory standard within a specified timeframe.</p><p>As a Chief Petty Officer I will set and maintain an exemplary standard of personal conduct, demeanour and displayed attitude, acting as a role model for my subordinates to follow.  As a Chief Petty Officer I commit to being the vital link between junior ratings and officers in the divisional system.  My superior officers can count on my loyal support, and my juniors can look to me for guidance and mentoring.</p><h3>Warrant Officer</h3><p>As a Warrant Officer, I solemnly pledge to constantly and resolutely uphold and preserve the core values of the New Zealand Naval Forces.  I will serve my country with pride and maintain the highest personal and professional standards at all times, whether on duty or not.</p><p>I will always act with honesty, integrity and respect for those I lead, while fostering teamwork, loyalty and courage.  I will take personal responsibility for the morale and well-being of our men and women and their families.</p><p>I make this pledge openly and dedicate myself to the pursuit of excellence.</p><h3>Officer's Pledge</h3><p>As an Officer of the Royal New Zealand Navy, solemnly pledge to uphold and preserve the Navy's core values of Courage, Commitment and Comradeship.  Through my attitudes and behaviour, I will demonstrate accountability for my actions, and serve New Zealand loyally, honourably and with pride.</p><p>At all times I will show respect for those I am privileged to Command and lead, be they sailors, soldiers, aviators or civilians.  I will take personal responsibility for the morale and wellbeing of sailors and their families.  I will live the ethos and values of a Naval Officer, and will demonstrate the highest personal and professional standards.  I will conduct all of my duties to the best of my ability, and will strive to embody the proud heritage of those who have done so before me.</p><p>I will selflessly dedicate myself to the Service of my country and I am honoured to make this pledge openly and freely.<br/>He apiha ahau, he rangatira ahau, I am an Officer, I am a leader.<br/>He heremana ahau, I am a sailor.</p>"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/pay-small.jpg",
+              "slug": "pay",
+              "title": "Pay",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/pay-small.jpg",
+                "slug": "pay",
+                "title": "Pay",
+                "keywords": "Pay,Wage,Salary,Remuneration",
+                "content": "<p>The tables below covers the minimum and maximum salary values for each rank as at 1 July 2018. Included are the employer superannuation contributions and the 'Military Factor' components effective 01 Jul 18.</p><img src='https://oracle-static.aviato.co.nz/content/pay-table-1.png' />"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/8-honours-awards-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/8-honours-awards-icon.png",
+        "slug": "honours-awards",
+        "title": "Honours & Awards",
+        "item_type": "menu",
+        "item": {
+          "name": "Honours & Awards",
+          "slug": "honours-awards",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/good-conduct-badges-small.jpg",
+              "slug": "honours-awards-overview",
+              "sort_order": 0,
+              "title": "Overview",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/good-conduct-badges-small.jpg",
+                "slug": "honours-awards-overview",
+                "title": "Overview",
+                "keywords": "Commendation,Honours,Awards,Medals,Gongs",
+                "content": "<p>New Zealand Defence Force (NZDF) Awards provide an important means of recognition for meritorious services performed by members of the NZDF.</p><p>The Chief of Defence Force (CDF), Service Chiefs (Navy, Army, Air Force), Vice Chief of Defence Force (VCDF), Commander Joint Forces New Zealand (COMJFNZ), and senior Defence leaders at 2-Star level can award commendations to members of their respective Services and staffs in recognition of excellence and superior or outstanding service. The commendations are available to individual military and civilian staff members, and to military units. The commendations are accompanied by a citation outlining the reason for the award and a dress distinction.</p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/good-conduct-badges-small.jpg",
+              "slug": "good-conduct-badges",
+              "title": "Good Conduct Badges",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/good-conduct-badges-small.jpg",
+                "slug": "good-conduct-badges",
+                "title": "Good Conduct Badges",
+                "keywords": "GCB,Good Conduct,Good Conduct Badge",
+                "content": "<h4>Fun fact</h4><p>Chevron is a French word meaning rafter or roof. It has been an honourable ordinarie in heraldry since at least the Twelfth Century.  The chevron was a basic part of the colourful and complicated science of heraldry.  It appeared on the shields and coats-of-arms of knights, barons and kings. Chevrons were thus easily recognised symbols of honour. French soldiers started wearing cloth chevrons in 1977 as length of service and good conduct badges. Some British units also used them to show length of service.  In 1803 the British began using chevrons with the points down as rank insignia. Sergeants wore three and Corporals two. The chevrons first appeared on the cuffs of sailors' jumpers in 1886 (US Navy). Shortly after WWII the Navy moved the stripes to its Seamens' upper arms.</p><p>A Good Conduct Badge is awarded at the CO's discretion to ratings qualified by service <i>and</i> conduct. They are awarded for continuous service and unblemished conduct. The following length of service is required for the award of GCBs:</p><p><strong>1st badge - 4 years</strong><br /><strong>2nd badge - 8 years</strong><br /><strong>3rd badge - 12 years</strong></p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+              "slug": "nzdf-rnzn-medals",
+              "title": "NZDF & RNZN Medals & Awards",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/appearance-small.jpg",
+                "slug": "nzdf-rnzn-medals",
+                "title": "NZDF & RNZN Medals & Awards",
+                "keywords": "Medal,Award,Long Service,AFA,DSM,LSGCM,LS&GCM,Good Conduct,Conduct,Decoration,Gong",
+                "content": "<img src='https://oracle-static.aviato.co.nz/content/nzdf-rnzn-medals-eligibility-table-1.png' />"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/4-personal-admin-small.jpg",
+              "slug": "sailor-civilian-of-the-quarter",
+              "title": "Sailor & Civilian of the Quarter",
+              "item_type": "menu",
+              "item": {
+                "name": "Sailor & Civilian of the Quarter",
+                "slug": "sailor-civilian-of-the-quarter",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/4-personal-admin-small.jpg",
+                    "slug": "sailor-of-the-quarter",
+                    "sort_order": 0,
+                    "title": "Sailor of the Quarter",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/4-personal-admin-small.jpg",
+                      "slug": "sailor-of-the-quarter",
+                      "title": "Sailor of the Quarter",
+                      "keywords": "Sailor of the Quarter,SOTQ",
+                      "content": "<p>Sailor of the Quarter (SOTQ) awards are unit level awards that formally recognise the significant contribution of high performing junior ratings. As the name suggests, a SOTQ is awarded four times a year:</p><ul><li>1st Quarter: Jan - Mar</li><li>2nd Quarter: Apr - Jun</li><li>3rd Quarter: Jul - Sep</li><li>4th Quarter: Oct - Dec</li></ul><p>There is no maximum number of personnel that can be nominated by a unit. All serving NZDF and RNZNVR personnel who are ORD, AB or LH (or equivalent if NZ Army or RNZAF) are eligible for nomination.  Acting Petty Officers are also eligible as they are still substantively LHs.</p><p>Considerations for suitability:<ul><li>Have they exceeded performance expectations in current position?</li><li>Are they a highly motivated role model?</li><li>Do they consistently display and adhere to the RNZN Core Values?</li></ul></p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/4-personal-admin-small.jpg",
+                    "slug": "civilian-of-the-quarter",
+                    "title": "Civilian of the Quarter",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/4-personal-admin-small.jpg",
+                      "slug": "civilian-of-the-quarter",
+                      "title": "Civilian of the Quarter",
+                      "keywords": "Civilian of the Quarter,COTQ",
+                      "content": "<p>Civilian of the Quarter (COTQ) awards are unit level award that formally recognise the significant contribution of high performing civilians within the Naval Support Command.   Eligibility requirements, the nomination process, and the award details are provided in NZBR 12.</p>"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/who-we-are-small.jpg",
+              "slug": "sailor-of-the-year-overview",
+              "sort_order": 0,
+              "title": "Overview",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/who-we-are-small.jpg",
+                "slug": "sailor-of-the-year-overview",
+                "title": "Overview",
+                "keywords": "Sailor of the Year,SOTY",
+                "content": "<p>The Sailor of the Year (SOTY) Programme was designed to recognise the outstanding contribution that many junior rates make to the Navy. The overarching criteria governing the selection of the SOTY are:</p><ul><li>irreproachable and exemplary conduct throughout their Service career</li><li>demonstrated qualities of superior performance</li><li>contributions made toward promoting the Navy's core values</li></ul><p>All serving RNZN and RNZNVR personnel who are ORD, AB or LH are eligible for nomination.  Acting Petty Officers are also eligible as they are still substantively LHs.</p><p>The SOTY is the public face for junior ratings and it is a role that all junior ratings look up to. The expectations of the SOTY include:<ul><li>Act as a role model for their peers and subordinates;</li><li>Be themselves;</li><li>Conduct representational duties, for example:<br/><ul><li>Waitangi Day</li><li>Powhiris and official welcomes</li><li>Course graduations</li><li>Fleet Divisions</li></ul></li><li>Attend official functions/ceremonies</li><li>Deliver briefs</li></ul></p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/commendations-small.jpg",
+              "slug": "commendations",
+              "title": "Commendations",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/commendations-small.jpg",
+                "slug": "commendations",
+                "title": "Overview",
+                "keywords": "Commendation",
+                "content": "<p>The Purpose of a Commendation is to provide formal recognition of personal endeavours, assist in promoting job and career satisfaction (particularly in areas where valuable service seldom leads to other forms of recognition), act as incentives to excel or perform to a higher standard, and recognise outstanding achievements or special service by units of the RNZN.</p><p>Anyone can nominate their peers, juniors, or seniors for a Commendation if they believe the individual has performed above and beyond what is required, made a valuable contribution to the RNZN, or displayed particular attributes and ethics worthy of recognition.</p><p>Commendations may be awarded to RNZN personnel, RNZNVR personnel, civilian staff, as well as to ships and establishments. There is no limit to the number of commendations that can be awarded.</p>"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/9-departing-the-rnzn-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/9-departing-the-rnzn-icon.png",
+        "slug": "departing-the-rnzn",
+        "title": "Departing the RNZN",
+        "item_type": "menu",
+        "item": {
+          "name": "Departing the RNZN",
+          "slug": "departing-the-rnzn",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+              "slug": "departing-the-rnzn-overview",
+              "sort_order": 0,
+              "title": "Overview",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+                "slug": "departing-the-rnzn-overview",
+                "title": "Overview",
+                "keywords": "Leaving,Leaving the RNZN,Leaving the NZDF,Departing the RNZN,Departing the NZDF,MD717,717,Release",
+                "content": "<p>You are 'released' from the RNZN when you transfer to another component of the Service at your own request i.e. transfer to the Naval Reserves for your period of Reserve liability or are placed on the RNZN Retired List.</p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+              "slug": "release-procedure",
+              "title": "Release Procedure",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+                "slug": "release-procedure",
+                "title": "Release Procedure",
+                "keywords": "Leaving,Leaving the RNZN,Leaving the NZDF,Departing the RNZN,Departing the NZDF,MD717,717,Terminal date,Release,GILL,Leave,Reserves,Reserve liability,Certificates of Service,Statements of Service",
+                "content": "<p>These categories apply to RNZN RF members:</p><img src='https://oracle-static.aviato.co.nz/content/release-procedure-table-1.png' /><h3>Withdrawing a Release or amending the Terminal Date</h3><p>Requests to withdraw notice or make any amendments to the original terminal date, are to be made formally in writing (Minute).  There is no guarantee that such a request will be approved. For example, a request to withdraw notice may be declined on the basis that your service has not been entirely satisfactory, or replacement posting action has already been initiated and no suitable alternative posting is available.</p><p>If you are unmarried and under the age of 18, your parent or guardian is to be informed (by the initiating unit) of the date of release/discharge/dismissal and brief details of the cause.  Should you not consent to this, your refusal is to be recorded and no information will be forwarded.</p><h3>Leave owing</h3><p>A 'Grant in Lieu of Leave (GILL)' is a payment made on the terminal date.  Outstanding and accumulated Annual Leave and outstanding Equivalent Leave, is payable as a Grant.  Long Leave, Incentive Leave and Stand-down Leave is not payable as a Grant.  For the valid leave, the individual will be paid out at rate of 1.4 times the number of days.  This is 1.4 times the daily rate of pay as at the terminal date.  It is subject to PAYE tax deductions but not superannuation deductions.</p><h3>Reserve liability</h3><p>All personnel released from the RNZN are transferred to the Reserves.  The minimum periods of Reserve liability are:<ul><li>Less than 20 years service - 4 years</li><li>20+ years service - 2 years</li></ul><br/>Exempt from this obligation are those aged 60+ years, dismissed or discharged personnel, and those who did not meet the required medical standard prior to release.</p><h3>Records & Certificates of Service</h3><p>On release or discharge from the RNZN, Regular Force members will receive, and Reservists can request, the following documents recording their Service career:<ul><li>Record of Service in the RNZN/New Zealand Armed Forces (&lt;1 year Service)<br/><ul><li>Service description</li><li>Length of service</li><li>Record of rank and trade changes (including acting rank and reduction/reversion);</li><li>Educational, technical and professional qualifications attained</li><li>Courses completed/attended</li><li>Honours, medals, awards, clasps, mentioned in dispatches, commendations and citation</li></ul></li><li>Certificate of Service in the RNZN/New Zealand Armed Forces (&gt;1 year Service)<br/><ul><li>Details the dates you served.</li></ul></ul>In addition to receiving one of these documents, you will also receive a Statement of Service which outlines your trade role and rank expectations.</p><p>The purpose of these documents is to provide a record of performance and also provide information that could be of assistance in attaining civilian employment. Ideally, you will receive these documents prior to your final day in the NZDF. If not, they will be sent to your release address.</p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+              "slug": "support",
+              "title": "Support",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/release-procedure-small.jpg",
+                "slug": "support",
+                "title": "Support",
+                "keywords": "Career transition coaches,Transition seminars,Career seminars,RSA,Resettlement study assistance,Resettlement,Leaving,Leaving the RNZN,Leaving the NZDF,Departing the RNZN,Departing the NZDF",
+                "content": "<h4>Career Transition Coaches</h4><p>NZDF Career Transition Coaches are available to support you or a divisional member to transition from military to civilian life. Refer to <a href='https://force4families.mil.nz/leaving-the-nzdf'>Force For Families page</a> for contact details and information on the services provided.</p><h4>Handbooks</h4><p>The 'My Career' site on the NZDF intranet provides a handbook for Service people considering leaving the NZDF, and for their DOs/Managers/Commanders to assist in their transition. The handbook provides checklists, useful information about the services available, pointers for drafting job applications, and the administrative processes and considerations relating to leaving the Service.</p><p>If you or a divisional member are considering leaving the RNZN, it is recommended that you visit the 'My Career' site. If you do not have access to the intranet, contact the Career Transition Coaches.</p><h4>Seminars</h4><p>The 3-day NZDF Transition Seminars are conducted by the Career Transition Team several times per year, in various camps and bases. The seminar includes helpful information on:</p><ul><li>developing a Curriculum Vitae (CV)</li><li>current job market</li><li>preparing for and competing in the job market</li><li>health and wellbeing support</li><li>release admin</li><li>financial planning</li><li>goal setting</li><li>business opportunities</li><li>entitlements</li><li>and more.</li></ul><p>Eligibility - Service members who have served more than 6 years, or those being released on medical grounds who have served more than 5 years. It is advised you attend the seminar within your final twelve months of service.</p><p>Application process - You apply for these seminars in the same way that you nominate for any NZDF course, via the NZDF Course Plan on the NZDF website. If a suitably scheduled seminar is available, click on the 'Nominate' link within the NZDF Course Plan webpage to initiate the nomination process.</p><h4>Resettlement Study Assistance</h4><p>Career Transition Coaches can help you consider and plan your Resettlement Study Assistance (RSA) to best support your career transition efforts.</p><p>RSA is leave that improves your skills in preparing for life outside NZDF. It may be used:</p><ul><li>to attend education or training courses</li><li>to attend NZDF courses</li><li>to attend on-the-job training</li><li>at your property or an entity (business) that you have a financial interest in, provided there is a training programme in place.</li></ul><p>Time off can also be taken at three hours per week for two years, plus reasonable travelling time.</p><p>If you have been medically discharged, approved RSA may be taken after your Terminal Date<br />You can't receive any financial compensation from another employer while on Resettlement Study Assistance.</p><h4>Eligibility</h4><p>Service members may be granted time off work for RSA leave as follows:</p><ul><li>up to 15 working days after completing 16 years' full time service</li><li>up to 30 working days after completing 17 years' full time service, or</li><li>up to 45 working days after completing 18 or more years' full time service</li></ul><p>If you complete another 18 years and have already taken your entitlement, you are eligible again.</p><h3>More assistance & resources</h3><p>Refer to <a href='https://force4families.mil.nz/force-financial-hub'>Force For Families page</a> for a range of external support agencies who are there to support Service people as they transition out of the NZDF.</p>"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/10-divisional-engagement-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/10-divisional-engagement-icon.png",
+        "slug": "divisional-engagement",
+        "title": "Divisional Engagement",
+        "item_type": "menu",
+        "item": {
+          "name": "Divisional Engagement",
+          "slug": "divisional-engagement",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+              "slug": "wellbeing",
+              "title": "Wellbeing",
+              "item_type": "menu",
+              "item": {
+                "name": "Wellbeing",
+                "slug": "wellbeing",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                    "slug": "confidential-helplines-wellbeing-support",
+                    "title": "Confidential Helplines & Wellbeing Support",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                      "slug": "confidential-helplines-wellbeing-support",
+                      "title": "Confidential Helplines & Wellbeing Support",
+                      "keywords": "Mental health,Mental wellbeing,Wellbeing,Welfare,Resilience,Mental resilience,Helplines,Support",
+                      "content": "<img src='https://oracle-static.aviato.co.nz/content/confidential-helplines-wellbeing-support-diagram-1.png' /><p>For more on the following information and other great advice, go to www.health.nzdf.mil.nz or download the RESCO App.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                    "slug": "mental-health-continuum",
+                    "title": "Mental Health Continuum",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                      "slug": "mental-health-continuum",
+                      "title": "Mental Health Continuum",
+                      "keywords": "Mental health,Mental wellbeing,Wellbeing,Welfare,Resilience,Mental resilience,Helplines,Support",
+                      "content": "<p>The Mental Health Continuum Model provides you with a self-reflection tool, but it is also a great conversation starter to discuss wellbeing with others.</p><img src='https://oracle-static.aviato.co.nz/content/mental-health-continuum-diagram-1.png' />"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                    "slug": "resilience-basics",
+                    "title": "Resilience Basics",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/wellbeing-small.jpg",
+                      "slug": "resilience-basics",
+                      "title": "Resilience Basics",
+                      "keywords": "Mental health,Mental wellbeing,Wellbeing,Welfare,Resilience,Mental resilience,Helplines,Support",
+                      "content": "<h3>Resilience basics – The Big Four</h3><p>A helpful reminder about some resilience basics that you can employ yourself, or that you can talk through with others.</p><img src='https://oracle-static.aviato.co.nz/content/resilience-basics-diagram-1.png' /><img src='https://oracle-static.aviato.co.nz/content/resilience-basics-diagram-2.png' />"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/11-support-services-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/11-support-services-icon.png",
+        "slug": "support-services",
+        "title": "Support Services",
+        "item_type": "menu",
+        "item": {
+          "name": "Support Services",
+          "slug": "support-services",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/definitions-small.jpg",
+              "slug": "urgent",
+              "title": "Urgent",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/definitions-small.jpg",
+                "slug": "urgent",
+                "title": "Urgent",
+                "keywords": "Support,Support services,OPD,Psych,NCO,Social worker,Counsellor,Navy Community Organisation,Chaplain,Military Police,MP,DHC,Defence Health Centre,Navy Hospital,SAPRA,AHA,Harassment,Sexual assault",
+                "content": "<p>For urgent assistance contact:</p><p><strong>RNZN confidential helpline & wellbeing support</strong><br/><a href='tel:080062894357'>0800NAVYHELP (080062894357)</a></p><p><strong>RNZN confidential helpline & wellbeing support</strong><br/><a href='tel:0800693348'>0800NZDF4U (0800693348)</a></p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/11-support-services-small.jpg",
+              "slug": "specialist",
+              "title": "Specialist",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/11-support-services-small.jpg",
+                "slug": "specialist",
+                "title": "Specialist",
+                "keywords": "Support,Support services,OPD,Psych,NCO,Social worker,Counsellor,Navy Community Organisation,Chaplain,Marae,Career Transitioning Coaches,Coaches,Military Police,MP,Daycare,Child care,Amenities,CWO,Command Warrant Officer,Command Senior Rate,DHC,Defence Health Centre,Navy Hospital,Legal,SAPRA,AHA,Harrassment,Sexual assault,Navy Motels,Library,DLC,Defence Learning Centre,Adult Learning Tutors,Tutors,Mentoring,Inside Out,HRA,Human Resource Advisor",
+                "content": "<h3>Organisational Psychology Department (OPD)</h3><p>The RNZN employs registered psychologists who specialise in organisational and military psychology. The work of RNZN psychologists covers three key areas:</p><ol start='1'><li>Equipping People for the Challenge - individual performance coaching (including failure management assessments required iaw NZBR 37), goal setting, mental skills and resilience training, critical incident support, and operational debriefing.</li><li>Strengthening Teams and Leaders - team/unit workshops for high performance, personality dynamics, resilience, and culture.</li><li>Right Person, Right Role - assessment of personnel for specialist roles, and the development and implementation of selection and assessment activities.</li></ol><p>Contact details: You are encouraged to approach the OPD about support for personnel in any of these areas. The department can be contacted at <a href='mailto:RNZN.Psychology@nzdf.mil.nz'>RNZN.Psychology@nzdf.mil.nz</a>.</p><h3>Naval Community Organisation</h3><p>The Naval Community Organisation (NCO) is committed to provide services, support and advice to the Naval community (service persons, families and civilian staff). The NCO's objectives are to ensure timely and efficient provision of Social Services to RNZN personnel and their families.</p><p>The NCO is intended to supplement the divisional system, not replace it. The existence of the NCO in no way relieves the DO (or Div Supervisor) of their responsibility for the welfare of their personnel.</p><p>If you require assistance or information from the NCO on Service-related matters you are to apply in the first instance through the divisional chain, who will investigate and then communicate directly with the NCO. If you or your dependants require personal assistance or information that is not of a Service-related nature, you can apply in person directly to NCO.</p><p><strong>Contact details:</strong></p><p><strong>Location:</strong> Navy Community Organisation Office, along the ridge of Monowai Hill just past the Wardroom</p><p><strong>Phone:</strong> <a href='tel:0800628943'>0800 NAVY HELP</a> provides the contact details for the duty social worker both during and out of normal working hours.</p><p>Within the NCO there are several units:</p><h4>Social Workers & Family Support Worker</h4><p>(NCO) employs two registered professional civilian social workers, and also a Family Support Worker. Both the Social Workers and the Family Support Worker provide general assistance and advice to Navy personnel.</p><p>The NCO social workers can help, support and advise you or your divisional members on a variety of matters and problems that can arise. It is important to remember that the service is in confidence and that a duty social worker can be contacted at any time.</p><p>Referrals can be made to Social Workers either by:</p><ul><li>Yourself</li><li>Your DO</li><li>Base Management</li><li>Partners</li><li>External Agencies</li><li>Other NZDF Units</li></ul><p>Issues that Social Workers support Sailors with include but are not limited to:</p><ul><li>Relationships</li><li>Alcohol/Substance/Gambling</li><li>Mental Health</li><li>Financial</li><li>Family/Whanau</li><li>Sexuality/General Identity</li><li>Career/Work concerns</li><li>Family Violence</li></ul><p>Social Workers also administer:</p><ul><li>Emergency Grants</li><li>Mandatory Grants</li><li>Hardship Grants/Loans</li><li>RNZN Benevolent Fund : Assistance as necessary in the examination of applications for assistance from the RNZN Benevolent Fund. The RNZN Benevolent Fund is established to provide immediate help to ratings and their dependants in cases of financial distress. The help may be in the form of a loan or an outright grant of money. Details of eligibility and application procedure should be discussed with the ship's office, or contact the NCO.</li><li>Provision of social work reports in cases where requests are made for an impartial and independent investigation of applications for special consideration on compassionate grounds. Detailed information on the content of these commonly requested reports is provided in NZBR1 Part 1 Chap 8 Sect 1:<ul><li>Requests for Compassionate Return to New Zealand (RTNZ)</li><li>Requests by individuals for information on the welfare of their dependants</li><li>Requests for Leave Without Pay or release</li><li>Requests for preferential posting</li><li>Advice to COs regarding a Serviceperson's mitigating information when appearing for a disciplinary incident</li><li>Administrative Discharge</li></ul></li><li>Referrals to external agencies</li></ul><h4>Family Support Worker</h4><p>Family Support Worker is employed at the NCO, primarily to provide respite while a family member are serving outside the Auckland region.</p><h4>RNZN Leave Centres (Navy Motels)</h4><p>Navy has holiday accommodation in both Taupo and Mt Maunganui. The lodges are located in renowned tourist areas, local to shops and town centre, with parks, lake or beaches within walking distance. The whole family can experience a holiday in a great location at an affordable price. Arawa and Takitimu Lodges in Taupo and Mt Maunganui were officially opened in 05/06 respectively. Both locations offer four modern built units with high quality chattels at an affordable price. Each unit can sleep 8 people and has three bedrooms, two bathrooms (master ensuite), double garage with internal access, BBQ, and full kitchen facilities.</p><p>To enquire about availability or your category status call <strong><a href='tel:+6494455131'>(09) 445 5131</a></strong> / <strong><a href='tel:+6494455135'>445 5135</a></strong> or email <strong><a href='mailto:NavyMotels@nzdf.mil.nz'>NavyMotels@nzdf.mil.nz</a></strong>.</p><h4>Amenities</h4><p>Navy Amenities operate a hire centre on behalf of the Philomel Welfare Fund for servicing RNZN personnel and their immediate dependents. All profits are returned to the Welfare Fund for the benefit of Naval personnel.</p><h4>Base Library</h4><p>The Base Library is located just inside the Main Gate, and is open from Monday to Wednesday 0815 to 1615, Thursday 1100 to 1700 and Friday 0815 to 1530. The Library is a mini public library with all the facilities that you would expect to find in a public library. As a Naval Base Library, the emphasis of the non-fiction books is on Naval history and development.</p><h4>Naval Community Child Care Centre</h4><p>The Naval Community Childcare Centres Association is an incorporated society to run and administer childcare centres for the benefit of naval families. There are two centres, Tamariki House for Under 2s (25 children) and Calliope House for Over 2s (50 children). Meals are provided morning tea, lunch, afternoon tea and a late snack during the opening hours of 7.00am to 5.00pm Monday to Friday.</p><img src='https://oracle-static.aviato.co.nz/content/specialist-table-1.png' /><p>To enquire about availability or your category status please call the Centre Manager on 09 445 2608</p><h3>Defence Health Centre</h3><p><strong>The Force Health Organisation</strong> (FHO) is part of the Joint Support Group (JSG). It delivers all NZDF health services to military personnel in New Zealand. The FHO is tasked with building and maintaining strong working relationships with these functions and coordinating holistic services. FHO vision - Working together to strengthen the health of our people through innovative and excellent healthcare.</p><p><strong>The Naval Health Unit</strong> (NHU) is comprised of seven services:</p><ul><li>Defence Health Centre Devonport - Health Services</li><li>Northern Health Support Squadron - Deployable Health Services</li><li>APM Physiotherapy</li><li>NZDF Recovery Co-ordination Service</li><li>Te Whare Tipu Oranga - Fleet Integrated Wellness Centre</li><li>Defence Dental Centre Devonport - Fleet Dental Services</li><li>Defence Dental Specialist Services - Oral Surgery</li></ul><p><strong>The Defence Health Centre</strong> (DHC) Devonport is based in the Naval Health Unit building on the top of Monowai Hill. The DHC provides shore-based integrated primary healthcare to all military personnel through Medical Officers, Nurses, Physiotherapy and working with other external and internal providers such as Social Workers, AEP Unit, Private Sector Medical Specialists and District Health Boards.</p><p><strong>Opening Hours & Sick Parade:</strong></p><p>The Defence Health Centre is open weekdays 08:00 AM - 16:00 PM</p><p>Sick Parade hours are from 08:00 AM - 10:00 AM</p><p><strong>Contact Details:</strong></p><p>Phone: <a href='+6494455922'>4455922</a> (external) Etxn. 7922 (internal)</p><p>Email: <a href='mailto:dhcdnb@nzdf.mil.nz'>dhcdnb@nzdf.mil.nz</a></p><p>Address: 91 Calliope Road, Devonport Naval Base</p><p><strong>Afterhours Medical Assistance:</strong></p><p>If you have any queries outside DHC hours please call <a href='tel:+6421804768'><strong>021 804 768</strong></a> to speak to the Duty Health Officer</p><p>During times the DHC is closed the following providers are available to personnel requiring medical assistance:</p><ul><li>Medplus Takapuna Medical Centre - 327 Lake Road, Hauraki Corner. OPEN - 08:00 AM - 20:00 PM)</li><li>ShoreCare Accident & Medical Centre - Smales Farm Office Park, Takapuna. OPEN 24/7</li><li>North Shore Hospital Emergency Department - 124 Shakespeare Road, Takapuna. OPEN 24/7</li><li>Auckland Hospital Emergency Department - 2 Park Road, Grafton. OPEN 24/7</li></ul><h3>Chaplaincy Centre</h3><p>Navy Chaplains fully support the Divisional System, understanding that it plays a pivotal role in every sailor's ongoing development and care.</p><p>Chaplains:</p><ul><li>A Navy Chaplain (Padre), is a trained sailor and officer who is able to support Command decisions regarding the spiritual, emotional and mental welfare of sailors from the advantage of having many years of people leadership experience.</li><li>The Navy Padre has the traditional benefit of being the same rank as the person they are talking to, while remaining completely bound by professional confidentiality concerning those who approach them, unless harm is imminent, implied or intended. This provides a safe platform for a DO, or a divisional member referred by a DO, to speak their mind without fear of being put on record. Their approach to people is always relational and practically grounded.</li></ul><p>Chaplaincy support includes:</p><ul><li>The availability of a Navy Padre to provide a sounding board and 'life advice' from a sailor's perspective, for the DO, CWO, XO forum onboard ship or alongside, regarding personnel issues.</li><li>The Navy Padre has the ability to be a 'go between' for the leadership team and the affected sailor/s when the situation is sensitive or communication has stalled. A Padre can often gain the permission of a divisional member to share information with Command that can augment the decision making process to the advantage of both Command and affected personnel.</li><li>The Navy Padre is an almost endless supply of sage counsel or advice but will stop short of being a 'Counsellor' in the professional sense. The padre can be relied on to know their 'part of ship' and triage those in need of further specialist care. It must be noted that the Padre keeps a good working relationship with DHC, NCO and other providers so as to give command the widest scope of input possible for decision making.</li><li>The Padre is available to build and maintain a pastoral relationship between the DO, Divisional Supervisors and the divisional members referred for the Padre's attention. This will provide an ongoing platform/person/place to vent frustration or share difficulty to a trained listening ear, without fear of demerit, disqualification or loss of reputation. A Padre, especially on board ship, will usually endeavour to link a young DO with a willing/helpful Senior Rating; this relationship alongside a Padre is very successful.</li><li>The Navy Padre is available to provide many ceremonial and spiritual services on request i.e. weddings, christenings, funerals and prayers on parade etc.</li></ul><p><strong>Contact details:</strong></p><p>Phone: <a href='+6494455326'>(09) 445 5326</a> or DTel: 7326</p><p>Office: The Chaplaincy Centre is located on the right-hand side just as you enter the HMNZS PHILOMEL Main Gate.</p><p>Visits: The Padre can come to your location if that is practicable.</p><h3>Maori Cultural Advisor & RNZN Marae</h3><p>The Māori Cultural Advisor and Te Taua Moana Marae staff can provide DOs, Divisional Supervisors and divisional members with advice on a wide range of cultural and practical matters:</p><ul><li>Protocol - providing advice on cultural practices appropriate to RNZN and personal activities i.e. Powhiris (welcomes) and Tangihanga (funerals)</li><li>Pastoral care - the Marae can be used to provide personnel with supported rest & respite care upon referral by the Defence Health Centre/Naval Community Organisation.</li><li>Education - developing learning opportunities within the RNZN in Māori language, tikanga and the Treaty of Waitangi.</li><li>Policy advice - advising on the implementation of RNZN and NZDF cultural policies</li><li>Liaison - liaising with local iwi and hapu</li><li>Kapa haka</li><li>Event management</li></ul><p>The mission statement for Te Taua Moana Marae is: 'To provide an understanding of Maori customs, supporting the needs of Te Taua Moana Marae, embracing a unity of all cultures within the RNZN and the wider naval community, by sharing, experiencing and respecting other's values and beliefs'. The Te Taua Moana Marae is a home for all RNZN sailors and their whanau.</p><p>Location: Ngataringa foreshore</p><p>Navy intranet site: http://communities/mcg/TeTauaMoana/TTM-Marae.aspx</p><p>Maori Cultural Officer: Int: <a href='tel:3978258'>397-8258</a> Ext: <a href='tel:+6494455258'>(09) 445 5258</a></p><h3>Human Resource Advisors (HRAs)  </h3><p>HRAs are responsible for providing proactive advice and counsel to Commanders and Managers on all 'people-related matters' i.e. generalist HR knowledge and practice, and advice on HR management issues (military and civilian). Generalist knowledge includes performance management, continuous improvement, employment legislation/policy, project Management, change Management, job evaluations and recruitment.</p><p><strong>Contact details:</strong> The DNB HRA Office is located in the FPTO building.</p><h3>Defence Legal</h3><p>Defence Legal Services is responsible for the provision of all legal advice to the NZDF, including the Chief of the Defence Force as well as the Chiefs of Navy, Army and Air Force. The Northern Region office is based at DNB and employs a Senior Legal Officer and two Legal Advisors.</p><p>DNB location: PHL Quarterdeck (upstairs)</p><p>Emails: Northern Region <a href='mailto:nthregionlegaloffice@nzdf.mil.nz'>nthregionlegaloffice@nzdf.mil.nz</a></p><p>Central & Southern Regions <a href='mailto:centrallso@nzdf.mil.nz'>centrallso@nzdf.mil.nz</a></p><h3>Military Police </h3><p>MPs assist in the conduct of preliminary inquiries on behalf of COs into complex, sensitive and serious criminal matters. The purpose of the investigation is to ascertain the facts in order to support a pending disciplinary process. Requests to pursue an investigation should be made by the unit CO to the local MP station. The MP office may refer the matter back to the unit CO if the matter can be sufficiently expedited without the need for MP inquiries i.e. the facts of the case are known and sufficient witnesses are able to present in a trial. Matters that are to be referred to Court Martial should be referred to the MP Serious Investigation Branch and include, sexual offending, serious fraud, conversion, theft and misappropriation of NZDF funds, resources or equipment.</p><p>DNB location: PHL Quarterdeck (downstairs opposite DSS)</p><h3>Adult Learning Tutors, Defence Learning Centre Northern</h3><p>Adult Learning tutors are able to provide the following support to personnel at Devonport Naval Base:</p><ul><li>Educational advice and assistance</li><li>Educational pathway advice</li><li>Communication Skills - both written and verbal. This includes Service Writing, academic writing, presentation skills</li><li>One-on-one tuition</li><li>Maths tutoring</li><li>Educational and learning assessments</li><li>Coaching</li></ul><p>Location: Learning Solutions Building (NYTE) in the North Yard.</p><p>The Team:</p><p><strong>Mr Mark Crosby</strong></p><p>Senior Adult Learning Tutor</p><p><a href='mailto:mark.crosby@nzdf.mil.nz'>mark.crosby@nzdf.mil.nz</a></p><p>397 7251</p><p><strong>Ms Jane Marshall</strong></p><p>Adult Learning Tutor</p><p><a href='mailto:jane.marshall@nzdf.mil.nz'>jane.marshall@nzdf.mil.nz</a></p><p>397 7742</p><p><strong>Mr Jonathan Gabriel</strong></p><p>Adult Learning Tutor</p><p><a href='mailto:jonathan.gabriel@nzdf.mil.nz'>jonathan.gabriel@nzdf.mil.nz</a></p><p>397 7866</p><h3>Career Transitioning Coaches</h3><p>Should you or a divisional member be considering leaving the RNZN, a meeting with a Career Transition Coach could be very helpful. The Career Transition team supports Regular Force personnel to prepare for and navigate civilian life and work, with services available for up to 12 months after departure. Career Transition Coaches provide confidential and tailored one-on-one coaching, as well as group workshops, to help make a successful transition. They help to:</p><ul><li>consider suitable options for work, identify industries, employers and/or training opportunities</li><li>consider longer term career and life aspirations beyond what individuals might have already arranged</li><li>translate skills into 'civilian speak'</li><li>understand and make the most of the job application process, including CVs, cover letters, interview skills, LinkedIn, and pay negotiations</li><li>develop individuals' 'personal brand' for the job search process</li><li>gain insight into skills, interests, drivers, values and personality, and how these impact job choice, career direction and sustainability</li><li>understand where to get additional support outside the NZDF if required.</li></ul><p><strong>Contact details:</strong></p><p>DNB Location: NCO Building, top of Monowai Hill</p><p>Email: <a href='mailto:Jennifer.miller@nzdf.mil.nz'>Jennifer.miller@nzdf.mil.nz</a></p><p>Phone: <a href='tel:+6421961341'>021 961 341</a></p><p>HQNZDF Wellington:</p><p>Email: <a href='mailto:tanya.derrett@nzdf.mil.nz'>tanya.derrett@nzdf.mil.nz</a></p><p>Phone: <a href='tel:+6421958470'>021 958 470</a></p><h3>Command Warrant Officers & Command Senior Rates</h3><p>Command Warrant Officers (CWO) and Command Senior Rates (CSR) are an integral link between a unit's Command Leadership Team (CO, XO, HoDs and CWO/CSR), DOs and divisional members. A CWO/CSR is not part of the Divisional System, but they are there to fully support and work with the Divisional System. They provide a wealth of experience in terms of the divisional situations that they have been directly or indirectly involved with. If they don't know the answer, they will most certainly will be able to point you in the right direction. As a Divisional Supervisor or DO, the CWO/CSR can be a wonderful resource to provide wise counsel and guidance if needed.</p><p><a href='mailto:NZWON@nzdf.mil.nz'>NZWON@nzdf.mil.nz</a> - New Zealand Warrant Officer of the Navy</p><p><a href='mailto:NSCCWO@nzdf.mil.nz'>NSCCWO@nzdf.mil.nz</a> - Naval Support Command (PHL) Warrant Officer</p><p><a href='mailto:MCCCWO@nzdf.mil.nz'>MCCCWO@nzdf.mil.nz</a> - Maritime Component Commander Command Warrant Officer</p><p><a href='mailto:TEMCWO@nzdf.mil.nz'>TEMCWO@nzdf.mil.nz</a> - HMNZS Te Mana Command Warrant Officer</p><p><a href='mailto:TEKCWO@nzdf.mil.nz'>TEKCWO@nzdf.mil.nz</a> - HMNZS Te Kaha Command Warrant Officer</p><p><a href='mailto:CANCWO@nzdf.mil.nz'>CANCWO@nzdf.mil.nz</a> - HMNZS Canterbury Command Warrant Officer</p><p><a href='mailto:MATCWO@nzdf.mil.nz'>MATCWO@nzdf.mil.nz</a> - HMNZS Matataua Command Warrant Officer</p><p><a href='mailto:WOCM@nzdf.mil.nz'>WOCM@nzdf.mil.nz</a> - Warrant Officer Career Management</p><p><a href='mailto:WOLD@nzdf.mil.nz'>WOLD@nzdf.mil.nz</a> - Warrant Officer Leadership Training</p><h3>Anti-Harassment Advisers</h3><p>AHAs are trained volunteers (military and civilian men and women of all ranks and levels), who provide an independent, non-threatening and confidential avenue to seek help and support if you have been harassed. AHAs will not solve your problems for you, rather they act as a signpost to direct you to options available both within and outside of the NZDF to assist you in taking action and resolving your harassment or discrimination problem.</p><p>What AHAs can do for you:</p><ul><li>Listen to your concerns</li><li>Be a confidential and important source of information and support</li><li>Outline to you the internal and external options available to deal with harassment</li><li>Work with you to decide how best to solve your harassment problem</li><li>Be your support person during an investigation (Note: Your AHA cannot investigate a complaint but other AHAs may)</li><li>If requested by you, provide an introduction and summary of your situation to the Command Chain</li><li>Give you confidence to resolve your harassment problem</li><li>If required, refer you to an appropriate agency for longer term support</li><li>Arrange harassment prevention training, and resources for your unit/work place</li></ul><p><strong>Contact details:</strong></p><p>Email: equity.diversity@nzdf.mil.nz </p><p>AHA names and contact numbers for your work area or unit are displayed on noticeboards and updates lists are available via the HR Toolkit - refer to the content under the Integrated Wellness/Anti Harassment menu.</p><h3>SAPRAs</h3><p>SAPRAs (Sexual Assault Prevention & Response Advisors) are subject matter experts in the field of harmful sexual behaviour, and provide support, information, and guidance in this area to anyone within the NZDF. Our role includes:</p><ol start='1'><li>Prevention (e.g. workshops, trainings, unit debriefs)</li><li>Response (e.g. supporting those affected through relevant processes, or to seek ongoing help)</li><li>Advice (e.g. providing general advice to DOs/Div Supervisors as necessary, and providing guidance to command around setting expectations, or how to deal with disclosures).</li></ol><p>Confidentiality is important to us, and we aim to provide as much choice around this as possible. We will discuss this when you make contact with us. Speaking to a SAPRA in the first instance is the best way of ensuring your information remains confidential, if that is what you would like.</p><p>24/7 Phone: Anyone can make contact with a SAPRA via our 24/7 duty number, <a href='tel:0800913608'>0800 913 608</a></p><p>DNB Location: Naval Community Organisation (NCO) Building, top of Monowai Hill</p><p>DNB SAPRA Phone: <a href='tel:+6421913608'>021 913 608</a></p><h3>RNZN Mentoring Scheme</h3><p>Mentoring provides a powerful form of professional development for our people. Just as naval platforms and systems require maintenance and monitoring, so do our people. Mentoring not only has a dramatic impact on professional and personal development, it also improves morale, quality of life and work environment. </p><p>The RNZN Mentoring Programme provides a link to access experienced personnel to share knowledge and insights they have gained through the years of service or specific experiences.</p><p>The purpose of a mentoring relationship includes providing information; guidance; exploring opportunities for promotion or training; informally analysing skills, experience; and analysing performance problems and developing solutions. A successful mentoring relationship will result in more informed choices, an action plan, and increased alternatives.</p><p>To become a registered mentor, you must attend a half day workshop. The workshops are open to all RNZN personnel, all ranks and NZDF Civilians. To register, email either address below with your 1-Up Manager cc'd on the email.</p><p>To become a mentee, email either address below to register.</p><p>Location: Leadership Development Group, North Yard</p><p>Emails: RNZN Mentoring inbox <a href='mailto:RNZNMentoringCoord@nzdf.mil.nz'>RNZNMentoringCoord@nzdf.mil.nz</a></p><p>WO Leadership Development <a href='mailto:WOLD@nzdf.mil.nz'>WOLD@nzdf.mil.nz</a></p><h3>Inside Out Meetings</h3><p>Inside Out provides a welcoming and comfortable space that gives the opportunity to share your story in a supportive environment. This is an environment that is non-judgemental, non-clinical and appropriately safe. Mental health, or a sense of not being well, does not discriminate across rank, gender, ethnicity, religion or beliefs.</p><p>Venue: Chaplaincy Centre</p><p>Day: Every Monday</p><p>Time: 1100</p><p>POC: <a href='mailto:NSCCWO@nzdf.mil.nz'>NSCCWO@nzdf.mil.nz</a></p>"
+              }
+            },
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/financial-small.jpg",
+              "slug": "financial",
+              "title": "Financial",
+              "item_type": "menu",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/financial-small.jpg",
+                "name": "Financial",
+                "slug": "financial",
+                "menu_items": [
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                    "slug": "force-financial-hub",
+                    "title": "Force Financial Hub",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                      "slug": "force-financial-hub",
+                      "title": "Force Financial Hub",
+                      "keywords": "Financial Hub,Force Financial Hub,Finance,Budgeting",
+                      "content": "<p><a href='https://force4families.mil.nz/force-financial-hub'>https://force4families.mil.nz/force-financial-hub</a></p><p>This online tool is a way to support the NZDF Community with making good financial decisions. If you wish to get in touch with the Force Financial Hub team, please email <a href='mailto:benefits@nzdf.mil.nz'>benefits@nzdf.mil.nz</a></p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                    "slug": "mortgage-broking-and-financial-information",
+                    "title": "Mortgage Broking and Financial Information",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                      "slug": "mortgage-broking-and-financial-information",
+                      "title": "Mortgage Broking and Financial Information",
+                      "keywords": "Financial Hub,Force Financial Hub,Finance,Budgeting,Financial Planning,Milestone Direct,Budgeting",
+                      "content": "<p><a href='https://force4families.mil.nz/financial-advice'>https://force4families.mil.nz/financial-advice</a></p><p>NZDF has entered into a transparent partnership with Milestone Direct to provide Free Mortgage Broking and Discounted Financial Advice for NZDF members and their families. Unlike other advisers, Milestone Direct are familiar with the needs of NZDF personnel and the range of circumstances you and your family may be in as a result of serving.</p><p>The advisers at Milestone Direct understand the benefits offered to the whole Defence Community and can advise on other financial circumstances such as, change in posting, NZDF accommodation policies, and now-closed superannuation schemes.</p><h3>Free and discounted fees</h3><p>Free general advice is provided by phone or email about any NZDF investment products if the query can be solved in 30 minutes. Owing to the nature of this advice, it will usually not be personalised for individual circumstances. Non-NZDF cost is $217 per hour.</p><p>One-off financial advice plans are also available for people who require advice in any or all areas of their life. For members of the NZDF Community subsidised rates of just $450 are available. Non-NZDF cost is $1250.</p><h3>Free Mortgage Broking</h3><ul><li>All NZDF members have access to free mortgage brokers who can assist in getting you a good deal;</li><li>If you are buying a first home, Milestone mortgage brokers can assist you through the process and give you KiwiSaver advice.</li><li>If you already own a home, Milestone can assist with refinancing, re-fixing, or re-structuring your existing mortgage to a better rate.</li><li>Assistance is also on offer with property investments.</li></ul><h3>Discounted Financial Planning Services</h3><p>The partnership between NZDF and Milestone Direct ensures open book pricing, which is delivered at a heavily discounted and subsidised NZDF rate.</p><ul><li>An initial no-cost and no-obligation initial consult will quickly identify any areas of your financial life that can be improved upon.</li><li>There are no standard first meetings. Sometimes, clients will have precise ideas of what they want to achieve and sometimes, clients want to see how advisers may be able to help in general.</li><li>After meeting, follow up emails are sent with help in actioning any applications.</li><li>A detailed financial plan is sometimes suggested by yourself or by the adviser. This is usually if your financial needs are quite complex or if you request detailed planning in any area.</li><li>An ongoing relationship can be struck to receive regular financial advice if you so choose.</li></ul><p>Follow the link to learn more about Mortgage Broking and Financial Advice through Milestone Direct.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                    "slug": "financial-capability-training",
+                    "title": "Financial Capability Training",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                      "slug": "financial-capability-training",
+                      "title": "Financial Capability Training",
+                      "keywords": "Finance Training,Budgeting,Budgeting Training,Money,Saving,Investor Education,Buying a Home",
+                      "content": "<p>NZDF has teamed up with the Commission for Financial Capability (<a href='www.sorted.org.nz'>www.sorted.org.nz</a>) to bring you the NZDF Financial Capability Programme. Three different courses are on offer and they are regularly run at camps and bases as well as at HQNZDF. These programmes are aimed at providing NZDF members and their families with the tools to make the best financial decisions for themselves.</p><p>To find out more about the programmes and when they will be offered at your location, email <a href='benefits@nzdf.mil.nz'>benefits@nzdf.mil.nz</a>, or <a href='https://force4families.mil.nz/nzdf-financial-capability-programme-2017'>https://force4families.mil.nz/nzdf-financial-capability-programme-2017</a></p><h4>Seminar 1 - Get Your Money Fighting Fit</h4><p>Covering key aspects of personal finance and money management, the &quot;Get Your Money Fighting Fit&quot; programme applies to all of us, no matter what stage we're at. The results can be life-changing, not just at work but at home too.</p><p>The programme will cover topics like budgeting, debt management, goals, savings, your personal money management system, retirement, KiwiSaver, investing, insurance, wills, power of attorney and buying a house. It is available to RF, TF/Reserve Forces and civilian personnel.</p><h4>Seminar 2 - Financing a Home Seminar (available also to family members)</h4><p>An introductory seminar for those who are considering buying a home (whether existing or new build). These seminars run for 2.5 - 3 hours and are generally held outside of standard business hours, when your family can attend as well. The seminars cover growing a house deposit and who can help with buying a first home, the right mortgage for you, sales and purchase process and the fundamentals of financing a home.</p><h4>Seminar 3 - NZDF Investor Education Programme</h4><p>A 2 day programme covering investing via KiwiSaver, achieving investment goals, shopping around and getting advice, investment strategy to spread risk/looking after your portfolio.</p>"
+                    }
+                  },
+                  {
+                    "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                    "slug": "preferential-banking-arrangements",
+                    "title": "Preferential Banking Arrangements",
+                    "item_type": "article",
+                    "item": {
+                      "banner": "https://oracle-static.aviato.co.nz/photos/pdrs-small.jpg.jpg",
+                      "slug": "preferential-banking-arrangements",
+                      "title": "Preferential Banking Arrangements",
+                      "keywords": "ANZ,Banking,Member Benefits",
+                      "content": "<p><a href='https://force4families.mil.nz/preferential-banking-arrangements'>https://force4families.mil.nz/preferential-banking-arrangements</a></p><p>ANZ offers all members of the New Zealand Defence Force a range of special discounts and benefits for their banking needs. This includes members of Regular Forces, Reserve Forces, Civilian members and departing NZDF members.</p><p>The package benefits include:</p><ul><li> Discounts on ANZ home loan interest rates, including for those with less than 20% equity.</li><li> An ANZ personal credit card with no annual account fee.</li><li> Save on bank fees with an ANZ Freedom account.</li></ul><p>To be eligible for the package discounts and benefits, your salary has to be paid into an ANZ personal bank account.</p><p>To register for the ANZ@work package visit any ANZ branch.</p><p>You must register for the package to receive the benefits</p>"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/12-resources-links-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/12-resources-links-icon.png",
+        "slug": "resources-links",
+        "title": "Resources & Links",
+        "item_type": "menu",
+        "item": {
+          "name": "Resources & Links",
+          "slug": "resources-links",
+          "menu_items": [
+            {
+              "banner": "https://oracle-static.aviato.co.nz/photos/1-about-rnzn-small.jpg",
+              "slug": "resources-useful-links",
+              "title": "Resources & Useful Links",
+              "item_type": "article",
+              "item": {
+                "banner": "https://oracle-static.aviato.co.nz/photos/1-about-rnzn-small.jpg",
+                "slug": "resources-useful-links",
+                "title": "Resources & Useful Links",
+                "content": "<h3>RNZN</h3><h3>Urgent Contact Numbers</h3><p><strong>RNZN confidential helpline & wellbeing support</strong><br/><a href='tel:080062894357'>0800NAVYHELP (0800 6289 4357)</a></p><p><strong>Devonport Naval Base</strong><br/><a href='tel:+6494455999'>(09) 4455999</a></p><h3>Social media</h3><p><strong>Website</strong><br/><a href='https://www.navy.mil.nz/'>https://www.navy.mil.nz/</a></p><p><strong>Facebook</strong><br/><a href='https://www.facebook.com/NZNavy'>@NZNavy</a></p><p><strong>Facebook Groups</strong><br/><a href='https://www.facebook.com/groups/nznavy'>Royal New Zealand Navy Community</a></p><p><strong>Twitter</strong><br/><a href='https://twitter.com/NZNavy'>@NZNavy</a></p><p><strong>Flickr</strong><br/><a href='https://flickr.com/photos/nznavy'>Royal New Zealand Navy</a></p><p><strong>Instagram</strong><br/><a href='https://www.instagram.com/rnznband/'>Royal New Zealand Navy Band</a></p><p><strong>YouTube</strong><br/><a href='https://www.youtube.com/playlist?list=PL14D57352EF461BF8'>https://www.youtube.com/playlist?list=PL14D57352EF461BF8</a></p><p><strong>LinkedIn</strong><br/><a href='https://www.linkedin.com/company/royal-new-zealand-navy/'>https://www.linkedin.com/company/royal-new-zealand-navy/</a></p><h3>General</h3><p>Navy Today is the RNZN's magazine.  Published every month, Navy Today provides news and stories about the work and activities of the RNZN in New Zealand and around the world.<br/><a href='http://www.navy.mil.nz/nap/navy-today/default.htm'>http://www.navy.mil.nz/nap/navy-today/default.htm</a></p><h3>External</h3><p><strong>Returned Services Association</strong><br/>Every day the RSA movement helps all service personnel and their families get the support they need.<br/><a href='https://www.rsa.org.nz/'>https://www.rsa.org.nz/</a></p><p><strong>No Duff</strong><br/>No Duff Charitable Trust is committed to providing support for the services community in New Zealand. This community consists of veterans and their families.<br/><a href='http://www.noduff.org/'>http://www.noduff.org/</a></p><h3>NZDF</h3><h3>Urgent Contact Numbers</h3><p><strong>NZDF confidential helpline & wellbeing support</strong><br/><a href='tel:0800693348'>0800NZDF4U (0800 693 348)</a></p><h3>Social media</h3><p><strong>Website</strong><br/><a href='https://nzdf.mil.nz/'>https://nzdf.mil.nz/</a></p><p><strong>Facebook</strong><br/><a href='https://www.facebook.com/NZDefenceForce'>@NZDefenceForce</a></p><p><strong>Facebook Groups</strong><br/><a href='https://www.facebook.com/groups/nzdfcommunityalerts/'>NZDF Community Alerts</a><br/><a href='https://www.facebook.com/groups/NZDFSport'>NZDF Sport</a><br/><a href='https://www.facebook.com/groups/NZDFCommunity/'>NZDF Community</a></p><p><strong>Twitter</strong><br/><a href='https://twitter.com/NZDefenceForce'>@NZDefenceForce</a></p><p><strong>Instagram</strong><br/><a href='https://www.instagram.com/nzdefenceforce/'>@NZDefenceForce</a></p><p><strong>YouTube</strong><br/><a href='https://www.youtube.com/channel/UCXo4WugjobSnTIs9WnDE3qA'>https://www.youtube.com/channel/UCXo4WugjobSnTIs9WnDE3qA</a></p><p><strong>LinkedIn</strong><br/><a href='https://www.linkedin.com/company/new-zealand-defence-force/'>https://www.linkedin.com/company/new-zealand-defence-force/</a></p><p><strong>Medium</strong><br/><a href='https://nzdefenceforce.medium.com/'>@NZDefenceForce</a></p><h3>General</h3><p>With 109 exciting roles available, there really is something for everyone. Explore our roles now, and find a career you'll love, that will really push you.<br/><a href='https://www.defencecareers.mil.nz/defence-careers/'>https://www.defencecareers.mil.nz/defence-careers/</a></p><p>The NZDF operational welfare website HOMEBASE is designed for our deployment community, which includes all our deployed personnel, their families and those who work to support them while they are away.<br/><a href='https://homebase.mil.nz/'>http://homebase.mil.nz/</a></p><p>Force 4 Families is a community for NZDF personnel and the friends, family and whānau who support them. We bring together the services, support and communities for available for our wider Defence Community.<br/><a href='https://force4families.mil.nz/'>https://force4families.mil.nz/</a></p><p>The Force Financial Hub has been set up so you can easily access all of the Defence Force's financial benefits in one place.<br/><a href='https://force4families.mil.nz/force-financial-hub'>https://force4families.mil.nz/force-financial-hub</a></p><p>Information for you and the Defence Community about the Defence Force Superannuation Scheme and other savings options – the New Zealand Defence Force KiwiSaver Scheme and the New Zealand Defence Force FlexiSaver Scheme.<br/>Website:  <a href='https://nzdf.superfacts.co.nz/'>https://nzdf.superfacts.co.nz/</a><br/>App:  <a href='https://apps.apple.com/nz/app/nzdf-savings-schemes/id1521463662'>NZDF Savings Scheme</a></p><p><strong>Veterans Affairs</strong><br/>Support for those with Qualifying Service to be well at home, at work, and in their communities.  Veterans' Affairs is an integrated operational unit within the Defence Force.<br/><a href='https://www.veteransaffairs.mil.nz/'>https://www.veteransaffairs.mil.nz/</a></p><p>The NZDF Health website aims to help ensure the physical, mental and spiritual health of defence force members (past and present).<br/><a href='https://health.nzdf.mil.nz/'>https://health.nzdf.mil.nz/</a></p><p>The Force Fit app is a free, easy to use app. It takes getting fit back-to-basics, and is available to everyone. As one of New Zealand's fittest organisations, we've packed all our expertise into this app. It's a great way to get started, or take your fitness to the next level.<br/>App:  <a href='https://apps.apple.com/nz/app/force-fit/id912668938'>Force Fit</a></p><p>This app has has a range of tools designed to complement our NZDF resilience training, as well as links to local support services (NZDF and broader community).  It has been developed and adapted for us by the Canadian Defence Force based on their resilience app (R2MR).<br/>App:  <a href='https://apps.apple.com/nz/app/resco/id1447582432'>ResCo</a></p>"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "banner": "https://oracle-static.aviato.co.nz/photos/13-leadership-small.jpg",
+        "icon": "https://oracle-static.aviato.co.nz/icons/13-leadership-icon.png",
+        "slug": "leadership",
+        "title": "Leadership",
+        "item_type": "article",
+        "item": {
+          "banner": "https://oracle-static.aviato.co.nz/photos/13-leadership-small.jpg",
+          "slug": "leadership",
+          "title": "Leadership",
+          "keywords": "Leadership,Leadership Framework,Value Adds,LF,LDS,Leadership Development System,Leadership Tools",
+          "content": "<p>Check out the following leadership videos:</p><p><strong><a href='https://www.youtube.com/channel/UCrGjHqUSxA4Emy-olmqumPg'>Navy Leadership Development Group on YouTube</a></strong></p>"
+        }
+      },
+      {
+        "icon": "https://oracle-static.aviato.co.nz/icons/rnzn-social-media-icon.png",
+        "slug": "rnzn-social-media",
+        "title": "RNZN Social Media",
+        "item_type": "article",
+        "item": {
+          "slug": "rnzn-social-media",
+          "title": "RNZN Social Media",
+          "keywords": "Social Media,Facebook",
+          "content": "<h3>View RNZN Social Media Content</h3>"
+        }
+      }
+    ]
+  }
+]

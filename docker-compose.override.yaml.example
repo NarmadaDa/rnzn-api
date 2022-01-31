@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  homeport-api-php:
+    volumes:
+      - ./src:/var/www/html
+
+  homeport-api-nginx:
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8086:80"
+
+networks:
+  default:
+    external:
+      name: lululuvely

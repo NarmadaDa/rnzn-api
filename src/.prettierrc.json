@@ -1,0 +1,8 @@
+{
+  "braceStyle": "psr-2",
+  "printWidth": 80,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingCommaPHP": true,
+  "useTabs": false
+}
