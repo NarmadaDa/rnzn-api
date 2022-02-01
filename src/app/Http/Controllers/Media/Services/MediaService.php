@@ -25,22 +25,37 @@ class MediaService {
 
         $fileName = $date.$file_name.$file->getClientOriginalName(); 
 
-        // Make Thumbnail
-        $resize = Image::make($file)->resize(300, null, function ($constraint) {
-            $constraint->aspectRatio();
-        })->encode('jpg');  
- 
-        // save file to azure blob virtual directory uplaods in your container
-        $filePath = $file->storeAs('uploads', $fileName, 'azure'); 
-  
-        $azure = Storage::disk('azure');
-        $thumbnailfilePath = '/thumbnail/' . $fileName;
-        $azure->put($thumbnailfilePath, $resize);
+        $file_type  = $file->getClientOriginalExtension();  
+        if($file_type == 'pdf'){
 
-        return [
-            "file_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath",
-            "thubnail_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath",
-            "relative_file_url" => "$filePath"
-        ];
+            $filePath = $file->storeAs('pdf', $fileName, 'azure'); 
+
+            $uploded_media = [
+                "file_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath",
+                "thubnail_url" => "",
+                "relative_file_url" => "$filePath"
+            ];
+
+        } else { 
+            // Make Thumbnail
+            $resize = Image::make($file)->resize(300, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->encode('jpg');  
+    
+            // save file to azure blob virtual directory uplaods in your container
+            $filePath = $file->storeAs('uploads', $fileName, 'azure'); 
+    
+            $azure = Storage::disk('azure');
+            $thumbnailfilePath = '/thumbnail/' . $fileName;
+            $azure->put($thumbnailfilePath, $resize);
+ 
+            $uploded_media = [
+                "file_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath",
+                "thubnail_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath",
+                "relative_file_url" => "$filePath"
+            ];
+        }
+
+        return $uploded_media;
     }
 }
