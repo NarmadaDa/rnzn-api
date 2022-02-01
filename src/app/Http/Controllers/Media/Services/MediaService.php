@@ -38,7 +38,7 @@ class MediaService {
 
         } else { 
             // Make Thumbnail
-            $resize = Image::make($file)->resize(300, null, function ($constraint) {
+            $resize = Image::make($file)->resize(300, 300, null, function ($constraint) {
                 $constraint->aspectRatio();
             })->encode('jpg');  
     
