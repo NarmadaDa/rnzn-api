@@ -29,10 +29,11 @@ class MediaService {
         if($file_type == 'pdf'){
 
             $filePath = $file->storeAs('pdf', $fileName, 'azure'); 
+            $thumbnailfilePath = '/thumbnail/pdf-default.jpeg';
 
             $uploded_media = [
                 "file_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath",
-                "thubnail_url" => "",
+                "thubnail_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath",
                 "relative_file_url" => "$filePath"
             ];
 
