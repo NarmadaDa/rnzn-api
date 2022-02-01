@@ -18,7 +18,7 @@ class GetNotifications extends PaginatedController
    */
   public function __invoke(Request $request)
   {
-    $user = $request->user(); 
+    $user = $request->user();
     // $perPage = $request->get('page_size', 20);
     $perPage = 100;
 

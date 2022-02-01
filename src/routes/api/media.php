@@ -5,6 +5,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('Media')->prefix('media')->group(function() {
   Route::post('/', [MediaController::class, 'upload']);
-  Route::get('/', [MediaController::class, 'list']);
 });
 
