@@ -12,6 +12,7 @@ use App\Models\QuickLink;
 use App\Models\Role;
 use App\Models\UserFeedback;
 use App\Models\UserRole;
+use App\Models\Media;
 use App\Notifications\PasswordResetNotification;
 use App\Notifications\PasswordUpdatedNotification;
 use App\Notifications\VerifyEmail;
@@ -111,6 +112,10 @@ class User extends Authenticatable implements MustVerifyEmail
   {
     return $this->hasMany(UserNotification::class, "user_id", "id");
   }
+  // public function userMedia()
+  // {
+  //   return $this->hasMany(Media::class, "user_id", "id");
+  // }
 
   public function roles()
   {

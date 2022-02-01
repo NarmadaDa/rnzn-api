@@ -5,6 +5,10 @@ use Illuminate\Support\Str;
 use Illuminate\Http\UploadedFile;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
+use Illuminate\Support\Facades\Storage;
+use Image;
+use DB; 
+use Exception;
 
 class MediaService {
 
@@ -20,13 +24,26 @@ class MediaService {
         $date = Carbon::now()->format('Y-m');
         $file_name = Str::uuid()->toString(); 
 
-        $fileName = $date.$file_name.$file->getClientOriginalName();
+        $fileName = $date.$file_name.$file->getClientOriginalName(); 
+
+        // Make Thumbnail
+        $resize = Image::make($file)->resize(300, null, function ($constraint) {
+            $constraint->aspectRatio();
+        })->encode('jpg');  
+ 
         // save file to azure blob virtual directory uplaods in your container
         $filePath = $file->storeAs('uploads', $fileName, 'azure'); 
+  
+        $azure = Storage::disk('azure');
+        $thumbnailfilePath = '/thumbnail/' . $fileName;
+        $azure->put($thumbnailfilePath, $resize);
 
         return [
             "file_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath",
+            "thubnail_url" => env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath",
             "relative_file_url" => "$filePath"
         ];
     }
+
+     
 }

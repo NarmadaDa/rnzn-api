@@ -20,6 +20,7 @@ class Media extends UUIDModel
     "type",
     "thumbnail_url",
     "url",
+    "updated_at",
   ];
 
   /**
@@ -30,7 +31,6 @@ class Media extends UUIDModel
   protected $hidden = [
     "id",
     "created_at",
-    "updated_at",
     "deleted_at",
     "mediable_id",
     "mediable_type",
@@ -44,4 +44,6 @@ class Media extends UUIDModel
   {
     return $this->morphTo();
   }
+
+
 }
