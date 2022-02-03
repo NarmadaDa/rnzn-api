@@ -41,8 +41,8 @@ class MediaService {
             $thubnail_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath";
 
         } else { 
-            // Make Thumbnail
-            $resize = Image::make($file)->resize(300, 300, null, function ($constraint) {
+            // Make Thumbnail - crop the best fitting 1:1 ratio (300x300) and resize to 300x300 pixel
+            $resize = Image::make($file)->fit(300, null, function ($constraint) {
                 $constraint->aspectRatio();
             })->encode('png');   
     
