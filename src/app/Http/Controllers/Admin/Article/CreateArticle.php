@@ -18,7 +18,7 @@ class CreateArticle extends BaseArticleController
    */
   public function __invoke(CreateArticleRequest $request)
   {
-    $data = $request->validated();
+    $data = $request->validated();  
 
     DB::beginTransaction();
 
@@ -36,6 +36,7 @@ class CreateArticle extends BaseArticleController
         $role = $this->roleRepository->findBySlug($r);
         $article->roles()->attach($role);
       }
+
 
       if (!empty($data["banner"])) {
         $article->media()->create([

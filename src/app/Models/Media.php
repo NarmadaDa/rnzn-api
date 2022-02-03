@@ -19,7 +19,10 @@ class Media extends UUIDModel
     "mediable_type",
     "type",
     "thumbnail_url",
-    "url",
+    "url", 
+    "file_type",
+    "dimensions",
+    "file_size"
   ];
 
   /**

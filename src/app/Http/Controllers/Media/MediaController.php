@@ -19,13 +19,12 @@ class MediaController extends Controller {
     }
 
     /**
-     * Handle media uploads
-     * Note: This does not handle storing in the database.
+     * Handle media uploads 
      * @param UploadRequest $data
      */
-    public function upload(UploadRequest $data) {
+    public function upload(UploadRequest $data) { 
         $data->validated();
-        $fileInfo = $this->mediaService->uploadToStorage($data['image']);
+        $fileInfo = $this->mediaService->uploadToStorage($data['image']);  
 
         $uuid = (string)Str::uuid();
         $media = Media::create([
@@ -35,6 +34,9 @@ class MediaController extends Controller {
             "type" => 'post',
             "thumbnail_url" => $fileInfo["thubnail_url"],
             "url" => $fileInfo["file_url"],
+            "file_type" => $fileInfo["file_type"],
+            "dimensions" => $fileInfo["dimensions"],
+            "file_size" => $fileInfo["file_size"],
         ]);  
 
         return [
