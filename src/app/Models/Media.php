@@ -22,7 +22,8 @@ class Media extends UUIDModel
     "url", 
     "file_type",
     "dimensions",
-    "file_size"
+    "file_size",
+    "updated_at",
   ];
 
   /**
@@ -33,7 +34,6 @@ class Media extends UUIDModel
   protected $hidden = [
     "id",
     "created_at",
-    "updated_at",
     "deleted_at",
     "mediable_id",
     "mediable_type",
