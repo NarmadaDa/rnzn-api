@@ -49,7 +49,7 @@ class MediaController extends Controller {
     */
     public function list() {  
         // $media = Media::authorisedAccounts()->get();
-        $media = Media::orderBy('updated_at', 'DESC')->paginate(20);  
+        $media = Media::orderBy('updated_at', 'DESC')->paginate(24);  
 
         // return list of media
         return [
