@@ -62,5 +62,8 @@ class Kernel extends HttpKernel
 
     "role.admin" => \App\Http\Middleware\VerifyAdmin::class,
     "not.guest" => \App\Http\Middleware\VerifyNotGuest::class,
+ 
+    "XssSanitizer" => \App\Http\Middleware\XssSanitizer::class,
+
   ];
 }
