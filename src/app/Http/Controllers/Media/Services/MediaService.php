@@ -64,12 +64,7 @@ class MediaService {
             $thubnail_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath";
           
         } else { 
-            $file_type = $file_type;
-            $dimensions = '';
-            $file_size = '';
-            $file_url = '';
-            $thubnail_url = '';
-            $filePath = ''; 
+            return false; 
         }
 
         $uploded_media = [
