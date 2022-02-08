@@ -49,8 +49,8 @@ class MediaController extends Controller {
     */
     public function list() {  
         // $media = Media::authorisedAccounts()->get();
-        $media = Media::orderBy('updated_at', 'DESC')->paginate(24);  
-        
+        $media = Media::orderBy('updated_at', 'DESC')->paginate(20);  
+
         // return list of media
         return [
           'media_list' => $media
