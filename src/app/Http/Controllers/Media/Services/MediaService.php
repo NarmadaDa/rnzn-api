@@ -40,14 +40,7 @@ class MediaService {
             $file_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath";
             $thubnail_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath";
 
-        } else if($file_type == 'jfif'){
-            $file_type = 'jfif';
-            $dimensions = '';
-            $file_size = '';
-            $file_url = '';
-            $thubnail_url = '';
-            $filePath = ''; 
-        } else { 
+        } else if($file_type == 'jpg' || $file_type == 'jpeg' || $file_type == 'png' || $file_type == 'gif'){  
             // Make Thumbnail - crop the best fitting 1:1 ratio (300x300) and resize to 300x300 pixel
             $resize = Image::make($file)->fit(300, null, function ($constraint) {
                 $constraint->aspectRatio();
@@ -70,6 +63,13 @@ class MediaService {
             $file_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . '/' . "$filePath";
             $thubnail_url = env('AZURE_STORAGE_URL') . env('AZURE_STORAGE_CONTAINER') . "$thumbnailfilePath";
           
+        } else { 
+            $file_type = $file_type;
+            $dimensions = '';
+            $file_size = '';
+            $file_url = '';
+            $thubnail_url = '';
+            $filePath = ''; 
         }
 
         $uploded_media = [

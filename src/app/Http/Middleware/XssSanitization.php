@@ -14,7 +14,7 @@ class XssSanitization
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
         $input = $request->all();
         array_walk_recursive($input, function(&$input) {

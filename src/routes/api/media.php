@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('Media')
 ->prefix('media') 
-// ->middleware(["auth:XssSanitizer"])
+// ->middleware(["XssSanitizer"])
 ->group(function() {
   Route::post('/', [MediaController::class, 'upload']);
   Route::get('/list', [MediaController::class, 'list']);
