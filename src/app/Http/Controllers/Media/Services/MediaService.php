@@ -75,7 +75,7 @@ class MediaService {
             "thubnail_url" => $thubnail_url,
             "relative_file_url" => $filePath 
         ];
-
+        
         return $uploded_media;
     }
 }
