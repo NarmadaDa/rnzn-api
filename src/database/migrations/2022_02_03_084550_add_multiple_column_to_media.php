@@ -18,7 +18,7 @@ class AddMultipleColumnToMedia extends Migration
             $table->string('dimensions', 20);
             $table->string('file_size', 20);
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.
