@@ -24,7 +24,7 @@ class MediaController extends Controller {
      */
     public function upload(UploadRequest $data) { 
         $data->validated();
-        $fileInfo = $this->mediaService->uploadToStorage($data['image']);  
+        $fileInfo = $this->mediaService->uploadToStorage($data['image']);   
 
         $uuid = (string)Str::uuid();
         $media = Media::create([
@@ -37,8 +37,9 @@ class MediaController extends Controller {
             "file_type" => $fileInfo["file_type"],
             "dimensions" => $fileInfo["dimensions"],
             "file_size" => $fileInfo["file_size"],
+            "summary" => $data["summary"],
         ]);  
-
+ 
         return [
             "file" => $fileInfo
         ];  
