@@ -37,6 +37,7 @@ class Post extends UUIDModel
       "uuid" => $this->uuid,
       "title" => $this->title,
       "content" => $this->content,
+      "summary" => $this->summary,
       "created_at" => $this->created_at,
     ];
     return json_encode($json);
