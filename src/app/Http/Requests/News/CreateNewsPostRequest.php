@@ -17,6 +17,7 @@ class CreateNewsPostRequest extends FormRequest
       'title'   => 'required|string',
       'type'    => 'required|string|exists:post_types,type',
       'content' => 'required|string',
+      'summary' => 'string',
     ];
   }
 
