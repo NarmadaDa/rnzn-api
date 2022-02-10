@@ -33,6 +33,7 @@ class UpdateNewsPost extends BasePostController
     $post->title = $data["title"];
     $post->content = $data["content"];
     $post->post_type_id = $postType->id;
+    $post->summary = $data["summary"];
     $post->save();
 
     $post->fresh();
