@@ -41,6 +41,7 @@ class UpdateArticle extends BaseArticleController
       $article->slug = $data["slug"];
       $article->content = $data["content"];
       $article->keywords = $data["keywords"];
+      $article->summary = $data["summary"];
       $article->save();
 
       $roleIds = Role::whereIn("slug", $data["roles"])
