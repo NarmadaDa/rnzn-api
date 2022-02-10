@@ -32,7 +32,7 @@ class CreateNewsPost extends BasePostController
 
     $post->fresh()->with("type");
 
-    NewsPostCreated::dispatch($post);
+    // NewsPostCreated::dispatch($post);
 
     return [
       "post" => $post,
