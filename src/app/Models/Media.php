@@ -24,7 +24,6 @@ class Media extends UUIDModel
     "dimensions",
     "file_size",
     "updated_at",
-    "summary",
   ];
 
   /**

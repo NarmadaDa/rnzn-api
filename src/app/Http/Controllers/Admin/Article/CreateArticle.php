@@ -17,7 +17,7 @@ class CreateArticle extends BaseArticleController
    * @return \Illuminate\Http\Response
    */
   public function __invoke(CreateArticleRequest $request)
-  {
+  {  
     $data = $request->validated();  
 
     DB::beginTransaction();
@@ -30,6 +30,7 @@ class CreateArticle extends BaseArticleController
         "slug" => $data["slug"],
         "content" => $data["content"],
         "keywords" => $data["keywords"],
+        "summary" => $data["summary"],
       ]);
 
       foreach ($data["roles"] as $r) {

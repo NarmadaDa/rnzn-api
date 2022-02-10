@@ -19,6 +19,7 @@ class CreateArticleRequest extends FormRequest
       'content'   => 'required|string',
       'keywords'  => 'nullable|string',
       'roles'     => 'required|array|min:1|in:personnel,family,guest',
+      'summary'  => 'string',
     ];
   }
 

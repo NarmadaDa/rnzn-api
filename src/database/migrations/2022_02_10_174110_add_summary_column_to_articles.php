@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddSummaryColumnToMedia extends Migration
+class AddSummaryColumnToArticles extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddSummaryColumnToMedia extends Migration
      */
     public function up()
     {
-        Schema::table('media', function (Blueprint $table) {
+        Schema::table('articles', function (Blueprint $table) {
             $table->string('summary', 255)->nullable();
         });
     }
@@ -25,7 +25,7 @@ class AddSummaryColumnToMedia extends Migration
      */
     public function down()
     {
-        Schema::table('media', function (Blueprint $table) {
+        Schema::table('articles', function (Blueprint $table) {
             $table->dropColumn(['summary']);
         });
     }

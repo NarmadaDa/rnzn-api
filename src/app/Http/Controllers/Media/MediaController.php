@@ -36,8 +36,7 @@ class MediaController extends Controller {
             "url" => $fileInfo["file_url"],
             "file_type" => $fileInfo["file_type"],
             "dimensions" => $fileInfo["dimensions"],
-            "file_size" => $fileInfo["file_size"],
-            "summary" => $data["summary"],
+            "file_size" => $fileInfo["file_size"] 
         ]);  
  
         return [
