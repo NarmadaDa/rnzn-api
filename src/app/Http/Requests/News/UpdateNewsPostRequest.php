@@ -32,7 +32,7 @@ class UpdateNewsPostRequest extends FormRequest
       'title'   => 'required|string',
       'type'    => 'required|string|exists:post_types,type',
       'content' => 'required',
-      'summary'  => 'string',
+      'summary' => 'nullable',
     ];
   }
 
