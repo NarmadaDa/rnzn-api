@@ -35,6 +35,7 @@ class UpdateArticleRequest extends FormRequest
       'keywords'  => 'nullable|string',
       'roles'     => 'array',
       "roles.*"   => "required|string|distinct|min:1",
+      'summary'  => 'string',
     ];
   }
 
