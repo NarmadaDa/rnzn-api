@@ -16,7 +16,7 @@ class CreateNewsPost extends BasePostController
    */
   public function __invoke(CreateNewsPostRequest $request)
   {
-    $data = $request->validated(); return $data["summary"];
+    $data = $request->validated(); 
 
     $postType = $this->postTypeRepository->findByType($data["type"]);
     if (!$postType) {
