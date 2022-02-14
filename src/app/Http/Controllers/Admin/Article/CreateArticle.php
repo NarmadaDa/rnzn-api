@@ -54,7 +54,8 @@ class CreateArticle extends BaseArticleController
 
     DB::commit();
 
-    $refreshed = $article->fresh()->load(["roles", "media"]);
+    // $refreshed = $article->fresh()->load(["roles", "media"]);
+    $refreshed = $article->fresh()->load(["roles"]);
 
     return [
       "article" => $refreshed,
