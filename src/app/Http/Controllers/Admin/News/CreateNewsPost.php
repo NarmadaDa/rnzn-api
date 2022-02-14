@@ -27,9 +27,8 @@ class CreateNewsPost extends BasePostController
       "title" => $data["title"],
       "post_type_id" => $postType->id,
       "content" => $data["content"],
-      "summary" => $data["summary"],
-      "url" => $data["url"],
-      "thumbnail_url" => $data["thumbnail_url"],
+      "summary" => $data["summary"], 
+      "banner" => $data["banner"],
     ]);
 
     $post->fresh()->with("type");
