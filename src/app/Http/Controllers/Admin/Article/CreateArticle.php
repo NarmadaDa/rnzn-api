@@ -17,7 +17,7 @@ class CreateArticle extends BaseArticleController
    * @return \Illuminate\Http\Response
    */
   public function __invoke(CreateArticleRequest $request)
-  {  
+  {
     $data = $request->validated();  
 
     DB::beginTransaction();
@@ -31,6 +31,8 @@ class CreateArticle extends BaseArticleController
         "content" => $data["content"],
         "keywords" => $data["keywords"],
         "summary" => $data["summary"],
+        "url" => $data["url"],
+        "thumbnail_url" => $data["thumbnail_url"],
       ]);
 
       foreach ($data["roles"] as $r) {
@@ -38,14 +40,13 @@ class CreateArticle extends BaseArticleController
         $article->roles()->attach($role);
       }
 
-
-      if (!empty($data["banner"])) {
-        $article->media()->create([
-          "type" => "banner",
-          "url" => $data["banner"],
-          "thumbnail_url" => $data["banner"],
-        ]);
-      }
+      // if (!empty($data["file_url"])) {
+      //   $article->media()->create([
+      //     "type" => "banner",
+      //     "url" => $data["file_url"],
+      //     "thumbnail_url" => $data["thubnail_url"],
+      //   ]);
+      // }
     } catch (Exception $e) {
       DB::rollback();
       abort(500, $e->getMessage());

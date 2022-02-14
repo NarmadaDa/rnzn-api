@@ -59,6 +59,23 @@ class MediaController extends Controller {
     
     }
 
+    
+    /**
+     * Handle media list- only images
+    */
+    public function onlyimg() {  
+        // $media = Media::authorisedAccounts()->get();
+        $media = Media::where("file_type","!=","pdf")->orderBy('updated_at', 'DESC')->get();   
+
+        // return list of media
+        return [
+          'media_list' => $media
+        ];
+
+    
+    }
+    
+    
 
 
 }
