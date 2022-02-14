@@ -38,22 +38,14 @@ class CreateArticle extends BaseArticleController
         $role = $this->roleRepository->findBySlug($r);
         $article->roles()->attach($role);
       }
-
-      // if (!empty($data["file_url"])) {
-      //   $article->media()->create([
-      //     "type" => "banner",
-      //     "url" => $data["file_url"],
-      //     "thumbnail_url" => $data["thubnail_url"],
-      //   ]);
-      // }
+ 
     } catch (Exception $e) {
       DB::rollback();
       abort(500, $e->getMessage());
     }
 
     DB::commit();
-
-    // $refreshed = $article->fresh()->load(["roles", "media"]);
+ 
     $refreshed = $article->fresh()->load(["roles"]);
 
     return [
