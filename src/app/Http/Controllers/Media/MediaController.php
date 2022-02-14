@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Media\Services\MediaService;
-use App\Http\Requests\Media\UploadRequest;
+use App\Http\Requests\Media\UploadRequest; 
 use Str;
 use App\Models\Media;
 
@@ -65,8 +65,7 @@ class MediaController extends Controller {
     */
     public function onlyimg() {  
         // $media = Media::authorisedAccounts()->get();
-        $media = Media::where("file_type","!=","pdf")->orderBy('updated_at', 'DESC')->get();   
-
+        $media = Media::where("file_type","!=","pdf")->orderBy('updated_at', 'DESC')->paginate(24); 
         // return list of media
         return [
           'media_list' => $media
