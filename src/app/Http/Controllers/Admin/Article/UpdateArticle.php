@@ -42,6 +42,7 @@ class UpdateArticle extends BaseArticleController
       $article->content = $data["content"];
       $article->keywords = $data["keywords"];
       $article->summary = $data["summary"];
+      $article->banner = $data["banner"];
       $article->save();
 
       $roleIds = Role::whereIn("slug", $data["roles"])
@@ -49,33 +50,33 @@ class UpdateArticle extends BaseArticleController
         ->toArray();
       $article->roles()->sync($roleIds);
 
-      // If no banner is passed through we will remove the existing banner
-      if (empty($data["banner"])) {
-        $article
-          ->media()
-          ->where("type", "=", "banner")
-          ->delete();
-      } elseif (!empty($data["banner"])) {
-        // check if already same image attached
-        $banner = $article
-          ->media()
-          ->where("type", "=", "banner")
-          ->where("url", "=", $data["banner"])
-          ->first();
+      // // If no banner is passed through we will remove the existing banner
+      // if (empty($data["banner"])) {
+      //   $article
+      //     ->media()
+      //     ->where("type", "=", "banner")
+      //     ->delete();
+      // } elseif (!empty($data["banner"])) {
+      //   // check if already same image attached
+      //   $banner = $article
+      //     ->media()
+      //     ->where("type", "=", "banner")
+      //     ->where("url", "=", $data["banner"])
+      //     ->first();
 
-        // If no banner is found, we will delete the old one and attach a new one
-        if ($banner == null) {
-          $article
-            ->media()
-            ->where("type", "=", "banner")
-            ->delete();
-          $article->media()->create([
-            "type" => "banner",
-            "url" => $data["banner"],
-            "thumbnail_url" => $data["banner"],
-          ]);
-        }
-      }
+      //   // If no banner is found, we will delete the old one and attach a new one
+      //   if ($banner == null) {
+      //     $article
+      //       ->media()
+      //       ->where("type", "=", "banner")
+      //       ->delete();
+      //     $article->media()->create([
+      //       "type" => "banner",
+      //       "url" => $data["banner"],
+      //       "thumbnail_url" => $data["banner"],
+      //     ]);
+      //   }
+      // }
     } catch (\Exception $e) {
       DB::rollback();
       abort(500, $e->getMessage());

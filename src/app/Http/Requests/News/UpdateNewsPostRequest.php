@@ -33,6 +33,7 @@ class UpdateNewsPostRequest extends FormRequest
       'type'    => 'required|string|exists:post_types,type',
       'content' => 'required',
       'summary' => 'nullable',
+      'banner' => 'nullable',
     ];
   }
 
