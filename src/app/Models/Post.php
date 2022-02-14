@@ -18,7 +18,7 @@ class Post extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["title", "content", "post_type_id", "summary"];
+  protected $fillable = ["title", "content", "post_type_id", "summary", "url", "thumbnail_url"];
 
   /**
    * The attributes that should be hidden for arrays.

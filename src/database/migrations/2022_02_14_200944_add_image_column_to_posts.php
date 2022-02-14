@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddImageColumnToArticles extends Migration
+class AddImageColumnToPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddImageColumnToArticles extends Migration
      */
     public function up()
     {
-        Schema::table('articles', function (Blueprint $table) {
+        Schema::table('posts', function (Blueprint $table) {
             $table->string('url', 1024)->nullable();
             $table->string('thumbnail_url', 1024)->nullable();
         });
@@ -26,7 +26,7 @@ class AddImageColumnToArticles extends Migration
      */
     public function down()
     {
-        Schema::table('articles', function (Blueprint $table) {
+        Schema::table('posts', function (Blueprint $table) {
             $table->dropColumn(['url', 'thumbnail_url']);
         });
     }

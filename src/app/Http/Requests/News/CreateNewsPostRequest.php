@@ -18,6 +18,8 @@ class CreateNewsPostRequest extends FormRequest
       'type'    => 'required|string|exists:post_types,type',
       'content' => 'required|string',
       'summary' => 'nullable',
+      'url'             => 'nullable', 
+      'thumbnail_url'   => 'nullable', 
     ];
   }
 
