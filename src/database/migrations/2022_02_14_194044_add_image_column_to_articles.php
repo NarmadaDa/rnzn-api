@@ -13,8 +13,10 @@ class AddImageColumnToArticles extends Migration
      */
     public function up()
     {
-        $table->string('url', 1024)->nullable();
-        $table->string('thumbnail_url', 1024)->nullable();
+        Schema::table('articles', function (Blueprint $table) {
+            $table->string('url', 1024)->nullable();
+            $table->string('thumbnail_url', 1024)->nullable();
+        });
     }
 
     /**
