@@ -35,3 +35,5 @@ api-variables.env
 *.code-workspace
 
 docker-compose.override.yaml
+
+.nova*
