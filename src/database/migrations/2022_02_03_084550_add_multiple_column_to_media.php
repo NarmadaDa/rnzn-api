@@ -14,9 +14,9 @@ class AddMultipleColumnToMedia extends Migration
     public function up()
     {
         Schema::table('media', function (Blueprint $table) {
-            $table->string('file_type', 20);
-            $table->string('dimensions', 20);
-            $table->string('file_size', 20);
+            $table->string('file_type', 20)->nullable();
+            $table->string('dimensions', 20)->nullable();
+            $table->string('file_size', 20)->nullable();
         });
     } 
 

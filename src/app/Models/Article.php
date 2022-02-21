@@ -21,7 +21,7 @@ class Article extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["title", "slug", "content", "keywords", "summary", "banner"];
+  protected $fillable = ["title", "slug", "content", "keywords", "summary", "banner" , "shortlist", "shortlist_order" ];
 
   /**
    * The attributes that should be hidden for arrays.

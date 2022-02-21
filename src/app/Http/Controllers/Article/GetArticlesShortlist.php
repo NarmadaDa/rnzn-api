@@ -23,7 +23,7 @@ class GetArticlesShortlist extends BaseArticleController
     $articles = Article::with(["roles", "media"])->where('shortlist', true)->orderBy('shortlist_order','desc')->get();
 
     // If there are no shortlisted articles, return a a dozen random public articles...
-    if (!$articles || null === $articles) {
+    if (!$articles || null === $articles || $articles->isEmpty()) {
 
       $articles = Article::whereHas('roles', function($query){ $query->where('slug','guest'); })->inRandomOrder()->limit(12)->get();
 
