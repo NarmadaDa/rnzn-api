@@ -14,3 +14,10 @@ Route::namespace("Article")
       Route::middleware(["not.guest"])->get("download", DownloadArticle::class);
     });
   });
+
+Route::namespace("Article")
+  ->prefix("article")
+  ->middleware(["auth:api"])
+  ->group(function () {
+    Route::as("shortlist")->get('shortlist', GetArticlesShortlist::class);
+  });
