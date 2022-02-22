@@ -31,7 +31,8 @@ class CreateArticle extends BaseArticleController
         "content" => $data["content"],
         "keywords" => $data["keywords"],
         "summary" => $data["summary"],
-        "banner" => $data["banner"], 
+        "banner" => $data["banner"],
+        "shortlist" => $data["shortlist"],  
       ]);
 
       foreach ($data["roles"] as $r) {
