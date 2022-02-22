@@ -20,7 +20,8 @@ class CreateArticleRequest extends FormRequest
       'keywords'        => 'nullable|string',
       'roles'           => 'required|array|min:1|in:personnel,family,guest',
       'summary'         => 'nullable', 
-      'banner'          => 'nullable',  
+      'banner'          => 'nullable',
+      'shortlist'       => 'nullable',  
     ];
   }
 

@@ -37,6 +37,7 @@ class UpdateArticleRequest extends FormRequest
       "roles.*"   => "required|string|distinct|min:1",
       'summary'   => 'nullable',
       'banner'    => 'nullable',
+      'shortlist' => 'nullable',  
     ];
   }
 
