@@ -78,6 +78,23 @@ class MediaController extends Controller {
 
     
     }
+
+    
+    /**
+     * Handle media list- only images
+    */
+    public function nopdf() {   
+
+        $media = Media::where('file_type', "!=", 'pdf') 
+        ->orderBy('updated_at', 'DESC')->paginate(24);   
+
+        // return list of media
+        return [
+          'media_list' => $media
+        ];
+
+    
+    }
     
     
 
