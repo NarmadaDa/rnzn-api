@@ -21,7 +21,7 @@ class GetArticlesShortlistOrder extends BaseArticleController
     $user = $request->user(); 
 
     // Get the shortlisted articles...
-      $articles = ArticalResource::collection(Article::where('shortlist', true)->orderBy('shortlist_order','desc')->get()); 
+      $articles = ArticalResource::collection(Article::where('shortlist', true)->orderBy('shortlist_order','asc')->get()); 
 
     // If there are no shortlisted articles, return a a dozen random public articles...
     if (!$articles || null === $articles || $articles->isEmpty()) {  
