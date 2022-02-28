@@ -22,9 +22,19 @@ class CreateArticle extends BaseArticleController
 
     DB::beginTransaction();
 
-    $article = null;
+    $article; $max_shortlist = null;
 
     try {
+
+      if($data["shortlist"]){ 
+        $max_shortlist = Article::max("shortlist_order");
+        if(!$max_shortlist){
+          $max_shortlist = 1;  
+        } else {
+          $max_shortlist +=1;
+        } 
+      }
+
       $article = $this->articleRepository->create([
         "title" => $data["title"],
         "slug" => $data["slug"],
@@ -32,7 +42,8 @@ class CreateArticle extends BaseArticleController
         "keywords" => $data["keywords"],
         "summary" => $data["summary"],
         "banner" => $data["banner"],
-        "shortlist" => $data["shortlist"],  
+        "shortlist" => $data["shortlist"], 
+        "shortlist_order" => $max_shortlist,   
       ]);
 
       foreach ($data["roles"] as $r) {
