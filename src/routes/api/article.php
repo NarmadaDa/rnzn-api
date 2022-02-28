@@ -20,5 +20,4 @@ Route::namespace("Article")
   ->middleware(["auth:api"])
   ->group(function () {
     Route::as("shortlist")->get('shortlist', GetArticlesShortlist::class);
-    Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);
   });

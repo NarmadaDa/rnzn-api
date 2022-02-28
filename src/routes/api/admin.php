@@ -27,6 +27,7 @@ Route::namespace("Admin")
           Route::as("create")->post("/", CreateArticle::class);
           Route::as("delete")->delete("{uuid}", DeleteArticle::class);
           Route::as("update")->post("{uuid}", UpdateArticle::class);
+          Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);
         });
 
       Route::as("menus.")

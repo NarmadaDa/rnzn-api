@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Article;
+namespace App\Http\Controllers\Admin\Article;
 
 use App\Http\Controllers\Article\BaseArticleController;
 use Illuminate\Http\Request;
