@@ -6,7 +6,7 @@ Route::namespace("Admin")
   ->prefix("admin")
   ->middleware(["auth:api", "role.admin"])
   ->group(function () {
-    // Route::middleware(["2fa"])->group(function () {
+    Route::middleware(["2fa"])->group(function () {
       // endpoints restricted behind 2fa
       Route::as("stats")->get("stats", GetAdminStats::class);
 
@@ -120,7 +120,7 @@ Route::namespace("Admin")
           Route::as("approve")->post("{uuid}/approve", ApproveUser::class);
           Route::as("delete")->delete("{uuid}", DeleteUser::class);
         });
-    // });
+    });
 
     Route::as("settings.")
       ->namespace("Settings")
