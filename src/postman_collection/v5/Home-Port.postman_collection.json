@@ -1,0 +1,822 @@
+{
+	"info": {
+		"_postman_id": "9bb00bc3-015e-48ba-b6f9-1ba358b5a97e",
+		"name": "Home-Port",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Version Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/version",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Devices Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responsejson = pm.response.json();\r",
+							"pm.environment.set(\"uuid\",responsejson.data.device.uuid);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"web\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/devices",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devices Type Verify",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/devices/{{uuid}}/verify",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"devices",
+						"{{uuid}}",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Token Generate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responsejson = pm.response.json();\r",
+							"pm.environment.set(\"access_token\",responsejson.data.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"grant_type\":\"password\",\r\n    \"client_id\":\"95907a32-adcf-4cf7-ab09-9fb50d92e528\",\r\n    \"client_secret\":\"0An7msVcAdwaa8NCtqoqMfnCMteQj7VWkpyBHT7F\",  \r\n    \"username\":\"aleks.beer@wove.co.nz\",\r\n    \"password\":\"Villvay143\" \r\n}\r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/oauth/token",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Stats",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/stats",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Media File Upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/D:/RNZN/Images/P4BzupWu.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/media",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Media List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/media/list",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"media",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"ww 22 artigclesa\",\r\n    \"slug\":\"ww 22 artigclesa\",\r\n    \"content\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\r\n    \"keywords\":\"DO,Divisional Supervisor,Divisional relationship,Relationship\",\r\n    \"summary\": \"test nnd\",\r\n    \"banner\":\"https://rnznstorage.blob.core.windows.net/rnzncontainer/uploads/2022-02240f1997-b6ee-4d31-9a40-9536840000a9royal-new-zealand-navy-b40271cc-7568-4a33-82af-1dd82a2320c-resize-750.jpeg\",\r\n    \"shortlist\": 1,\r\n    \"roles\": [\r\n          \"family\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles Shortlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/article/shortlist",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"article",
+						"shortlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Articles\",\r\n    \"slug\":\"s\",\r\n    \"content\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\",\r\n    \"keywords\":\"DO,Divisional Supervisor,Divisional relationship,Relationship\",\r\n    \"banner\":\"text\",\r\n    \"shortlist\": 1,\r\n    \"summary\": \"test nnd 6\",\r\n    \"roles\": [\r\n          \"family\"\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles/3183dd6b-1eba-414b-be7d-d43cee414974",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles",
+						"3183dd6b-1eba-414b-be7d-d43cee414974"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Article By UUID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles/uuid/c12465b0-c2b4-495d-89fc-f03031bf9d47",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles",
+						"uuid",
+						"c12465b0-c2b4-495d-89fc-f03031bf9d47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"Test News 14\",\r\n      \"type\" : \"news\",\r\n      \"content\" : \"Test News 14\",\r\n      \"summary\" : \"kkkkkk\",\r\n      \"banner\":\"https://rnznstorage.blob.core.windows.net/rnzncontainer/uploads/2022-02240f1997-b6ee-4d31-9a40-9536840000a9royal-new-zealand-navy-b40271cc-7568-4a33-82af-1dd82a2320c-resize-750.jpeg\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/news",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/news/72307a35-e397-42b6-b1fc-ab808516ca40",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"news",
+						"72307a35-e397-42b6-b1fc-ab808516ca40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News List - Search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/news/search",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"news",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"aa\",\r\n      \"type\" : \"news\",\r\n      \"content\" : \"test content 2\",\r\n      \"summary\" : \"testtttt 2222 5555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/news/72307a35-e397-42b6-b1fc-ab808516ca40",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"news",
+						"72307a35-e397-42b6-b1fc-ab808516ca40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Media List - Only Img",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/media/only_img",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"media",
+						"only_img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/menus/root",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"menus",
+						"root"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Media List - No PDF",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/media/no_pdf",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"media",
+						"no_pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles Shortlist Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles/shortlist_order",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles",
+						"shortlist_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Articles Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "HomePort-Device-Identifier",
+						"value": "{{uuid}}"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/admin/articles/3183dd6b-1eba-414b-be7d-d43cee414974",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"articles",
+						"3183dd6b-1eba-414b-be7d-d43cee414974"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": ""
+		}
+	]
+}
