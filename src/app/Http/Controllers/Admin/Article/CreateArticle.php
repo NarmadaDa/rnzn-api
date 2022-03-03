@@ -63,5 +63,6 @@ class CreateArticle extends BaseArticleController
     return [
       "article" => $refreshed,
     ];
+    
   }
 }
