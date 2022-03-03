@@ -18,7 +18,7 @@ class CreateUserRequest extends FormRequest
       "first_name" => "required|string",
       "middle_name" => "nullable|string",
       "last_name" => "required|string",
-      "role" => "required|in:guest,family,personnel,admin,super",
+      "role" => "required|in:guest,personnel,admin,super",
     ];
   }
 
