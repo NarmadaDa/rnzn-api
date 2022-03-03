@@ -8,7 +8,7 @@ use App\Models\Article;
 use Exception;
 use Illuminate\Support\Facades\DB;
 
-class SortArticle extends BaseArticleController
+class ShortlistArticleSort extends BaseArticleController
 {
   /**
    * Handle the incoming request.
