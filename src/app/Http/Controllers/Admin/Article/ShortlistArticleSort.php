@@ -25,7 +25,7 @@ class ShortlistArticleSort extends BaseArticleController
     try {
 
       foreach($data["order"] as $uuid => $order){
-        Article::where('uuid', $uuid)->update(['shortlist_order' => $order]);
+        Article::where('uuid', $uuid)->update(['shortlist' => true, 'shortlist_order' => $order]);
       }
 
     } catch (Exception $e) {
