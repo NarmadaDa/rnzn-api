@@ -64,11 +64,6 @@ class Role extends UUIDModel
     return static::where("slug", "admin")->first();
   }
 
-  public static function familyRole()
-  {
-    return static::where("slug", "family")->first();
-  }
-
   public static function guestRole()
   {
     return static::where("slug", "guest")->first();

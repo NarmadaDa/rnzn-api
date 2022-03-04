@@ -29,7 +29,7 @@ class ApproveUserRequest extends FormRequest
   {
     return [
       "uuid" => "required|uuid",
-      "role" => "required|in:guest,family,personnel,admin,super",
+      "role" => "required|in:guest,personnel,admin,super",
     ];
   }
 

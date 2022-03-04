@@ -152,13 +152,6 @@ class User extends Authenticatable implements MustVerifyEmail
       ->exists();
   }
 
-  public function isFamily()
-  {
-    return $this->roles()
-      ->where("slug", "family")
-      ->exists();
-  }
-
   public function isGuest()
   {
     return $this->roles()

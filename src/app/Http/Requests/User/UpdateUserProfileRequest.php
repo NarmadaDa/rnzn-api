@@ -17,7 +17,7 @@ class UpdateUserProfileRequest extends FormRequest
       "first_name" => "required|string",
       "middle_name" => "required|string",
       "last_name" => "required|string",
-      "role" => "required|in:guest,family,personnel,admin,super",
+      "role" => "required|in:guest,personnel,admin,super",
     ];
   }
 
