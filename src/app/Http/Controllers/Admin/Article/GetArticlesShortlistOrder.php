@@ -47,8 +47,11 @@ class GetArticlesShortlistOrder extends BaseArticleController
     // });
 
     // Return the authorised articles shortlist collection...
+    // return [
+    //   "article_shortlist" => $authorisedArticles,
+    // ];
     return [
-      "article_shortlist" => $authorisedArticles,
+      "article_shortlist" => $articles,
     ];
   }
 }
