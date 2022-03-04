@@ -31,6 +31,13 @@ Route::namespace("Admin")
           Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);   
         });
 
+        Route::as("articles_shortlist.")
+          ->namespace("Article")
+          ->prefix("articles_shortlist")
+          ->group(function () {
+            Route::as("delete")->delete("{uuid}", DeleteArticleShortlist::class);
+          });
+
       Route::as("menus.")
         ->namespace("Menu")
         ->prefix("menus")
