@@ -15,6 +15,7 @@ class ArticalResource extends JsonResource
     public function toArray($request)
     {
         return [ 
+            'uuid' => $this->uuid,
             'title' => $this->title,
             'updated_at' => $this->updated_at, 
             'shortlist_order' => $this->shortlist_order,
