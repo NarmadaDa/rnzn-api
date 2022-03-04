@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Requests\Admin;
+namespace App\Http\Requests\Article;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ApproveUserRequest extends FormRequest
+class DeleteArticleShortlistRequest extends FormRequest
 {
   /**
    * Add parameters to be validated.
-   *
+   * 
    * @return array
    */
-  public function all($keys = null)
+  public function all($keys = NULL)
   {
     $data = parent::all($keys);
-
-    $data["uuid"] = $this->route("uuid");
+    
+    $data['uuid'] = $this->route('uuid');
 
     return $data;
   }
@@ -28,8 +28,7 @@ class ApproveUserRequest extends FormRequest
   public function rules()
   {
     return [
-      "uuid" => "required|uuid",
-      "role" => "required|in:guest,personnel,admin,super",
+      'uuid' => 'required|uuid',
     ];
   }
 
@@ -41,10 +40,8 @@ class ApproveUserRequest extends FormRequest
   public function messages()
   {
     return [
-      "uuid.required" => "Invalid UUID.",
-      "uuid.uuid" => "Invalid UUID.",
-      "role.required" => "Role is required.",
-      "role.in" => "Invalid Role.",
+      'uuid.required'   => 'Invalid UUID.',
+      'uuid.alpha_dash' => 'Invalid UUID.',
     ];
   }
 }

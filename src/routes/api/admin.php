@@ -8,7 +8,7 @@ Route::namespace("Admin")
   ->group(function () {
     // Route::middleware(["2fa"])->group(function () {
       // endpoints restricted behind 2fa
-      Route::as("stats")->get("stats", GetAdminStats::class);
+      Route::as("stats")->get("stats", GetAdminStats::class); 
 
       Route::as("feedback.")
         ->namespace("Feedback")
@@ -22,13 +22,21 @@ Route::namespace("Admin")
         ->namespace("Article")
         ->prefix("articles")
         ->group(function () {
+          Route::as("sort")->post("sort", ShortlistArticleSort::class);  
           Route::get("/", GetArticles::class);
           Route::get("/uuid/{uuid}", GetArticleByUUID::class);
           Route::as("create")->post("/", CreateArticle::class);
           Route::as("delete")->delete("{uuid}", DeleteArticle::class);
           Route::as("update")->post("{uuid}", UpdateArticle::class);
-          Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);
+          Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);   
         });
+
+        Route::as("articles_shortlist.")
+          ->namespace("Article")
+          ->prefix("articles_shortlist")
+          ->group(function () {
+            Route::as("delete")->delete("{uuid}", DeleteArticleShortlist::class);
+          });
 
       Route::as("menus.")
         ->namespace("Menu")
