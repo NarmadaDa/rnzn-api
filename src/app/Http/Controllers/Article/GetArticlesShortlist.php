@@ -17,7 +17,7 @@ class GetArticlesShortlist extends BaseArticleController
   public function __invoke(Request $request)
   {
     // Get the user from the request...
-    $user = $request->user(); dd($user);
+    $user = $request->user(); 
 
     // Get the shortlisted articles...
     $articles = Article::with(["roles", "media"])->where('shortlist', true)->orderBy('shortlist_order','desc')->get(); 
@@ -31,13 +31,13 @@ class GetArticlesShortlist extends BaseArticleController
         "article_shortlist" => $articles,
       ];
     }
-
+  
     // Filter the articles by role...
     $authorisedArticles = $articles->map(function($article) use ($user){
 
       $ids = $article->roles()->pluck('id')->toArray();
 
-      $authorised = $user->roles()->whereIn('id', $ids)->exists();
+      $authorised = $user->roles()->whereIn('id', $ids)->exists(); 
 
       if ($authorised){
 
