@@ -17,10 +17,10 @@ class GetArticlesShortlist extends BaseArticleController
   public function __invoke(Request $request)
   {
     // Get the user from the request...
-    $user = $request->user();
+    $user = $request->user(); dd($user);
 
     // Get the shortlisted articles...
-    $articles = Article::with(["roles", "media"])->where('shortlist', true)->orderBy('shortlist_order','desc')->get();
+    $articles = Article::with(["roles", "media"])->where('shortlist', true)->orderBy('shortlist_order','desc')->get(); 
 
     // If there are no shortlisted articles, return a a dozen random public articles...
     if (!$articles || null === $articles || $articles->isEmpty()) {
