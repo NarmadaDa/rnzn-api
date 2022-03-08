@@ -23,33 +23,6 @@ class GetArticlesShortlistOrder extends BaseArticleController
     // Get the shortlisted articles...
       $articles = ArticalResource::collection(Article::where('shortlist', true)->orderBy('shortlist_order','asc')->get()); 
 
-    // If there are no shortlisted articles, return a a dozen random public articles...
-    // if (!$articles || null === $articles || $articles->isEmpty()) {  
-
-    //   $articles = Article::whereHas('roles', function($query){ $query->where('slug','guest'); })->inRandomOrder()->limit(12)->get();
-
-    //   return [
-    //     "article_shortlist" => $articles,
-    //   ];
-    // }
-
-    // // Filter the articles by role...
-    // $authorisedArticles = $articles->map(function($article) use ($user){
-
-    //   $ids = $article->roles()->pluck('id')->toArray();
-
-    //   $authorised = $user->roles()->whereIn('id', $ids)->exists();
-
-    //   if ($authorised){
-
-    //     return $article;
-    //   }
-    // });
-
-    // Return the authorised articles shortlist collection...
-    // return [
-    //   "article_shortlist" => $authorisedArticles,
-    // ];
     return [
       "article_shortlist" => $articles,
     ];
