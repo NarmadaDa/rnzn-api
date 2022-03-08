@@ -19,9 +19,6 @@ class GetRootMenu extends BaseMenuController
     if ($user = $request->user()) {
       if ($user->isPersonnel() || $user->isAdmin()) {
         $slug = "personnel-root";
-      } elseif ($user->isFamily()) {
-        // TODO: eventually return the family content
-        $slug = "personnel-root";
       }
     }
 
