@@ -15,7 +15,7 @@ class UpdateUserRequest extends FormRequest
   {
     return [
       "first_name" => "required|string",
-      "middle_name" => "required|string",
+      "middle_name" => "nullable|string",
       "last_name" => "required|string",
       "role" => "required|in:guest,family,personnel,admin,super",
     ];
@@ -31,7 +31,6 @@ class UpdateUserRequest extends FormRequest
     return [
       "first_name.required" => "First Name is required.",
       "first_name.string" => "Invalid First Name.",
-      "middle_name.required" => "Middle Name is required.",
       "middle_name.string" => "Invalid Middle Name.",
       "last_name.required" => "Last Name is required.",
       "last_name.string" => "Invalid Last Name.",
