@@ -20,7 +20,19 @@ class GetArticlesShortlist extends BaseArticleController
     $user = $request->user(); 
 
     // Get the shortlisted articles...
-    $articles = Article::with(["roles", "media"])->where('shortlist', true)->orderBy('shortlist_order','desc')->get(); 
+    $allow_role_ids = [];
+    if($user->isAdmin()){   
+      $allow_role_ids = [1,2,3,5];
+    } else if($user->isPersonnel()){
+      $allow_role_ids = [3, 5];
+    } else { // guest
+      $allow_role_ids = [5];
+    }
+
+    $articles = Article::with(["roles", "media"])->where('shortlist', true)->whereHas('roles', function($query) use($allow_role_ids){
+     $query->whereIn('id', $allow_role_ids); 
+    })->orderBy('shortlist_order','desc')->get(); 
+
 
     // If there are no shortlisted articles, return a a dozen random public articles...
     if (!$articles || null === $articles || $articles->isEmpty()) {
@@ -31,23 +43,10 @@ class GetArticlesShortlist extends BaseArticleController
         "article_shortlist" => $articles,
       ];
     }
-  
-    // Filter the articles by role...
-    $authorisedArticles = $articles->map(function($article) use ($user){
-
-      $ids = $article->roles()->pluck('id')->toArray();
-
-      $authorised = $user->roles()->whereIn('id', $ids)->exists(); 
-
-      if ($authorised){
-
-        return $article;
-      }
-    });
-
+    
     // Return the authorised articles shortlist collection...
     return [
-      "article_shortlist" => $authorisedArticles,
+      "article_shortlist" => $articles,
     ];
   }
 }
