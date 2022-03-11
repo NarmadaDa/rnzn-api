@@ -124,8 +124,8 @@ Route::namespace("Admin")
       Route::as("channels.")
       ->namespace("Channel")
       ->prefix("channels")
-      ->group(function () { 
-        Route::get("/", GetChannels::class);
+      ->group(function () {  
+        Route::get("/", GetChannels::class); 
         Route::as("create")->post("/", CreateChannel::class); 
       });
 
