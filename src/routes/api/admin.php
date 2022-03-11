@@ -120,6 +120,13 @@ Route::namespace("Admin")
           Route::as("approve")->post("{uuid}/approve", ApproveUser::class);
           Route::as("delete")->delete("{uuid}", DeleteUser::class);
         });
+ 
+      Route::as("channels.")
+      ->namespace("Channel")
+      ->prefix("channels")
+      ->group(function () { 
+        Route::as("create")->post("/", CreateChannel::class); 
+      });
 
     // });
 
