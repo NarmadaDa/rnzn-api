@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Media\Services\MediaService;
-use App\Http\Requests\Media\UploadRequest;
+use App\Http\Requests\Media\UploadRequest; 
 use Str;
 use App\Models\Media;
 
@@ -24,7 +24,7 @@ class MediaController extends Controller {
      */
     public function upload(UploadRequest $data) { 
         $data->validated();
-        $fileInfo = $this->mediaService->uploadToStorage($data['image']);  
+        $fileInfo = $this->mediaService->uploadToStorage($data['image']);   
 
         $uuid = (string)Str::uuid();
         $media = Media::create([
@@ -36,9 +36,9 @@ class MediaController extends Controller {
             "url" => $fileInfo["file_url"],
             "file_type" => $fileInfo["file_type"],
             "dimensions" => $fileInfo["dimensions"],
-            "file_size" => $fileInfo["file_size"],
+            "file_size" => $fileInfo["file_size"] 
         ]);  
-
+ 
         return [
             "file" => $fileInfo
         ];  
@@ -59,6 +59,44 @@ class MediaController extends Controller {
     
     }
 
+    
+    /**
+     * Handle media list- only images
+    */
+    public function onlyimg() {  
+        // $media = Media::authorisedAccounts()->get();
+
+        $media = Media::where('file_type', "=", 'jpg')
+        ->orWhere('file_type', "=", 'jpeg')
+        ->orWhere('file_type', "=", 'png')
+        ->orderBy('updated_at', 'DESC')->paginate(24);   
+
+        // return list of media
+        return [
+          'media_list' => $media
+        ];
+
+    
+    }
+
+    
+    /**
+     * Handle media list- only images
+    */
+    public function nopdf() {   
+
+        $media = Media::where('file_type', "!=", 'pdf') 
+        ->orderBy('updated_at', 'DESC')->paginate(24);   
+
+        // return list of media
+        return [
+          'media_list' => $media
+        ];
+
+    
+    }
+    
+    
 
 
 }

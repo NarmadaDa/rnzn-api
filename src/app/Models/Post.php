@@ -18,7 +18,7 @@ class Post extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["title", "content", "post_type_id"];
+  protected $fillable = ["title", "content", "post_type_id", "summary", "banner"];
 
   /**
    * The attributes that should be hidden for arrays.
@@ -37,6 +37,7 @@ class Post extends UUIDModel
       "uuid" => $this->uuid,
       "title" => $this->title,
       "content" => $this->content,
+      "summary" => $this->summary,
       "created_at" => $this->created_at,
     ];
     return json_encode($json);

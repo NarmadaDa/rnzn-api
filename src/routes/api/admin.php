@@ -27,6 +27,7 @@ Route::namespace("Admin")
           Route::as("create")->post("/", CreateArticle::class);
           Route::as("delete")->delete("{uuid}", DeleteArticle::class);
           Route::as("update")->post("{uuid}", UpdateArticle::class);
+          Route::as("shortlist_order")->get('shortlist_order', GetArticlesShortlistOrder::class);
         });
 
       Route::as("menus.")
@@ -119,6 +120,17 @@ Route::namespace("Admin")
           Route::as("approve")->post("{uuid}/approve", ApproveUser::class);
           Route::as("delete")->delete("{uuid}", DeleteUser::class);
         });
+ 
+      Route::as("channels.")
+      ->namespace("Channel")
+      ->prefix("channels")
+      ->group(function () {  
+        Route::get("/", GetChannels::class); 
+        Route::as("create")->post("/", CreateChannel::class); 
+        Route::get("/uuid/{uuid}", GetChannelByUUID::class);
+        Route::as("update")->post("{uuid}", UpdateChannel::class);
+      });
+
     // });
 
     Route::as("settings.")

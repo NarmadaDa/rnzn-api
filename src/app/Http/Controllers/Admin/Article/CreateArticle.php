@@ -22,40 +22,47 @@ class CreateArticle extends BaseArticleController
 
     DB::beginTransaction();
 
-    $article = null;
+    $article; $max_shortlist = null;
 
     try {
+
+      if($data["shortlist"]){ 
+        $max_shortlist = Article::max("shortlist_order");
+        if(!$max_shortlist){
+          $max_shortlist = 1;  
+        } else {
+          $max_shortlist +=1;
+        } 
+      }
+
       $article = $this->articleRepository->create([
         "title" => $data["title"],
         "slug" => $data["slug"],
         "content" => $data["content"],
         "keywords" => $data["keywords"],
+        "summary" => $data["summary"],
+        "banner" => $data["banner"],
+        "shortlist" => $data["shortlist"], 
+        "shortlist_order" => $max_shortlist,   
       ]);
 
       foreach ($data["roles"] as $r) {
         $role = $this->roleRepository->findBySlug($r);
         $article->roles()->attach($role);
       }
-
-
-      if (!empty($data["banner"])) {
-        $article->media()->create([
-          "type" => "banner",
-          "url" => $data["banner"],
-          "thumbnail_url" => $data["banner"],
-        ]);
-      }
+ 
     } catch (Exception $e) {
       DB::rollback();
       abort(500, $e->getMessage());
     }
 
     DB::commit();
-
-    $refreshed = $article->fresh()->load(["roles", "media"]);
+ 
+    $refreshed = $article->fresh()->load(["roles"]);
 
     return [
       "article" => $refreshed,
     ];
+    
   }
 }

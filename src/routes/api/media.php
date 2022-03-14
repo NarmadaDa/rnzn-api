@@ -9,5 +9,7 @@ Route::namespace('Media')
 ->group(function() {
   Route::post('/', [MediaController::class, 'upload']);
   Route::get('/list', [MediaController::class, 'list']);
+  Route::get('/only_img', [MediaController::class, 'onlyimg']);
+  Route::get('/no_pdf', [MediaController::class, 'nopdf']);
 });
 

@@ -14,11 +14,14 @@ class CreateArticleRequest extends FormRequest
   public function rules()
   {
     return [
-      'title'     => 'required|string',
-      'slug'      => 'required|string|unique:articles',
-      'content'   => 'required|string',
-      'keywords'  => 'nullable|string',
-      'roles'     => 'required|array|min:1|in:personnel,family,guest',
+      'title'           => 'required|string',
+      'slug'            => 'required|string|unique:articles',
+      'content'         => 'required|string',
+      'keywords'        => 'nullable|string',
+      'roles'           => 'required|array|min:1|in:personnel,family,guest',
+      'summary'         => 'nullable', 
+      'banner'          => 'nullable',
+      'shortlist'       => 'nullable',  
     ];
   }
 

@@ -16,7 +16,7 @@ class CreateNewsPost extends BasePostController
    */
   public function __invoke(CreateNewsPostRequest $request)
   {
-    $data = $request->validated();
+    $data = $request->validated(); 
 
     $postType = $this->postTypeRepository->findByType($data["type"]);
     if (!$postType) {
@@ -27,11 +27,13 @@ class CreateNewsPost extends BasePostController
       "title" => $data["title"],
       "post_type_id" => $postType->id,
       "content" => $data["content"],
+      "summary" => $data["summary"], 
+      "banner" => $data["banner"],
     ]);
 
     $post->fresh()->with("type");
 
-    NewsPostCreated::dispatch($post);
+    // NewsPostCreated::dispatch($post);
 
     return [
       "post" => $post,

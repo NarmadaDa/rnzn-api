@@ -44,7 +44,8 @@ Route::prefix("v1")->group(function () {
     Route::as("media.")->group(__DIR__ . "/api/media.php");
     Route::as("menu.")->group(__DIR__ . "/api/menu.php");
     Route::as("news.")->group(__DIR__ . "/api/news.php");
-    Route::as("notifications.")->group(__DIR__ . "/api/notification.php");
+    Route::as("news.")->group(__DIR__ . "/api/news.php");
+    Route::as("channel.")->group(__DIR__ . "/api/channel.php");
     // Route::as("quicklink.")->group(__DIR__ . "/api/quicklink.php");
     Route::as("user.")->group(__DIR__ . "/api/user.php");
   });

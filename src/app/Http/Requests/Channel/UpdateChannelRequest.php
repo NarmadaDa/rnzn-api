@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\News;
+namespace App\Http\Requests\Channel;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateNewsPostRequest extends FormRequest
+class UpdateChannelRequest extends FormRequest
 {
   /**
    * Add parameters to be validated.
@@ -28,12 +28,12 @@ class UpdateNewsPostRequest extends FormRequest
   public function rules()
   {
     return [
-      'uuid'    => 'required|uuid',
-      'title'   => 'required|string',
-      'type'    => 'required|string|exists:post_types,type',
-      'content' => 'required',
-      'summary' => 'nullable',
-      'banner' => 'nullable',
+      'uuid'            => 'required|uuid', 
+      'name'            => 'required|string',
+      'initial_post'    => 'nullable',
+      'post_pin'        => 'nullable', 
+      'channel_active'  => 'nullable',   
+      'image'           => 'nullable', 
     ];
   }
 
@@ -47,13 +47,8 @@ class UpdateNewsPostRequest extends FormRequest
     return [
       'uuid.required'     => 'Invalid UUID.',
       'uuid.uuid'         => 'Invalid UUID.',
-      'title.required'    => 'Title is required.',
-      'title.string'      => 'Invalid Title.',
-      'type.required'     => 'Type is required.',
-      'type.string'       => 'Invalid Type.',
-      'type.exists'       => 'Invalid Type.',
-      'content.required'  => 'Content is required.',
-      'content.string'    => 'Invalid Content.',
+      'name.required'    => 'Channel name is required.',
+      'name.string'      => 'Invalid channel name.', 
     ];
   }
 }
