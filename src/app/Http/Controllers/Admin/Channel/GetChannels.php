@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Admin\Channel;
-
-use App\Http\Controllers\Controller;
+ 
+use App\Http\Controllers\Channel\BaseChannelController;
 use App\Models\Channel; 
 
-class GetChannels extends Controller
+class GetChannels extends BaseChannelController
 {
   /**
    * Handle the incoming request.

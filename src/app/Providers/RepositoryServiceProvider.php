@@ -12,6 +12,7 @@ use App\Repositories\Eloquent\PostTypeRepository;
 use App\Repositories\Eloquent\QuickLinkRepository;
 use App\Repositories\Eloquent\RoleRepository;
 use App\Repositories\Eloquent\UserRepository;
+use App\Repositories\Eloquent\ChannelRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
 use App\Repositories\Interfaces\DeviceRepositoryInterface;
 use App\Repositories\Interfaces\EloquentRepositoryInterface;
@@ -22,6 +23,7 @@ use App\Repositories\Interfaces\PostTypeRepositoryInterface;
 use App\Repositories\Interfaces\QuickLinkRepositoryInterface;
 use App\Repositories\Interfaces\RoleRepositoryInterface;
 use App\Repositories\Interfaces\UserRepositoryInterface;
+use App\Repositories\Interfaces\ChannelRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -81,6 +83,11 @@ class RepositoryServiceProvider extends ServiceProvider
     $this->app->bind(
       UserRepositoryInterface::class,
       UserRepository::class
+    );
+
+    $this->app->bind(
+      ChannelRepositoryInterface::class,
+      ChannelRepository::class
     );
   }
 }

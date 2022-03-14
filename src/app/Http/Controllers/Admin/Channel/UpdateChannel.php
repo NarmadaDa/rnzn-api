@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Admin\Channel;
 
 use Illuminate\Validation\ValidationException;
 use App\Http\Requests\Channel\UpdateChannelRequest;
-// use App\Http\Controllers\Article\BaseArticleController;
+use App\Http\Controllers\Channel\BaseChannelController;
 use App\Http\Controllers\Controller;
 use App\Models\Channel;
 use DB;
 use Validator;
 
-class UpdateChannel extends Controller
+class UpdateChannel extends BaseChannelController
 {
   /**
    * Handle the incoming request.

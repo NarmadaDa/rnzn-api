@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers\Admin\Channel;
 
-// use App\Http\Controllers\Article\BaseArticleController;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Channel\BaseChannelController;
 use App\Http\Requests\Channel\CreateChannelRequest;
 use App\Models\Channel;
 use Exception;
 use Illuminate\Support\Facades\DB;
 
-// class CreateChannel extends BaseArticleController
-class CreateChannel extends Controller
+class CreateChannel extends BaseChannelController
 {
   /**
    * Handle the incoming request.
