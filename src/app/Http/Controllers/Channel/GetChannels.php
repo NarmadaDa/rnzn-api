@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Channel;
 
-// use App\Http\Controllers\News\BasePostController;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Channel\BaseChannelController; 
 use App\Models\Channel;
 
-class GetChannels extends Controller
+class GetChannels extends BaseChannelController
 {
   /**
    * Handle the incoming request.
