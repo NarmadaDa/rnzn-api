@@ -32,10 +32,11 @@ class UpdateChannel extends Controller
     DB::beginTransaction();
 
     try {
-      $channel->name          = $data["name"];
-      $channel->initial_post  = $data["initial_post"];
-      $channel->post_pin      = $data["post_pin"];
-      $channel->image         = $data["image"]; 
+      $channel->name            = $data["name"];
+      $channel->initial_post    = $data["initial_post"];
+      $channel->post_pin        = $data["post_pin"]; 
+      $channel->channel_active  = $data["channel_active"]; 
+      $channel->image           = $data["image"]; 
       $channel->save();
  
 
