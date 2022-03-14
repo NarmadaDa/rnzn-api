@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Admin\Channel;
 
-// use App\Http\Controllers\Article\BaseArticleController;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Channel\BaseChannelController;
 use Illuminate\Http\Request;
 use App\Models\Channel;
 
-class GetChannelByUUID extends Controller
+class GetChannelByUUID extends BaseChannelController
 {
   /**
    * Handle the incoming request.
