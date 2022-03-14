@@ -21,7 +21,7 @@ class Channel extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["name", "channel_active"];
+  protected $fillable = ["name", "post_pin", "channel_active"];
   
   /**
    * The attributes that should be hidden for arrays.

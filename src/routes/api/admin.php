@@ -135,6 +135,8 @@ Route::namespace("Admin")
       ->group(function () {  
         Route::get("/", GetChannels::class); 
         Route::as("create")->post("/", CreateChannel::class); 
+        Route::get("/uuid/{uuid}", GetChannelByUUID::class);
+        Route::as("update")->post("{uuid}", UpdateChannel::class);
       });
 
     // });
