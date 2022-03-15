@@ -3,8 +3,7 @@
 namespace App\Http\Controllers\Channel;
 
 use App\Http\Controllers\Channel\BaseChannelController; 
-use App\Http\Requests\Channel\GetChannelByIDRequest;
-use App\Models\Channel;
+use App\Http\Requests\Channel\GetChannelByIDRequest; 
 
 class PinChannelPost extends BaseChannelController
 {
