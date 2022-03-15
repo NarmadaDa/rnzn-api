@@ -7,4 +7,5 @@ Route::namespace("Conditions")
   ->middleware(["auth:api"])
   ->group(function () {
     Route::as("all")->get("", GetAllConditions::class);
+    Route::as("update")->post("{uuid}", UpdateAcceptConditionsByUser::class);  
   });

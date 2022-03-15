@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\News;
+namespace App\Http\Requests\Conditions;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class GetNewsPostRequest extends FormRequest
+class GetConditionByIDRequest extends FormRequest
 {
   /**
    * Add parameters to be validated.
