@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers\Admin\Channel;
  
-use App\Http\Controllers\Channel\BaseChannelController;
-use App\Models\Channel; 
+use App\Http\Controllers\Channel\BaseChannelController; 
 
 class GetChannels extends BaseChannelController
 {
@@ -15,7 +14,11 @@ class GetChannels extends BaseChannelController
    */
   public function __invoke()
   {
-    $channels = Channel::get();
+    $channels = $this->channelRepository->all(); 
+    
+    if (!$channels) {
+      abort(404, "Channels does not exist.");
+    }
 
     return [
       "channels" => $channels 
