@@ -14,14 +14,14 @@ class Conditions extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["title", "description"];
+  protected $fillable = ["id", "title", "description"];
 
   /**
    * The attributes that should be hidden for arrays.
    *
    * @var array
    */
-  protected $hidden = ["id", "created_at", "updated_at"];
+  protected $hidden = ["created_at", "updated_at"];
 
 
 
