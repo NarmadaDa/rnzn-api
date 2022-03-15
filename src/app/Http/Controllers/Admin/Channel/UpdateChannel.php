@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Admin\Channel;
 
 use Illuminate\Validation\ValidationException;
 use App\Http\Requests\Channel\UpdateChannelRequest;
-use App\Http\Controllers\Channel\BaseChannelController;
-use App\Http\Controllers\Controller;
-use App\Models\Channel;
+use App\Http\Controllers\Channel\BaseChannelController;  
 use DB;
 use Validator;
 
@@ -23,8 +21,7 @@ class UpdateChannel extends BaseChannelController
     $data = $request->validated();
     $uuid = $request->route("uuid");
 
-    $channel  = Channel::where("uuid",$uuid)->first();
-
+    $channel = $this->channelRepository->findByUUID($data["uuid"]); 
     if (!$channel) {
       abort(404, "Channel does not exist.");
     } 
@@ -37,7 +34,7 @@ class UpdateChannel extends BaseChannelController
       $channel->post_pin        = $data["post_pin"]; 
       $channel->channel_active  = $data["channel_active"]; 
       $channel->image           = $data["image"]; 
-      $channel->save();
+      $channel->save(); 
  
 
     } catch (\Exception $e) {

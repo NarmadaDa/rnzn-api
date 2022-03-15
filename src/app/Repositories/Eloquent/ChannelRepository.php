@@ -33,25 +33,12 @@ ChannelRepositoryInterface
   }
 
   /**
-   * @param string $slug
-   * @return App\Models\Channel
-   */
-  public function findBySlug(int $id): ?Channel
-  {
-    return $this->model
-      ->with(["roles", "media"])
-      ->where("slug", $slug)
-      ->first();
-  }
-
-  /**
    * @param string $uuid
    * @return App\Models\Channel
    */
   public function findByUUID(string $uuid): ?Channel
   {
-    return $this->model
-      ->with(["roles", "media"])
+    return $this->model 
       ->where("uuid", $uuid)
       ->first();
   }
@@ -70,11 +57,12 @@ ChannelRepositoryInterface
  * @param int $id
  * @return App\Models\Channel
  */
-public function findByPinPost(int $id): ?Channel
-{
-  return $this->model 
-    ->where("id", $id)
-    ->where("post_pin", 1)
-    ->first();
-}
+  public function findByPinPost(int $id): ?Channel
+  {
+    return $this->model 
+      ->where("id", $id)
+      ->where("post_pin", 1)
+      ->first();
+  } 
+
 }

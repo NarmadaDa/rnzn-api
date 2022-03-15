@@ -17,10 +17,9 @@ class GetChannelByUUID extends BaseChannelController
   public function __invoke(Request $request)
   {
     $user = $request->user();
-    $uuid = $request->route("uuid");
+    $uuid = $request->route("uuid"); 
 
-    $channel  = Channel::where("uuid",$uuid)->first();
-
+    $channel = $this->channelRepository->findByUUID($uuid);
     if (!$channel) {
       abort(404, "Channel does not exist.");
     }

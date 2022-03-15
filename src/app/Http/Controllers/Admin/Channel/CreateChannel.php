@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\Channel;
 
 use App\Http\Controllers\Channel\BaseChannelController;
 use App\Http\Requests\Channel\CreateChannelRequest;
-use App\Models\Channel;
+use Illuminate\Support\Arr;
 use Exception;
 use Illuminate\Support\Facades\DB;
 
@@ -18,30 +18,26 @@ class CreateChannel extends BaseChannelController
    */
   public function __invoke(CreateChannelRequest $request)
   {
-    $data = $request->validated();  
+    $data = $request->validated();    
 
     DB::beginTransaction();
 
-    try {
+    try { 
+      
+      $channel_data = Arr::add($data, 'channel_active', 1);  
 
-      $channel = Channel::create([
-        "name"            => $data["name"], 
-        "initial_post"    => $data["initial_post"],
-        "post_pin"        => $data["post_pin"], 
-        "channel_active"  => 1,
-        "image"           => $data["image"],     
-      ]); 
+      $this->channelRepository->create($channel_data); 
 
-  } catch (Exception $e) {
-      DB::rollback();
-      abort(500, $e->getMessage());
-  }
+    } catch (Exception $e) {
+        DB::rollback();
+        abort(500, $e->getMessage());
+    }
 
-  DB::commit();
+    DB::commit();
 
-  return [
-    "message" => "Channel successfully created.",
-  ];
+    return [
+      "message" => "Channel successfully created.",
+    ];
     
   }
 }
