@@ -7,5 +7,5 @@ Route::namespace("Channel")
   ->middleware(["auth:api"])
   ->group(function () {
     Route::as("all")->get('/', GetChannels::class); 
-    Route::as("pin")->post("{id}/posts", PinChannelPost::class);
+    Route::as("pin")->get("{id}/posts", PinChannelPost::class);
   });
