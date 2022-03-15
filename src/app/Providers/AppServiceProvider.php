@@ -44,6 +44,7 @@ class AppServiceProvider extends ServiceProvider
 
     Relation::morphMap([
       "article" => Article::class,
+      "conditions" => Conditions::class,
       "media" => Media::class,
       "menu" => Menu::class,
       "menu_item" => MenuItem::class,
