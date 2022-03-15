@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Article;
+use App\Models\Conditions;
 use App\Models\Media;
 use App\Models\Menu;
 use App\Models\MenuItem;
@@ -44,6 +45,7 @@ class AppServiceProvider extends ServiceProvider
 
     Relation::morphMap([
       "article" => Article::class,
+      "conditions" => Conditions::class,
       "media" => Media::class,
       "menu" => Menu::class,
       "menu_item" => MenuItem::class,

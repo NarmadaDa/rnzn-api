@@ -40,6 +40,7 @@ Route::prefix("v1")->group(function () {
   Route::middleware(["device.verify"])->group(function () {
     Route::as("admin.")->group(__DIR__ . "/api/admin.php");
     Route::as("article.")->group(__DIR__ . "/api/article.php");
+    Route::as("conditions.")->group(__DIR__ . "/api/conditions.php");
     Route::as("guest.")->group(__DIR__ . "/api/guest.php");
     Route::as("media.")->group(__DIR__ . "/api/media.php");
     Route::as("menu.")->group(__DIR__ . "/api/menu.php");
