@@ -11,7 +11,7 @@ use App\Models\Profile;
 use App\Models\QuickLink;
 use App\Models\Role;
 use App\Models\UserFeedback;
-use App\Models\UserRole;
+use App\Models\UserRole; 
 use App\Notifications\PasswordResetNotification;
 use App\Notifications\PasswordUpdatedNotification;
 use App\Notifications\VerifyEmail;
