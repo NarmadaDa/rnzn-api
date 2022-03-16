@@ -20,8 +20,16 @@ class CreateChannelsTable extends Migration
             $table->boolean('post_pin')->default(false);
             $table->boolean('channel_active')->default(true);
             $table->string('image', 1024)->nullable(); 
+            $table->unsignedBigInteger('user_id');  
             $table->uuid("uuid")->unique(); 
             $table->timestamps();
+
+            $table
+            ->foreign("user_id")
+            ->references("id")
+            ->on("users")
+            ->onDelete("cascade");
+
         });
     }
 

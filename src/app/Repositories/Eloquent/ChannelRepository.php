@@ -26,8 +26,17 @@ ChannelRepositoryInterface
   
   public function all_channel()
   {
-    return $this->model->orderBy("id", "DESC")->get();
+    return $this->model 
+    ->with(["user"])
+    ->orderBy("id", "DESC")->get();
   }
+  
+  // public function get_channel()
+  // {
+  //   return $this->model 
+  //   ->with(["user"])
+  //   ->orderBy("id", "DESC")->get();
+  // }
 
   /**
    * @param string $uuid
@@ -45,6 +54,7 @@ ChannelRepositoryInterface
   public function findByUUID(string $uuid): ?Channel
   {
     return $this->model 
+      ->with(["profile"])
       ->where("uuid", $uuid)
       ->first();
   }

@@ -7,6 +7,7 @@ namespace App\Models;
 // use App\Models\Media;
 // use App\Models\MenuItem;
 use App\Models\UUIDModel;
+use App\Models\Profile;
 // use App\Models\Role;
 // use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -21,7 +22,7 @@ class Channel extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["name", "post_pin", "initial_post", "channel_active", "image", "created_at", "updated_at"];
+  protected $fillable = ["name", "post_pin", "initial_post", "channel_active", "image", "user_id", "created_at", "updated_at"];
   
   /**
    * The attributes that should be hidden for arrays.
@@ -30,5 +31,13 @@ class Channel extends UUIDModel
    */
   protected $hidden = [];
 
+ /**
+   * Relationships
+   */
+
+  public function profile()
+  {
+    return $this->belongsTo(Profile::class, "user_id");
+  }
 
 }
