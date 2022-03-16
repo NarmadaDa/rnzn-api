@@ -23,6 +23,12 @@ ChannelRepositoryInterface
     parent::__construct($model);
   }
 
+  
+  public function all_channel()
+  {
+    return $this->model->orderBy("id", "DESC")->get();
+  }
+
   /**
    * @param string $uuid
    * @return void
