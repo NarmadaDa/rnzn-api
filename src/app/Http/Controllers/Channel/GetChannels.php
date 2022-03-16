@@ -13,7 +13,7 @@ class GetChannels extends BaseChannelController
    */
   public function __invoke()
   {    
-    $channel = $this->channelRepository->all();
+    $channel = $this->channelRepository->all_channel();
     if (!$channel) {
       abort(404, "Channel does not exist.");
     }
