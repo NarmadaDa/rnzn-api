@@ -21,4 +21,10 @@ interface ChannelRepositoryInterface
    * @return App\Models\Channel
    */
   public function findByUUID(string $uuid): ?Channel;
+
+  // /**
+  //  * @param string $uuid
+  //  * @return App\Models\Channel
+  //  */
+  // public function get_channel(): ?Channel;
 }

@@ -18,15 +18,17 @@ class CreateChannel extends BaseChannelController
    */
   public function __invoke(CreateChannelRequest $request)
   {
-    $data = $request->validated();    
+    $data = $request->validated();  
+    $user_id = $request->user()->id;  
 
     DB::beginTransaction();
 
-    try { 
-      
-      $channel_data = Arr::add($data, 'channel_active', 1);  
-
-      $this->channelRepository->create($channel_data); 
+    try {   
+       
+      $channel_data2 = Arr::add($data, 'channel_active' , 1 );  
+      $channel_data3 = Arr::add($channel_data2, 'user_id' , $user_id );  
+ 
+      $this->channelRepository->create($channel_data3); 
 
     } catch (Exception $e) {
         DB::rollback();

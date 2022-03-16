@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\User;
+use App\Models\Channel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -37,5 +38,10 @@ class Profile extends Model
   public function user()
   {
     return $this->belongsTo(User::class);
+  }
+
+  public function channels()
+  {
+    return $this->belongsTo(Channel::class, "user_id");
   }
 }
