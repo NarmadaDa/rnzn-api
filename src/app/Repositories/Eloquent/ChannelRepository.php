@@ -27,7 +27,6 @@ ChannelRepositoryInterface
   public function all_channel()
   {
     return $this->model 
-    ->with(["user"])
     ->orderBy("id", "DESC")->get();
   }
   
