@@ -15,8 +15,7 @@ class CreateForumNormalPostsTable extends Migration
     {
         Schema::create('forum_normal_posts', function (Blueprint $table) { 
             $table->id();
-            $table->string("post"); 
-            $table->string('image', 1024)->nullable(); 
+            $table->text("post"); 
             $table->boolean('inappropriate')->default(false);
             $table->uuid("uuid")->unique(); 
             $table->timestamps();
