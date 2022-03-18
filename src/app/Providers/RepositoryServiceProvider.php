@@ -13,6 +13,7 @@ use App\Repositories\Eloquent\QuickLinkRepository;
 use App\Repositories\Eloquent\RoleRepository;
 use App\Repositories\Eloquent\UserRepository;
 use App\Repositories\Eloquent\ChannelRepository;
+use App\Repositories\Eloquent\ForumpostRepository;
 use App\Repositories\Eloquent\ConditionsRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
 use App\Repositories\Interfaces\DeviceRepositoryInterface;
@@ -25,6 +26,7 @@ use App\Repositories\Interfaces\QuickLinkRepositoryInterface;
 use App\Repositories\Interfaces\RoleRepositoryInterface;
 use App\Repositories\Interfaces\UserRepositoryInterface;
 use App\Repositories\Interfaces\ChannelRepositoryInterface;
+use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\ConditionsRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
@@ -96,5 +98,11 @@ class RepositoryServiceProvider extends ServiceProvider
       ConditionsRepositoryInterface::class,
       ConditionsRepository::class
     );
+
+    $this->app->bind(
+      ForumpostRepositoryInterface::class,
+      ForumpostRepository::class
+    );
+
   }
 }

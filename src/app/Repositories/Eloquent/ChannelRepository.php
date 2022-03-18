@@ -28,14 +28,7 @@ ChannelRepositoryInterface
   {
     return $this->model 
     ->orderBy("id", "DESC")->get();
-  }
-  
-  // public function get_channel()
-  // {
-  //   return $this->model 
-  //   ->with(["user"])
-  //   ->orderBy("id", "DESC")->get();
-  // }
+  } 
 
   /**
    * @param string $uuid
