@@ -15,6 +15,7 @@ use App\Repositories\Eloquent\UserRepository;
 use App\Repositories\Eloquent\ChannelRepository;
 use App\Repositories\Eloquent\ForumpostRepository;
 use App\Repositories\Eloquent\ConditionsRepository;
+use App\Repositories\Eloquent\StudentRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
 use App\Repositories\Interfaces\DeviceRepositoryInterface;
 use App\Repositories\Interfaces\EloquentRepositoryInterface;
@@ -28,6 +29,7 @@ use App\Repositories\Interfaces\UserRepositoryInterface;
 use App\Repositories\Interfaces\ChannelRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\ConditionsRepositoryInterface;
+use App\Repositories\Interfaces\StudentRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -97,6 +99,11 @@ class RepositoryServiceProvider extends ServiceProvider
     $this->app->bind(
       ConditionsRepositoryInterface::class,
       ConditionsRepository::class
+    );
+
+    $this->app->bind(
+      StudentRepositoryInterface::class,
+      StudentRepository::class
     );
 
     $this->app->bind(
