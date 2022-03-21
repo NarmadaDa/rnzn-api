@@ -4,18 +4,19 @@ namespace App\Models;
 
 use App\Models\UUIDModel;
 use App\Models\Channel;
+use App\Models\ForumPost;
 
-class ForumPost extends UUIDModel
+class ChannelPost extends UUIDModel
 {
 
-  protected $table = "forum_normal_posts";
+  protected $table = "channel_posts";
 
   /**
    * The attributes that are mass assignable.
    *
    * @var array
    */
-  protected $fillable = ["post", "inappropriate", "user_id", "created_at", "updated_at"];
+  protected $fillable = ["channel_id", "forum_normal_post_id", "created_at", "updated_at"];
   
   /**
    * The attributes that should be hidden for arrays.
@@ -27,10 +28,5 @@ class ForumPost extends UUIDModel
  /**
    * Relationships
   */
-
-  public function channel()
-  {
-    return $this->belongsTo(Channel::class);
-  } 
   
 }
