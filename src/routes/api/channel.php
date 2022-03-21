@@ -15,4 +15,5 @@ Route::namespace("Channel")
   ->middleware(["auth:api"])
   ->group(function () { 
     Route::as("create")->post("/", CreatePost::class);  
+    Route::as("inappropriate")->post("inappropriate", InappropriatePost::class);  
   });

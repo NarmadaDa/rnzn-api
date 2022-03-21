@@ -34,9 +34,16 @@ class CreatePost extends BaseChannelController
     try {   
  
       $post_data1 = Arr::add($data, 'user_id' , $user_id );  
-      $post_data = Arr::add($post_data1, 'uuid' , $user_uuid );  
+      $post_data = Arr::add($post_data1, 'uuid' , $user_uuid );   
 
-      $this->formpostRepository->create($post_data); 
+      // insert data to "forum_normal_posts"
+      $this->formpostRepository->create($post_data);  
+      // $form_post = $this->formpostRepository->create($post_data);  
+
+      // // insert data to "channel_posts"
+      // $post_id = ForumPost::find($form_post->id);
+      // $post_id->channel()->attach($colorId, ['size_id' => $sizeId]);
+
 
     } catch (Exception $e) {
         DB::rollback();
