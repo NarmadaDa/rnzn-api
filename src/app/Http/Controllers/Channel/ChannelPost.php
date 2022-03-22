@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\Channel;
 
 use App\Http\Controllers\Channel\BaseChannelController; 
-use App\Http\Requests\Channel\GetChannelByIDRequest; 
+use App\Http\Requests\Channel\GetChannelByIDRequest;  
+use App\Http\Controllers\PaginatedController;
 
-class PinChannelPost extends BaseChannelController
+class ChannelPost extends BaseChannelController
 {
   /**
    * Handle the incoming request.
@@ -22,13 +23,13 @@ class PinChannelPost extends BaseChannelController
       abort(404, "Channel does not exist.");
     }
 
-    $channel_pin_post = $this->channelRepository->findByPinPost($data["id"]);
-    if (!$channel_pin_post) {
+    $channel_post = $this->channelRepository->findByPost($data["id"]);
+    if (!$channel_post) {
       abort(404, "Pined post does not exist.");
-    }
+    } 
 
     return [
-      "channel" => $channel_pin_post,
+      "channel" => $channel_post,
     ];
   }
 

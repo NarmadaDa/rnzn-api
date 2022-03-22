@@ -14,9 +14,7 @@ class CreateChannelRequest extends FormRequest
   public function rules()
   {
     return [
-      'name'            => 'required|string',
-      'initial_post'    => 'nullable',
-      'post_pin'        => 'nullable', 
+      'name'            => 'required|string', 
       'channel_active'  => 'nullable',   
       'image'           => 'nullable', 
     ];

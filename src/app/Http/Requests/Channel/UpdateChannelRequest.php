@@ -30,8 +30,7 @@ class UpdateChannelRequest extends FormRequest
     return [
       'uuid'            => 'required|uuid', 
       'name'            => 'required|string',
-      'initial_post'    => 'nullable',
-      'post_pin'        => 'nullable', 
+      'post'            => 'nullable', 
       'channel_active'  => 'nullable',   
       'image'           => 'nullable', 
     ];

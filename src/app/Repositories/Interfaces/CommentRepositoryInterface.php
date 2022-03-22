@@ -2,14 +2,13 @@
 
 namespace App\Repositories\Interfaces;
 
-use App\Models\ForumPost;
-use App\Models\Channel;
+use App\Models\Comment; 
 
 /**
  * Interface ChannelRepositoryInterface
  * @package App\Repositories\Interfaces
  */
-interface ForumpostRepositoryInterface
+interface CommentRepositoryInterface
 {
   // /**
   //  * @param string $uuid
@@ -19,9 +18,9 @@ interface ForumpostRepositoryInterface
 
   /**
    * @param string $uuid
-   * @return App\Models\ForumPost
+   * @return App\Models\Comment
    */
-  public function findByUUID(string $uuid): ?ForumPost;
+  public function findByUUID(string $uuid): ?Comment;
 
   // /**
   //  * @param string $uuid

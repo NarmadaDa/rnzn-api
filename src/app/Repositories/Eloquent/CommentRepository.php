@@ -4,6 +4,7 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\ForumPost;
 use App\Models\Channel;
+use App\Models\Comment;
 use App\Repositories\BaseRepository;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 
@@ -11,7 +12,7 @@ use App\Repositories\Interfaces\ForumpostRepositoryInterface;
  * Class ArticleRepository
  * @package App\Repositories\Eloquent
  */
-class ForumpostRepository extends BaseRepository implements
+class CommentRepository extends BaseRepository implements
 ForumpostRepositoryInterface
 {
   /**
@@ -24,16 +25,15 @@ ForumpostRepositoryInterface
     parent::__construct($model);
   }
 
-   /**
+  /**
    * @param string $uuid
-   * @return App\Models\ForumPost
+   * @return App\Models\Comment
    */
-  public function findByUUID(string $uuid): ?ForumPost
+  public function findByUUID(string $uuid): ?Comment
   {
     return $this->model  
       ->where("uuid", $uuid)
       ->first();
   }
-  
 
 }
