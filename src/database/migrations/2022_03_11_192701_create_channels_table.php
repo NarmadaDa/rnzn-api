@@ -16,8 +16,6 @@ class CreateChannelsTable extends Migration
         Schema::create('channels', function (Blueprint $table) {
             $table->id();
             $table->string("name");  
-            $table->string("initial_post")->nullable(); 
-            $table->boolean('post_pin')->default(false);
             $table->boolean('channel_active')->default(true);
             $table->string('image', 1024)->nullable(); 
             $table->unsignedBigInteger('user_id');  

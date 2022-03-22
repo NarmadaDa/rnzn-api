@@ -29,13 +29,12 @@ class UpdateChannel extends BaseChannelController
     DB::beginTransaction();
 
     try {
-      $channel->name            = $data["name"];
-      $channel->initial_post    = $data["initial_post"];
-      $channel->post_pin        = $data["post_pin"]; 
+      $channel->name            = $data["name"]; 
       $channel->channel_active  = $data["channel_active"]; 
       $channel->image           = $data["image"]; 
       $channel->save(); 
  
+      //  post update ...
 
     } catch (\Exception $e) {
       DB::rollback();

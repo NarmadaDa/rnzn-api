@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\UUIDModel;
 use App\Models\Channel;
+use App\Models\Comment;
 
 class ForumPost extends UUIDModel
 {
@@ -15,7 +16,7 @@ class ForumPost extends UUIDModel
    *
    * @var array
    */
-  protected $fillable = ["post", "inappropriate", "user_id", "created_at", "updated_at"];
+  protected $fillable = ["channel_id", "post", "pin_post", "inappropriate", "user_id", "created_at", "updated_at"]; 
   
   /**
    * The attributes that should be hidden for arrays.
@@ -32,5 +33,11 @@ class ForumPost extends UUIDModel
   {
     return $this->belongsTo(Channel::class);
   } 
+  
+  public function comments()
+  { 
+    return $this->hasMany(Comment::class, "post_id", "id");
+  }
+
   
 }
