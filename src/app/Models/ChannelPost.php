@@ -28,5 +28,4 @@ class ChannelPost extends UUIDModel
  /**
    * Relationships
   */
-  
 }

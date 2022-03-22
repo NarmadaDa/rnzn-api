@@ -52,11 +52,10 @@ class InappropriatePost extends BaseChannelController
 
       } else {
 
-        $message  = "Invalid Type.";
+        abort(404, "Type should be 'inappropriate' or 'delete'");
 
       }
      
-
     } catch (Exception $e) {
         DB::rollback();
         abort(500, $e->getMessage());

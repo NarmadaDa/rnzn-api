@@ -14,7 +14,9 @@ class AddNormalPosts extends Migration
     public function up()
     {
         Schema::table('forum_normal_posts', function (Blueprint $table) { 
-            $table->unsignedInteger('user_id')->after("uuid");
+            $table->boolean('pin_post')->default(false)->after("post");
+            $table->integer('channel_id')->after("id");
+            $table->unsignedInteger('user_id')->after("uuid"); 
         });
     }
 
@@ -26,6 +28,8 @@ class AddNormalPosts extends Migration
     public function down()
     {
         Schema::table('forum_normal_posts', function (Blueprint $table) {
+            $table->dropColumn(['pin_post']);
+            $table->dropColumn(['channel_id']);
             $table->dropColumn(['user_id']);
         });
     }

@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Eloquent;
 
-use App\Models\Channel;
+use App\Models\Channel; 
 use App\Repositories\BaseRepository;
 use App\Repositories\Interfaces\ChannelRepositoryInterface;
 
@@ -27,7 +27,9 @@ ChannelRepositoryInterface
   public function all_channel()
   {
     return $this->model 
-    ->orderBy("id", "DESC")->get();
+    ->where("channel_active", 1)
+    ->orderBy("id", "DESC")
+    ->get();
   } 
 
   /**
@@ -65,12 +67,13 @@ ChannelRepositoryInterface
  * @param int $id
  * @return App\Models\Channel
  */
-  public function findByPinPost(int $id): ?Channel
-  {
+  public function findByPost(int $id): ?Channel
+  {   
     return $this->model 
+      ->with(["profile", "posts", "posts.comments"]) 
       ->where("id", $id)
-      ->where("post_pin", 1)
+      ->where("channel_active", 1)
       ->first();
-  } 
+  }  
 
 }

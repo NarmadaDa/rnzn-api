@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Channel;
 
 use App\Http\Controllers\Channel\BaseChannelController; 
 use App\Http\Requests\Channel\CreatePostRequest; 
-use App\Models\ForumPost;
+use App\Models\ForumPost; 
+use App\Models\PostType; 
 use Illuminate\Support\Arr;
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -18,7 +19,7 @@ class CreatePost extends BaseChannelController
    */ 
 
   public function __invoke(CreatePostRequest $request)
-  {
+  { 
 
     $data = $request->validated(); 
     $user_id = $request->user()->id;  
@@ -33,16 +34,41 @@ class CreatePost extends BaseChannelController
 
     try {   
  
-      $post_data1 = Arr::add($data, 'user_id' , $user_id );  
-      $post_data = Arr::add($post_data1, 'uuid' , $user_uuid );   
-
       // insert data to "forum_normal_posts"
-      $this->formpostRepository->create($post_data);  
-      // $form_post = $this->formpostRepository->create($post_data);  
+      $form_post_id = $this->formpostRepository->create([
+         "post" => $data["post"], 
+         "channel_id" => $data["channel_id"], 
+         "user_id" => $user_id,
+      ]);  
+     
+      // $post_data1 = Arr::add($data, 'user_id' , $user_id );  
+      // $post_data2 = Arr::add($post_data1, 'uuid' , $user_uuid );   
+      // $post_data = Arr::add($post_data2, 'channel_id' , $data["channel_id"] ); 
 
-      // // insert data to "channel_posts"
+      // // // insert data to "forum_normal_posts"
+      // // $this->formpostRepository->create($post_data);  
+      // $form_post_id = $this->formpostRepository->create($post_data);  
+      // // post_id", "post_type_id", "content", "emoji_id", "emoji_count", "uuid", "created_at", "updated_at"
+      // // insert data to "comment"
+
+      // if($data["post_type"] == 'comment'){
+      //   $post_type = 2;
+      // } else if($data["post_type"] == 'reply'){
+      //   $post_type = 3;
+      // } else {
+      //   abort(404, "Post type does not match.");
+      // }
+
+      // Comment::create([
+      //   "post_id" => $form_post_id,
+      //   "post_type" => $post_type,
+      //   "content" => $data["content"],  
+      // ]);
+
+
+
       // $post_id = ForumPost::find($form_post->id);
-      // $post_id->channel()->attach($colorId, ['size_id' => $sizeId]);
+      // $post_id->comments()->attach($post_id);
 
 
     } catch (Exception $e) {
