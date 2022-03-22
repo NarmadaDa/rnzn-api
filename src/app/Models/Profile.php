@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\User;
 use App\Models\Channel;
+use App\Models\ForumPost;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -43,5 +44,5 @@ class Profile extends Model
   public function channels()
   {
     return $this->belongsTo(Channel::class, "user_id");
-  }
+  } 
 }
