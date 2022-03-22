@@ -39,37 +39,7 @@ class CreatePost extends BaseChannelController
          "post" => $data["post"], 
          "channel_id" => $data["channel_id"], 
          "user_id" => $user_id,
-      ]);  
-     
-      // $post_data1 = Arr::add($data, 'user_id' , $user_id );  
-      // $post_data2 = Arr::add($post_data1, 'uuid' , $user_uuid );   
-      // $post_data = Arr::add($post_data2, 'channel_id' , $data["channel_id"] ); 
-
-      // // // insert data to "forum_normal_posts"
-      // // $this->formpostRepository->create($post_data);  
-      // $form_post_id = $this->formpostRepository->create($post_data);  
-      // // post_id", "post_type_id", "content", "emoji_id", "emoji_count", "uuid", "created_at", "updated_at"
-      // // insert data to "comment"
-
-      // if($data["post_type"] == 'comment'){
-      //   $post_type = 2;
-      // } else if($data["post_type"] == 'reply'){
-      //   $post_type = 3;
-      // } else {
-      //   abort(404, "Post type does not match.");
-      // }
-
-      // Comment::create([
-      //   "post_id" => $form_post_id,
-      //   "post_type" => $post_type,
-      //   "content" => $data["content"],  
-      // ]);
-
-
-
-      // $post_id = ForumPost::find($form_post->id);
-      // $post_id->comments()->attach($post_id);
-
+      ]);   
 
     } catch (Exception $e) {
         DB::rollback();
@@ -79,7 +49,8 @@ class CreatePost extends BaseChannelController
     DB::commit();
 
     return [
-      "message" => "Reply to a post successfully created.",
+      "message"   => "Post successfully created.",
+      "post_uuid" => $form_post_id->uuid
     ];
   }
 
