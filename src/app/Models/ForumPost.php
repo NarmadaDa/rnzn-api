@@ -50,5 +50,10 @@ class ForumPost extends UUIDModel
   {
     return $this->hasOne(Profile::class, "id", "user_id");
   }  
+   
+  public function user()
+  {
+    return $this->hasOne(User::class, "id", "user_id");
+  } 
 
 }
