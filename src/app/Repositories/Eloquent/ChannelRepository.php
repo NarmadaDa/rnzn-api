@@ -68,7 +68,7 @@ ChannelRepositoryInterface
  * @return App\Models\Channel
  */
   public function findByPost(int $id): ?Channel
-  {   
+  {    
     return $this->model 
       ->with(["profile", "posts", "posts.comments"]) 
       ->where("id", $id)
