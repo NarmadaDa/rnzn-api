@@ -70,7 +70,7 @@ ChannelRepositoryInterface
   public function findByPost(int $id): ?Channel
   {    
     return $this->model 
-      ->with(["profile", "posts", "posts.comments"]) 
+      ->with(["profile", "posts", "posts.user", "posts.comments"]) 
       ->where("id", $id)
       ->where("channel_active", 1)
       ->first();
