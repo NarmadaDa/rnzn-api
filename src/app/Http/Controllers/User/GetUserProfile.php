@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\ConditionAcceptUsers;
 
 class GetUserProfile extends Controller
 {
@@ -18,8 +19,13 @@ class GetUserProfile extends Controller
     $user = $request->user();
     $user->load('profile', 'roles');
 
+
+    $accepted = ConditionAcceptUsers::where("accepted_by", $user["uuid"])->exists();
+
+
     return [
-      'user' => $user
+      'user' => $user,
+      'terms_and_conditions' => $accepted
     ];
   }
 }
