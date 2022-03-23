@@ -34,7 +34,7 @@ class CreatePost extends BaseChannelController
 
     try {   
  
-      // insert data to "forum_normal_posts"
+      // insert data to "forum_posts"
       $form_post_id = $this->formpostRepository->create([
          "post" => $data["post"], 
          "channel_id" => $data["channel_id"], 
