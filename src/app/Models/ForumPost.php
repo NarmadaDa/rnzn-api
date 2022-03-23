@@ -6,12 +6,12 @@ use App\Models\UUIDModel;
 use App\Models\Channel;
 use App\Models\Comment;
 use App\Models\User;
-use App\Models\Profile;
+use App\Models\Profile; 
 
 class ForumPost extends UUIDModel
 {
 
-  protected $table = "forum_normal_posts";
+  protected $table = "forum_posts";
 
   /**
    * The attributes that are mass assignable.
@@ -42,8 +42,8 @@ class ForumPost extends UUIDModel
   }
   
   public function reactions()
-  { // 
-    return $this->hasMany(Comment::class, "post_id", "post_type_id");
+  {  
+    return $this->hasMany(ForumPostReaction::class, "post_uuid", "uuid"); 
   } 
    
   public function profile()

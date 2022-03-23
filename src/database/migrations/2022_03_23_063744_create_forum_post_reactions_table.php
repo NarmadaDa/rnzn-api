@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateForumNormalPostsTable extends Migration
+class CreateForumPostReactionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateForumNormalPostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('forum_normal_posts', function (Blueprint $table) { 
+        Schema::create('forum_post_reactions', function (Blueprint $table) {
             $table->id();
-            $table->text("post"); 
-            $table->boolean('inappropriate')->default(false);
-            $table->uuid("uuid")->unique(); 
+            $table->uuid("post_uuid"); 
+            $table->unsignedBigInteger('user_id');  
+            $table->string('emoji');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateForumNormalPostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('forum_normal_posts');
+        Schema::dropIfExists('forum_post_reactions');
     }
 }

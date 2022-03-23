@@ -4,7 +4,7 @@ namespace App\Http\Requests\Channel;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateReactionReques extends FormRequest
+class CreateReactionRequest extends FormRequest
 {
 
   /**
@@ -16,7 +16,7 @@ class CreateReactionReques extends FormRequest
   {
     return [
       'uuid' => 'required|uuid',
-      'reaction' => 'required', 
+      'emoji' => 'required|numeric',
     ];
   }
 
@@ -30,7 +30,8 @@ class CreateReactionReques extends FormRequest
     return [
       'uuid.required'   => 'Invalid UUID.',
       'uuid.alpha_dash' => 'Invalid UUID.',   
-      'reaction.required'    => 'Reaction is required.', 
+      'emoji.required'  => 'Emoji ID is required.', 
+      'emoji.numeric'   => 'Invalid emoji.',
     ];
   }
 }
