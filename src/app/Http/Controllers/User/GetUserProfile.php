@@ -18,14 +18,13 @@ class GetUserProfile extends Controller
   {
     $user = $request->user();
     $user->load('profile', 'roles');
-
-
+    
     $accepted = ConditionAcceptUsers::where("accepted_by", $user["uuid"])->exists();
 
+    $user['terms_and_conditions'] = $accepted;
 
     return [
       'user' => $user,
-      'terms_and_conditions' => $accepted
     ];
   }
 }
