@@ -5,6 +5,8 @@ namespace App\Models;
 use App\Models\UUIDModel;
 use App\Models\Channel;
 use App\Models\Comment;
+use App\Models\User;
+use App\Models\Profile;
 
 class ForumPost extends UUIDModel
 {
@@ -27,7 +29,7 @@ class ForumPost extends UUIDModel
 
  /**
    * Relationships
-  */
+  */ 
 
   public function channel()
   {
@@ -38,6 +40,20 @@ class ForumPost extends UUIDModel
   { 
     return $this->hasMany(Comment::class, "post_id", "id");
   }
-
   
+  public function reactions()
+  { // 
+    return $this->hasMany(Comment::class, "post_id", "post_type_id");
+  } 
+   
+  public function profile()
+  {
+    return $this->hasOne(Profile::class, "id", "user_id");
+  }  
+   
+  public function user()
+  {
+    return $this->hasOne(User::class, "id", "user_id");
+  } 
+
 }

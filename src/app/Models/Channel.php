@@ -43,7 +43,9 @@ class Channel extends UUIDModel
   
   public function posts()
   { 
-    return $this->hasMany(ForumPost::class, "channel_id")->where('inappropriate','=', false);
-  } 
+    return $this->hasMany(ForumPost::class, "channel_id")
+    ->with('profile')
+    ->where('inappropriate','=', false);
+  }    
 
 }
