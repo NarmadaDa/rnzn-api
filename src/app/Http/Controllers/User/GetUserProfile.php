@@ -20,11 +20,12 @@ class GetUserProfile extends Controller
     $user->load('profile', 'roles');
 
 
-    $accepted = ConditionAcceptUsers::where("accepted_by", $user["uuid"])->first();
+    $accepted = ConditionAcceptUsers::where("accepted_by", $user["uuid"])->exists();
+
 
     return [
       'user' => $user,
-      'conditions_accepted' => $accepted
+      'terms_and_conditions' => $accepted
     ];
   }
 }
