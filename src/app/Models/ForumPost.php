@@ -44,7 +44,7 @@ class ForumPost extends UUIDModel
   
   public function reactions()
   {  
-    return $this->hasMany(ForumPostReactionCount::class, "post_id", "id"); 
+    return $this->hasOne(ForumPostReactionCount::class, "post_id", "id"); 
   } 
    
   public function profile()
