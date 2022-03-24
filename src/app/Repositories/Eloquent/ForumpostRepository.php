@@ -2,8 +2,7 @@
 
 namespace App\Repositories\Eloquent;
 
-use App\Models\ForumPost;
-use App\Models\Channel;
+use App\Models\ForumPost; 
 use App\Repositories\BaseRepository;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 

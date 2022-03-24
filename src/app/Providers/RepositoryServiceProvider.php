@@ -17,6 +17,8 @@ use App\Repositories\Eloquent\ForumpostRepository;
 use App\Repositories\Eloquent\ConditionsRepository;
 use App\Repositories\Eloquent\InappropriateRepository;
 use App\Repositories\Eloquent\CommentRepository;
+use App\Repositories\Eloquent\ForumpostreactionRepository;
+use App\Repositories\Eloquent\ForumpostreactioncountRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
 use App\Repositories\Interfaces\DeviceRepositoryInterface;
 use App\Repositories\Interfaces\EloquentRepositoryInterface;
@@ -32,6 +34,8 @@ use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\ConditionsRepositoryInterface;
 use App\Repositories\Interfaces\InappropriateRepositoryInterface;
 use App\Repositories\Interfaces\CommentRepositoryInterface;
+use App\Repositories\Interfaces\ForumpostreactionRepositoryInterface;
+use App\Repositories\Interfaces\ForumpostreactioncountRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -116,6 +120,16 @@ class RepositoryServiceProvider extends ServiceProvider
     $this->app->bind(
       CommentRepositoryInterface::class,
       CommentRepository::class
+    );
+
+    $this->app->bind(
+      ForumpostreactionRepositoryInterface::class,
+      ForumpostreactionRepository::class
+    );
+
+    $this->app->bind(
+      ForumpostreactioncountRepositoryInterface::class,
+      ForumpostreactioncountRepository::class
     );
 
   }
