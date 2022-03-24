@@ -19,8 +19,7 @@ class CreateReaction extends BaseChannelController
    */ 
 
   public function __invoke(CreateReactionRequest $request)
-  {       
-      
+  {        
    
     $data = $request->validated(); 
     $user_id = $request->user()->id;   

@@ -15,7 +15,7 @@ class ChannelPost extends BaseChannelController
    */ 
 
   public function __invoke(GetChannelByIDRequest $request)
-  {
+  {  
     $data = $request->validated(); 
 
     $channel = $this->channelRepository->findByID($data["id"]);
