@@ -16,7 +16,8 @@ class AddForumPosts extends Migration
         Schema::table('forum_posts', function (Blueprint $table) { 
             $table->boolean('pin_post')->default(false)->after("post");
             $table->integer('channel_id')->after("id");
-            $table->unsignedInteger('user_id')->after("uuid"); 
+            $table->unsignedInteger('user_id')->after("uuid");
+            $table->softDeletes(); 
         });
     }
 

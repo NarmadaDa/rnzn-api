@@ -7,9 +7,11 @@ use App\Models\Channel;
 use App\Models\Comment;
 use App\Models\User;
 use App\Models\Profile; 
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ForumPost extends UUIDModel
 {
+  use SoftDeletes;
 
   protected $table = "forum_posts";
 
@@ -25,7 +27,7 @@ class ForumPost extends UUIDModel
    *
    * @var array
    */
-  protected $hidden = [];
+  protected $hidden = ["deleted_at"];
 
  /**
    * Relationships
