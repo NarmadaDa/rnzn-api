@@ -50,15 +50,15 @@ class CreateReaction extends BaseChannelController
         $angry_count = 0;
 
         $emoji  = $data['emoji'];
-        if($emoji == 1){ // like
+        if($emoji == "like"){ // like
           $like_count = 1;
-        } else if($emoji == 2){ // haha 
+        } else if($emoji == "haha"){ // haha 
           $haha_count = 1;
-        }  else if($emoji == 3){ // wow
+        }  else if($emoji == "wow"){ // wow
           $wow_count = 1;
-        }  else if($emoji == 4){ // sad
+        }  else if($emoji == "sad"){ // sad
           $sad_count = 1;
-        }  else if($emoji == 5){ // angry
+        }  else if($emoji == "angry"){ // angry
           $angry_count = 1;
         }
 
@@ -102,11 +102,11 @@ class CreateReaction extends BaseChannelController
           $angry_count = $react_count->angry_count;
 
           $emoji  = $data['emoji']; 
-          $like   = ($emoji == 1 ? $like_count +=1 : $like_count);
-          $haha   = ($emoji == 2 ? $haha_count +=1 : $haha_count);
-          $wow    = ($emoji == 3 ? $wow_count +=1 : $wow_count);
-          $sad    = ($emoji == 4 ? $sad_count +=1 : $sad_count);
-          $angry  = ($emoji == 5 ? $angry_count +=1 : $angry_count); 
+          $like   = ($emoji == "like" ? $like_count +=1 : $like_count);
+          $haha   = ($emoji == "haha" ? $haha_count +=1 : $haha_count);
+          $wow    = ($emoji == "wow" ? $wow_count +=1 : $wow_count);
+          $sad    = ($emoji == "sad" ? $sad_count +=1 : $sad_count);
+          $angry  = ($emoji == "angry" ? $angry_count +=1 : $angry_count); 
 
           $react_count->like_count   = $like;
           $react_count->haha_count   = $haha;
