@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Eloquent;
 
-use App\Models\Channel; 
+use App\Models\Channel;  
 use App\Repositories\BaseRepository;
 use App\Repositories\Interfaces\ChannelRepositoryInterface; 
 
@@ -69,7 +69,7 @@ ChannelRepositoryInterface
  */
   public function findByPost(int $id): ?Channel
   {     
-    return $this->model 
+    return $this->model  
       ->with(["profile", "posts", "posts.user", "posts.reactions", "posts.comments"]) 
       ->where("id", $id)
       ->where("channel_active", 1)
