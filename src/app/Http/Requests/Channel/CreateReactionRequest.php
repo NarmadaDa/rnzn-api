@@ -16,7 +16,7 @@ class CreateReactionRequest extends FormRequest
   {
     return [
       'uuid' => 'required|uuid',
-      'emoji' => 'required|numeric',
+      'emoji' => 'required|string',
     ];
   }
 
@@ -31,7 +31,7 @@ class CreateReactionRequest extends FormRequest
       'uuid.required'   => 'Invalid UUID.',
       'uuid.alpha_dash' => 'Invalid UUID.',   
       'emoji.required'  => 'Emoji ID is required.', 
-      'emoji.numeric'   => 'Invalid emoji.',
+      'emoji.string'   => 'Invalid emoji.',
     ];
   }
 }
