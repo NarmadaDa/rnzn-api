@@ -21,7 +21,7 @@ class ForumPostReactionCount extends Model
    *
    * @var array
    */
-  protected $hidden = ["id", "created_at", "updated_at"];
+  protected $hidden = ["id", "post_id", "created_at", "updated_at"];
 
  /**
    * Relationships

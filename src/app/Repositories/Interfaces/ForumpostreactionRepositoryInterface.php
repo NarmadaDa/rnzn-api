@@ -22,11 +22,12 @@ interface ForumpostreactionRepositoryInterface
    */
   public function findByUUID(string $uuid): ?ForumPostReaction;
 
-  // /**
-  //  * @param string $uuid
-  //  * @return App\Models\Channel
-  //  */
-  // public function get_channel(): ?Channel;
+  /**
+   * @param string $uuid
+   * @return App\Models\ForumPostReaction
+   */
+  public function findReactionByUser(string $uuid, int $user_id): ?ForumPostReaction;
 
+   
 
 }

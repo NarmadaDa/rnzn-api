@@ -15,7 +15,8 @@ class CreateForumPostReactionsTable extends Migration
     {
         Schema::create('forum_post_reactions', function (Blueprint $table) {
             $table->id();
-            $table->uuid("post_uuid"); 
+            $table->integer('post_id');
+            $table->uuid("uuid"); 
             $table->unsignedBigInteger('user_id');  
             $table->string('emoji');
             $table->timestamps();

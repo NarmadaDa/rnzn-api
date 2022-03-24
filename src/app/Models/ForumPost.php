@@ -7,6 +7,7 @@ use App\Models\Channel;
 use App\Models\Comment;
 use App\Models\User;
 use App\Models\Profile; 
+use App\Models\ForumPostReactionCount;
 
 class ForumPost extends UUIDModel
 {
@@ -43,7 +44,7 @@ class ForumPost extends UUIDModel
   
   public function reactions()
   {  
-    return $this->hasMany(ForumPostReaction::class, "post_uuid", "uuid"); 
+    return $this->hasMany(ForumPostReactionCount::class, "post_id", "id"); 
   } 
    
   public function profile()
