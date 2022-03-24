@@ -7,6 +7,7 @@ use App\Repositories\Interfaces\ChannelRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\InappropriateRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostreactionRepositoryInterface;
+use App\Repositories\Interfaces\ForumpostreactioncountRepositoryInterface;
 
 class BaseChannelController extends Controller
 {
@@ -29,6 +30,11 @@ class BaseChannelController extends Controller
    * @var App\Repositories\Interfaces\ForumpostreactionRepositoryInterface
    */
   protected $forumpostreactionRepository;
+
+  /**
+   * @var App\Repositories\Interfaces\ForumpostreactioncountRepositoryInterface
+   */
+  protected $forumpostreactioncountRepository;
   
 
   /**
@@ -38,17 +44,20 @@ class BaseChannelController extends Controller
    * @param App\Repositories\Interfaces\ForumpostRepositoryInterface $formpostRepository
    * @param App\Repositories\Interfaces\InappropriateRepositoryInterface $inappropriateRepository
    * @param App\Repositories\Interfaces\ForumpostreactionRepositoryInterface $forumpostreactionRepository
+   * @param App\Repositories\Interfaces\ForumpostreactioncountRepositoryInterface $forumpostreactioncountRepository
    */
   public function __construct(
     ChannelRepositoryInterface $channelRepository,
     ForumpostRepositoryInterface $formpostRepository,
     InappropriateRepositoryInterface $inappropriateRepository,
-    ForumpostreactionRepositoryInterface $forumpostreactionRepository
+    ForumpostreactionRepositoryInterface $forumpostreactionRepository,
+    ForumpostreactioncountRepositoryInterface $forumpostreactioncountRepository
   )
   {
     $this->channelRepository = $channelRepository;
     $this->formpostRepository = $formpostRepository;
     $this->inappropriateRepository = $inappropriateRepository;
     $this->forumpostreactionRepository = $forumpostreactionRepository;
+    $this->forumpostreactioncountRepository = $forumpostreactioncountRepository;
   }
 }

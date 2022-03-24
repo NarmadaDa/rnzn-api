@@ -32,7 +32,18 @@ ForumpostreactionRepositoryInterface
     return $this->model  
       ->where("uuid", $uuid)
       ->first();
-  }
-  
+  }  
+
+  /**
+  * @param string $uuid
+  * @return App\Models\ForumPostReaction
+  */
+ public function findReactionByUser(string $uuid, int $user_id): ?ForumPostReaction
+ {
+   return $this->model  
+     ->where("uuid", $uuid)
+     ->where("user_id", $user_id)
+     ->first();
+ } 
 
 }

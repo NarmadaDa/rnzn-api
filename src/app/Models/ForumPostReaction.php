@@ -14,14 +14,14 @@ class ForumPostReaction extends Model
    *
    * @var array
    */
-  protected $fillable = ["post_uuid", "emoji", "user_id"]; 
+  protected $fillable = ["post_id", "uuid", "user_id", "emoji"]; 
   
   /**
    * The attributes that should be hidden for arrays.
    *
    * @var array
    */
-  protected $hidden = ["id", "post_uuid", "user_id", "created_at", "updated_at"];
+  protected $hidden = ["created_at", "updated_at"];
 
  /**
    * Relationships
