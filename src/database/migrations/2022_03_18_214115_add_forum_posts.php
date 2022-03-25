@@ -17,6 +17,7 @@ class AddForumPosts extends Migration
             $table->boolean('pin_post')->default(false)->after("post");
             $table->integer('channel_id')->after("id");
             $table->unsignedInteger('user_id')->after("uuid"); 
+            $table->softDeletes(); 
         });
     }
 

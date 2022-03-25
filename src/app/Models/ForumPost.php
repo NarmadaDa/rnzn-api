@@ -8,9 +8,11 @@ use App\Models\Comment;
 use App\Models\User;
 use App\Models\Profile; 
 use App\Models\ForumPostReactionCount;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ForumPost extends UUIDModel
 {
+  use SoftDeletes;
 
   protected $table = "forum_posts";
 
