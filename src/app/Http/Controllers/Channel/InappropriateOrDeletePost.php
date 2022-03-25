@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Exception;
 use Illuminate\Support\Facades\DB;
 
-class InappropriatePost extends BaseChannelController
+class InappropriateOrDeletePost extends BaseChannelController
 {
   /**
    * Handle the incoming request.
