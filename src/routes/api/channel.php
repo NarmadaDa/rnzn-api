@@ -16,7 +16,7 @@ Route::namespace("Channel")
   ->middleware(["auth:api"])
   ->group(function () {   
     Route::as("create")->post("/", CreatePost::class);   
-    Route::as("inappropriate_or_delete")->post("inappropriate_or_delete", InappropriateOrDeletePost::class);  
+    Route::as("inappropriateOrDelete")->post("inappropriateOrDelete", InappropriateOrDeletePost::class);  
     Route::as("reply")->post("replypost", CreateComment::class); 
     Route::as("reaction")->post("reaction", CreateReaction::class);   
   });
