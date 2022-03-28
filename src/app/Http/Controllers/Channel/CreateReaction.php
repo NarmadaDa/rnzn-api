@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Channel;
 
 use App\Http\Controllers\Channel\BaseChannelController; 
-use App\Http\Requests\Channel\CreateReactionRequest;   
-use App\Models\ForumPostReaction; 
-use Illuminate\Support\Arr;
+use App\Http\Requests\Channel\CreateReactionRequest;    
+use App\Models\ForumPostReaction;  
 use Exception;
 use Illuminate\Support\Facades\DB;
 
@@ -21,6 +20,7 @@ class CreateReaction extends BaseChannelController
   {        
    
     $data = $request->validated(); 
+    $user_id = $request->user()->id;   
     $user_uuid = $request->user()->uuid;   
    
     $post = $this->formpostRepository->findByUUID($request["uuid"]); 
@@ -31,7 +31,7 @@ class CreateReaction extends BaseChannelController
     DB::beginTransaction();
 
     try {    
-
+ 
       $emoji  = $data['emoji']; 
       $like   = ($emoji == "like" ? 1 : '');
       $haha   = ($emoji == "haha" ? 1 : '');
@@ -39,22 +39,40 @@ class CreateReaction extends BaseChannelController
       $sad    = ($emoji == "sad" ? 1 : '');
       $angry  = ($emoji == "angry" ? 1 : ''); 
 
-    
- 
-      $reaction = ForumPostReaction::create([
-        'post_id' => $post->id, 
-        'uuid' => $user_uuid,
-        'likes' => $like,
-        'haha' => $haha,
-        'wow' => $wow,
-        'sad' => $sad,
-        'angry' => $angry
-      ]);  
- 
+        // $reactionByUser = $this->forumpostreactionRepository->findReactionByUser($post->id, $user_id);
 
-      // $reactionByUser = $this->forumpostreactionRepository->findReactionByUser($request["uuid"], $user_id);
-     
-      
+      // return $reactionByUser;
+
+      $reactionByUser = ForumPostReaction::where("post_id", $post->id)
+      ->where("user_id", $user_id)
+      ->first();
+
+   
+
+      if(!$reactionByUser){
+
+        $reaction = ForumPostReaction::create([
+          'post_id' => $post->id, 
+          'uuid' => $user_uuid,
+          'user_id' => $user_id,
+          'likes' => $like,
+          'haha' => $haha,
+          'wow' => $wow,
+          'sad' => $sad,
+          'angry' => $angry
+        ]); 
+
+        $message = "Reaction to a post successfully created.";
+
+      } else {
+        
+        ForumPostReaction::where("post_id", $post->id)
+        ->where("user_id", $user_id)
+        ->update(['likes' => $like, 'haha' => $haha, 'wow' => $wow, 'sad' => $sad, 'angry' => $angry]);
+
+        $message = "Reaction to a post successfully updated.";
+
+      } 
   
     } catch (Exception $e) {
         DB::rollback();
@@ -64,7 +82,7 @@ class CreateReaction extends BaseChannelController
     DB::commit();
 
     return [
-      "message" => "Reaction to a post/comment/reply successfully created.",
+      "message" => $message
     ];
   }
 
