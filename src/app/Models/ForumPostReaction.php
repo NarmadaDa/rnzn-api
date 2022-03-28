@@ -14,7 +14,7 @@ class ForumPostReaction extends Model
    *
    * @var array
    */
-  protected $fillable = ["post_id", "uuid", "likes", "haha", "wow", "sad", "angry"]; 
+  protected $fillable = ["post_id", "uuid", "user_id", "likes", "haha", "wow", "sad", "angry"]; 
   
   /**
    * The attributes that should be hidden for arrays.

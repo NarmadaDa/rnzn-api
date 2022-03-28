@@ -26,7 +26,7 @@ interface ForumpostreactionRepositoryInterface
    * @param string $uuid
    * @return App\Models\ForumPostReaction
    */
-  public function findReactionByUser(string $uuid, int $user_id): ?ForumPostReaction;
+  public function findReactionByUser(int $post_id, int $user_id);
 
    
 

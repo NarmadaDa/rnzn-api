@@ -14,8 +14,8 @@ class PinPostRequest extends FormRequest
   public function rules()
   {
     return [
-      'channel_id' => 'required',
-      'post' => 'required|string',
+      'uuid' => 'required|uuid',
+      'type' => 'required|string',
     ];
   }
 
@@ -27,9 +27,31 @@ class PinPostRequest extends FormRequest
   public function messages()
   {
     return [
-      'channel_id.required'   => 'Channel ID is required.',
-      'post.required'    => 'Post is required.',
-      'post.string'      => 'Invalid post.',   
+      'uuid.required'   => 'Invalid UUID.',
+      'uuid.alpha_dash' => 'Invalid UUID.',  
+      'type.required'    => 'Type is required.',
+      'type.string'      => 'Invalid Type.', 
     ];
   }
+  // public function rules()
+  // {
+  //   return [
+  //     'channel_id' => 'required',
+  //     'post' => 'required|string',
+  //   ];
+  // }
+
+  // /**
+  //  * Get the error messages for the defined validation rules.
+  //  *
+  //  * @return array
+  //  */
+  // public function messages()
+  // {
+  //   return [
+  //     'channel_id.required'   => 'Channel ID is required.',
+  //     'post.required'    => 'Post is required.',
+  //     'post.string'      => 'Invalid post.',   
+  //   ];
+  // }
 }
