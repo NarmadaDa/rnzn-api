@@ -117,16 +117,18 @@ class ChannelPost extends BaseChannelController
         $angry = null;
       }
 
+      $reactions  = array(
+        "like" =>  $like,
+        "haha" =>  $haha,
+        "wow" =>  $wow,
+        "sad" =>  $sad,
+        "angry" =>  $angry
+       );
+
      } 
 
 
-    $reactions  = array(
-     "like" =>  $like,
-     "haha" =>  $haha,
-     "wow" =>  $wow,
-     "sad" =>  $sad,
-     "angry" =>  $angry
-    );
+
  
      $posts[] = [ 
       'id' => $id,

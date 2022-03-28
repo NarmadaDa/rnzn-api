@@ -32,7 +32,7 @@ class CreateReaction extends BaseChannelController
 
     try {    
 
-      $emoji   = $data['emoji']; 
+      $emoji  = $data['emoji']; 
       $like   = ($emoji == "like" ? 1 : '');
       $haha   = ($emoji == "haha" ? 1 : '');
       $wow    = ($emoji == "wow" ? 1 : '');
@@ -52,7 +52,7 @@ class CreateReaction extends BaseChannelController
       ]);  
  
 
-     //  $reactionByUser = $this->forumpostreactionRepository->findReactionByUser($request["uuid"], $user_id);
+      // $reactionByUser = $this->forumpostreactionRepository->findReactionByUser($request["uuid"], $user_id);
      
       
   
