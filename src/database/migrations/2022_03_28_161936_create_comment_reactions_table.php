@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateForumPostReactionCountsTable extends Migration
+class CreateCommentReactionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateForumPostReactionCountsTable extends Migration
      */
     public function up()
     {
-        Schema::create('forum_post_reaction_counts', function (Blueprint $table) {
+        Schema::create('comment_reactions', function (Blueprint $table) { 
             $table->id();
             $table->integer('post_id');
-            $table->integer('like_count');
-            $table->integer('haha_count');
-            $table->integer('wow_count');
-            $table->integer('sad_count');
-            $table->integer('angry_count');
+            $table->uuid("uuid");   // user uuid
+            $table->string('emoji'); 
             $table->timestamps();
+
         });
     }
 
@@ -32,6 +30,6 @@ class CreateForumPostReactionCountsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('forum_post_reaction_counts');
+        Schema::dropIfExists('comment_reactions');
     }
 }
