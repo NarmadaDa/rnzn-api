@@ -47,6 +47,13 @@ class ChannelPost extends BaseChannelController
       'updatedAt' => $updated_at, 
     ]; 
 
+    
+
+    $like = null;
+    $haha = null;
+    $wow = null;
+    $sad = null;
+    $angry = null;
     $size = count($channel_post->posts);
 
     for ($i = 0; $i < $size; $i++)
@@ -64,12 +71,54 @@ class ChannelPost extends BaseChannelController
      $lastName = $channel_post->posts[$i]->lastName; 
      $image = $channel_post->posts[$i]->image; 
      $userUUID = $channel_post->posts[$i]->userUUID;   
+
      
-     $like  = explode(',', $channel_post->posts[$i]->like_users); 
-     $haha  = explode(',', $channel_post->posts[$i]->haha_users); 
-     $wow   = explode(',', $channel_post->posts[$i]->wow_users); 
-     $sad   = explode(',', $channel_post->posts[$i]->sad_users);
-     $angry = explode(',', $channel_post->posts[$i]->angry_users);
+
+    $like = $channel_post->posts[$i]->like_users;
+    $haha = $channel_post->posts[$i]->haha_users;
+    $wow = $channel_post->posts[$i]->wow_users;
+    $sad = $channel_post->posts[$i]->sad_users;
+    $angry = $channel_post->posts[$i]->angry_users;
+
+     if($like == null && $haha == null &&  $wow == null  &&  $sad == null  &&  $angry == null){
+      
+      $reactions = null;  
+
+     } else {
+
+      if($like != null){
+        $like  = explode(',', $channel_post->posts[$i]->like_users); 
+      }
+
+      if($haha != null){
+        $haha  = explode(',', $channel_post->posts[$i]->haha_users); 
+      }
+
+      if($wow != null){
+        $wow   = explode(',', $channel_post->posts[$i]->wow_users); 
+      }
+
+      if($sad != null){
+        $sad   = explode(',', $channel_post->posts[$i]->sad_users);
+      }
+
+      if($angry != null){
+        $angry = explode(',', $channel_post->posts[$i]->angry_users); 
+      } 
+
+     } 
+
+
+    $reactions  = array(
+     "like" =>  $like,
+     "haha" =>  $haha,
+     "wow" =>  $wow,
+     "sad" =>  $sad,
+     "angry" =>  $angry
+    );
+
+     
+
 
      $posts[] = [ 
       'id' => $id,
@@ -84,13 +133,7 @@ class ChannelPost extends BaseChannelController
       "lastName" =>  $lastName,
       "image" =>  $image,
       "userUUID" =>  $userUUID, 
-      "reactions" =>  [
-        "like" =>  $like,
-        "haha" =>  $haha,
-        "wow" =>  $wow,
-        "sad" =>  $sad,
-        "angry" =>  $angry
-      ]
+      "reactions" =>  $reactions
     ];
  
  
