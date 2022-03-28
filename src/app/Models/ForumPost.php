@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\Profile; 
 use App\Models\ForumPostReactionCount;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 
 class ForumPost extends UUIDModel
 {
@@ -28,7 +29,7 @@ class ForumPost extends UUIDModel
    *
    * @var array
    */
-  protected $hidden = [];
+  protected $hidden = ["deleted_at"];
 
  /**
    * Relationships

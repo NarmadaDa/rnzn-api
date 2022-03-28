@@ -6,6 +6,7 @@ use App\Http\Controllers\Channel\BaseChannelController;
 use App\Http\Requests\Channel\CreateCommentRequest; 
 use App\Models\ForumPost;  
 use App\Models\Comment;  
+use App\Models\CommentReaction;  
 use Illuminate\Support\Arr;
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -44,11 +45,25 @@ class CreateComment extends BaseChannelController
 
     try {    
 
-      Comment::create([
-        "post_id" => $post->id, 
-        "post_type_id" => $post_type_id, 
-        "content" => $request["content"],
-      ]);  
+      if($post_type == "comment"){
+
+        Comment::create([
+          "post_id" => $post->id, 
+          "post_type_id" => $post_type_id, 
+          "content" => $request["content"],
+        ]);  
+
+        CommentReaction::create([
+          "post_id" => $post->id,
+          "uuid" => $user_uuid,
+          "emoji" => $data->emoji,
+        ]);
+
+    } else if($post_type == "reply"){
+
+    } else {
+
+    }
       
 
 

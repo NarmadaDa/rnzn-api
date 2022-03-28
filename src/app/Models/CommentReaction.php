@@ -4,27 +4,28 @@ namespace App\Models;
  
 use Illuminate\Database\Eloquent\Model; 
 
-class ForumPostReactionCount extends Model
+class CommentReaction extends Model
 {
 
-  protected $table = "forum_post_reaction_counts";
+  protected $table = "comment_reactions";
 
   /**
    * The attributes that are mass assignable.
    *
    * @var array
    */
-  protected $fillable = ["post_id", "like_count", "haha_count", "wow_count", "sad_count", "angry_count"]; 
+  protected $fillable = ["post_id", "uuid", "emoji"]; 
   
   /**
    * The attributes that should be hidden for arrays.
    *
    * @var array
    */
-  protected $hidden = ["id", "post_id", "created_at", "updated_at"];
+  protected $hidden = ["id", "created_at", "updated_at"];
 
  /**
    * Relationships
   */ 
 
+   
 }

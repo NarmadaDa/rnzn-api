@@ -4,7 +4,7 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\Channel;  
 use App\Repositories\BaseRepository;
-use App\Repositories\Interfaces\ChannelRepositoryInterface; 
+use App\Repositories\Interfaces\ChannelRepositoryInterface;  
 
 /**
  * Class ArticleRepository
@@ -63,17 +63,23 @@ ChannelRepositoryInterface
       ->where("id", $id) 
       ->first();
   }
+
+ 
   /**
  * @param int $id
  * @return App\Models\Channel
  */
-  public function findByPost(int $id): ?Channel
-  {     
-    return $this->model  
-      ->with(["profile", "posts", "posts.user", "posts.reactions", "posts.comments"]) 
-      ->where("id", $id)
-      ->where("channel_active", 1)
-      ->first();
-  }  
+  public function findByPost(int $id)
+  {       
+    $post_data = $this->model    
+            ->select("id", "name", "image", "uuid as channelUuid", "created_at as createdAt", "updated_at as updatedAt")
+            ->where("id", $id)
+            ->where("channel_active", 1)
+            ->first();
+ 
+    $post_data['posts'] = $post_data->posts($id);  
+
+    return $post_data;
+  }    
 
 }
