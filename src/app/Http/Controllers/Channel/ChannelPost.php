@@ -5,8 +5,9 @@ namespace App\Http\Controllers\Channel;
 use App\Http\Controllers\Channel\BaseChannelController; 
 use App\Http\Requests\Channel\GetChannelByIDRequest;  
 use App\Http\Controllers\PaginatedController;
+use App\Models\ForumPostReaction;
 use App\Models\User;
-use Illuminate\Support\Facades\DB;
+use DB;
 
 class ChannelPost extends BaseChannelController
 {
@@ -18,7 +19,7 @@ class ChannelPost extends BaseChannelController
 
   public function __invoke(GetChannelByIDRequest $request)
   {   
-
+ 
     $data = $request->validated(); 
 
     $channel = $this->channelRepository->findByID($data["id"]);
@@ -30,6 +31,12 @@ class ChannelPost extends BaseChannelController
     if (!$channel_post) {
       abort(404, "Pined post does not exist.");
     }  
+
+
+
+
+    // return $channel_post;
+
 
     $id = $channel_post->id;  
     $name = $channel_post->name;   
@@ -46,14 +53,8 @@ class ChannelPost extends BaseChannelController
       'createdAt' => $created_at,
       'updatedAt' => $updated_at, 
     ]; 
-
-    
-
-    $like = null;
-    $haha = null;
-    $wow = null;
-    $sad = null;
-    $angry = null;
+ 
+  
     $size = count($channel_post->posts);
 
     for ($i = 0; $i < $size; $i++)
@@ -70,41 +71,51 @@ class ChannelPost extends BaseChannelController
      $middleName = $channel_post->posts[$i]->middleName; 
      $lastName = $channel_post->posts[$i]->lastName; 
      $image = $channel_post->posts[$i]->image; 
-     $userUUID = $channel_post->posts[$i]->userUUID;   
+     $userUUID = $channel_post->posts[$i]->userUUID; 
 
-     
 
-    $like = $channel_post->posts[$i]->like_users;
-    $haha = $channel_post->posts[$i]->haha_users;
-    $wow = $channel_post->posts[$i]->wow_users;
-    $sad = $channel_post->posts[$i]->sad_users;
-    $angry = $channel_post->posts[$i]->angry_users;
+     $like = ForumPostReaction::select(DB::raw('group_concat(uuid) as emoji'))->where('post_id', '=',  $id)->where('likes', '=',  1)->first();
+     $haha = ForumPostReaction::select(DB::raw('group_concat(uuid) as emoji'))->where('post_id', '=',  $id)->where('haha', '=',  1)->first();
+     $wow = ForumPostReaction::select(DB::raw('group_concat(uuid) as emoji'))->where('post_id', '=',  $id)->where('wow', '=',  1)->first();
+     $sad = ForumPostReaction::select(DB::raw('group_concat(uuid) as emoji'))->where('post_id', '=',  $id)->where('sad', '=',  1)->first();
+     $angry = ForumPostReaction::select(DB::raw('group_concat(uuid) as emoji'))->where('post_id', '=',  $id)->where('angry', '=',  1)->first();
+       
 
-     if($like == null && $haha == null &&  $wow == null  &&  $sad == null  &&  $angry == null){
+     if($like->emoji == null && $haha->emoji == null &&  $wow->emoji == null  &&  $sad->emoji == null  &&  $angry->emoji == null){ 
       
       $reactions = null;  
 
      } else {
 
-      if($like != null){
-        $like  = explode(',', $channel_post->posts[$i]->like_users); 
+      if($like->emoji != null){
+        $like  = explode(',', $like->emoji); 
+      } else {
+        $like = null;
       }
 
-      if($haha != null){
-        $haha  = explode(',', $channel_post->posts[$i]->haha_users); 
+      if($haha->emoji != null){
+        $haha  = explode(',', $haha->emoji); 
+      } else {
+        $haha = null;
       }
 
-      if($wow != null){
-        $wow   = explode(',', $channel_post->posts[$i]->wow_users); 
+      if($wow->emoji != null){
+        $wow   = explode(',', $wow->emoji); 
+      } else {
+        $wow = null;
       }
 
-      if($sad != null){
-        $sad   = explode(',', $channel_post->posts[$i]->sad_users);
+      if($sad->emoji != null){
+        $sad   = explode(',', $sad->emoji);
+      } else {
+        $sad = null;
       }
 
-      if($angry != null){
-        $angry = explode(',', $channel_post->posts[$i]->angry_users); 
-      } 
+      if($angry->emoji != null){
+        $angry = explode(',', $angry->emoji); 
+      }  else {
+        $angry = null;
+      }
 
      } 
 
@@ -116,10 +127,7 @@ class ChannelPost extends BaseChannelController
      "sad" =>  $sad,
      "angry" =>  $angry
     );
-
-     
-
-
+ 
      $posts[] = [ 
       'id' => $id,
       'channelId' => $channelId,
