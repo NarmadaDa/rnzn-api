@@ -7,6 +7,7 @@ use App\Repositories\Interfaces\ChannelRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\InappropriateRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostreactionRepositoryInterface;
+use App\Repositories\Interfaces\PinPostRepositoryInterface;
 
 class BaseChannelController extends Controller
 {
@@ -29,6 +30,11 @@ class BaseChannelController extends Controller
    * @var App\Repositories\Interfaces\ForumpostreactionRepositoryInterface
    */
   protected $forumpostreactionRepository;
+
+  /**
+   * @var App\Repositories\Interfaces\PinPostRepositoryInterface
+   */
+  protected $PinPostRepository;
   
 
   /**
@@ -43,12 +49,14 @@ class BaseChannelController extends Controller
     ChannelRepositoryInterface $channelRepository,
     ForumpostRepositoryInterface $formpostRepository,
     InappropriateRepositoryInterface $inappropriateRepository,
-    ForumpostreactionRepositoryInterface $forumpostreactionRepository
+    ForumpostreactionRepositoryInterface $forumpostreactionRepository,
+    PinPostRepositoryInterface $PinPostRepository
   )
   {
     $this->channelRepository = $channelRepository;
     $this->formpostRepository = $formpostRepository;
     $this->inappropriateRepository = $inappropriateRepository;
     $this->forumpostreactionRepository = $forumpostreactionRepository;
+    $this->PinPostRepository = $PinPostRepository;
   }
 }

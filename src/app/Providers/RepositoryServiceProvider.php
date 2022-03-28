@@ -16,6 +16,7 @@ use App\Repositories\Eloquent\ChannelRepository;
 use App\Repositories\Eloquent\ForumpostRepository;
 use App\Repositories\Eloquent\ConditionsRepository;
 use App\Repositories\Eloquent\InappropriateRepository;
+use App\Repositories\Eloquent\PinPostRepository;
 use App\Repositories\Eloquent\CommentRepository;
 use App\Repositories\Eloquent\ForumpostreactionRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
@@ -32,6 +33,7 @@ use App\Repositories\Interfaces\ChannelRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostRepositoryInterface;
 use App\Repositories\Interfaces\ConditionsRepositoryInterface;
 use App\Repositories\Interfaces\InappropriateRepositoryInterface;
+use App\Repositories\Interfaces\PinPostRepositoryInterface;
 use App\Repositories\Interfaces\CommentRepositoryInterface;
 use App\Repositories\Interfaces\ForumpostreactionRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -123,6 +125,11 @@ class RepositoryServiceProvider extends ServiceProvider
     $this->app->bind(
       ForumpostreactionRepositoryInterface::class,
       ForumpostreactionRepository::class
+    );
+
+    $this->app->bind(
+      PinPostRepositoryInterface::class,
+      PinPostRepository::class
     );
 
   }
