@@ -17,6 +17,7 @@ class CreateForumPostReactionsTable extends Migration
             $table->id();
             $table->integer('post_id');
             $table->uuid("uuid");   // user uuid
+            $table->integer('user_id');
             $table->string('likes');
             $table->string('haha');
             $table->string('wow');
