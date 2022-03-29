@@ -32,26 +32,6 @@ class PinPostRequest extends FormRequest
       'type.required'    => 'Type is required.',
       'type.string'      => 'Invalid Type.', 
     ];
-  }
-  // public function rules()
-  // {
-  //   return [
-  //     'channel_id' => 'required',
-  //     'post' => 'required|string',
-  //   ];
-  // }
-
-  // /**
-  //  * Get the error messages for the defined validation rules.
-  //  *
-  //  * @return array
-  //  */
-  // public function messages()
-  // {
-  //   return [
-  //     'channel_id.required'   => 'Channel ID is required.',
-  //     'post.required'    => 'Post is required.',
-  //     'post.string'      => 'Invalid post.',   
-  //   ];
-  // }
+  } 
+  
 }
