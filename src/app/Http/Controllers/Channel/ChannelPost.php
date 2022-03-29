@@ -142,7 +142,7 @@ class ChannelPost extends BaseChannelController
       "middleName" =>  $middleName,
       "lastName" =>  $lastName,
       "image" =>  $image,
-      "userUUID" =>  $userUUID, 
+      "userUuid" =>  $userUUID, 
       "reactions" =>  $reactions
     ];
  
