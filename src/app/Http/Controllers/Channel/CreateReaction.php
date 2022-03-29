@@ -32,7 +32,7 @@ class CreateReaction extends BaseChannelController
 
     try {    
  
-      $emoji  = $data['emoji']; 
+      $emoji  = strtolower($data['emoji']); 
       $like   = ($emoji == "like" ? 1 : '');
       $haha   = ($emoji == "haha" ? 1 : '');
       $wow    = ($emoji == "wow" ? 1 : '');
