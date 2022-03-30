@@ -31,13 +31,7 @@ class ChannelPost extends BaseChannelController
     if (!$channel_post) {
       abort(404, "Pined post does not exist.");
     }  
-
-
-
-
-    // return $channel_post;
-
-
+  
     $id = $channel_post->id;  
     $name = $channel_post->name;   
     $image = $channel_post->image;  
@@ -54,7 +48,7 @@ class ChannelPost extends BaseChannelController
       'updatedAt' => $updated_at, 
     ]; 
  
-  
+    $posts = [];
     $size = count($channel_post->posts);
 
     for ($i = 0; $i < $size; $i++)
@@ -151,7 +145,7 @@ class ChannelPost extends BaseChannelController
 
 
     $post_data['channel'] = $channel;
-    $post_data['posts'] = $posts;  
+    $post_data['posts'] = $posts;   
  
     return  $post_data;
   }
