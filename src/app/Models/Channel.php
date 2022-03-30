@@ -49,6 +49,7 @@ class Channel extends UUIDModel
       )  
 
       ->where('c.id', '=', $id)
+      // ->where('fp.inappropriate', '=', 0)
       ->where('c.channel_active', '=', 1)
       ->where('fp.deleted_at', '=', null)
       ->orderBy('pinPost', 'desc')
