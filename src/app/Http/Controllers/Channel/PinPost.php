@@ -22,13 +22,7 @@ class PinPost extends BaseChannelController
     
     $data = $request->validated(); 
     $user = $request->user();  
- 
-    if($user->userRole->role_id != 1 || $user->userRole->role_id != 2 ){
-
-      abort(404, "Only Admin users can pin a post.");
-
-    }
-    
+  
     $post = $this->pinpostRepository->findByUUID($data["uuid"]);
     if (!$post) {
 
@@ -46,6 +40,8 @@ class PinPost extends BaseChannelController
     DB::beginTransaction();
     
     try {    
+
+      if($user->userRole->role_id == 1 || $user->userRole->role_id == 2 ){
     
         $pinned_posts = $this->pinpostRepository->pinned_posts();
         
@@ -68,6 +64,12 @@ class PinPost extends BaseChannelController
         $post->save();
       
         $message  = "Current post pinned successfully.";
+
+      } else {
+
+        abort(404, "Only Admin users can pin a post.");
+
+      }
       
     } catch (Exception $e) {
       DB::rollback();
