@@ -21,17 +21,19 @@ class PinPost extends BaseChannelController
   { 
     
     $data = $request->validated(); 
-    $user_id = $request->user()->id;  
+    $user_id = $request->user()->id;
+    $user = $request->user();  
     
+    //return[$user->userRole->role_id];
     $post = $this->PinPostRepository->findByUUID($data["uuid"]);
     if (!$post) {
       abort(404, "Post does not exist.");
     }
     
-    $post_by_user = $this->PinPostRepository->findByUserID($data["uuid"], $user_id);
-    if (!$post_by_user) {
-      abort(404, "Post does not exist valid user.");
-    }
+    // $post_by_user = $this->PinPostRepository->findByUserID($data["uuid"], $user_id);
+    // if (!$post_by_user) {
+    //   abort(404, "Post does not exist valid user.");
+    // }
     
     $pinned_posts = $this->PinPostRepository->pinned_posts();
     
@@ -42,6 +44,7 @@ class PinPost extends BaseChannelController
       // Pin a post
       if ($data["type"] == "pin") {
         
+        if($user->userRole->role_id == 1 || $user->userRole->role_id == 2){
         //Make other pinned posts in same channel to false and pin only one post per channel
         //Iterate through pinned posts and find if there are same channel IDs
         for($x = 0; $x < count($pinned_posts) - 1; $x++){
@@ -61,8 +64,10 @@ class PinPost extends BaseChannelController
         
       }else {
         
-        abort(404, "Type should be 'pin'");
+        abort(404, "Only admins can pin a post");
         
+      }}else{
+        abort(404, "Type should be 'pin'");
       }
       
     } catch (Exception $e) {
