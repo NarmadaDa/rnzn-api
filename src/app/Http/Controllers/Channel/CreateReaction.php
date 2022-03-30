@@ -65,6 +65,17 @@ class CreateReaction extends BaseChannelController
         $message = "Reaction to a post successfully created.";
 
       } else {
+
+        // if user second time use same emoji
+        if($reactionByUser->user_id == $user_id){
+
+          if($reactionByUser->likes == $like || $reactionByUser->haha == $haha || $reactionByUser->wow == $wow || $reactionByUser->sad == $sad || $reactionByUser->angry == $angry){
+
+            ForumPostReaction::where("post_id", $post->id)->where("user_id", $user_id)->delete();
+
+          }
+
+        }
         
         ForumPostReaction::where("post_id", $post->id)
         ->where("user_id", $user_id)
