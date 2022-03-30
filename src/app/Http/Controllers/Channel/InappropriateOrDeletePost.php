@@ -21,7 +21,7 @@ class InappropriateOrDeletePost extends BaseChannelController
   { 
  
     $data = $request->validated(); 
-    $user_id = $request->user()->id;  
+    $user = $request->user();  
 
     $post = $this->inappropriateRepository->findByUUID($data["uuid"]);
     if (!$post) {
@@ -50,7 +50,7 @@ class InappropriateOrDeletePost extends BaseChannelController
 
         } else {
 
-          $post_by_user = $this->inappropriateRepository->findByUserID($data["uuid"], $user_id);
+          $post_by_user = $this->inappropriateRepository->findByUserID($data["uuid"], $user->id);
           if (!$post_by_user) {
             abort(404, "Post does not exist valid user.");
           }
