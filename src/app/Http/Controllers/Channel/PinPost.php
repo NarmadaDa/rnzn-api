@@ -28,11 +28,6 @@ class PinPost extends BaseChannelController
       abort(404, "Post does not exist.");
     }
     
-    $post_by_user = $this->pinpostRepository->findByUserID($data["uuid"], $user_id);
-    if (!$post_by_user) {
-      abort(404, "Post does not exist valid user.");
-    }
-    
     $pinned_posts = $this->pinpostRepository->pinned_posts();
     
     DB::beginTransaction();
