@@ -19,18 +19,13 @@ class InappropriateOrDeletePost extends BaseChannelController
 
   public function __invoke(InappropriateRequest $request)
   { 
-
+ 
     $data = $request->validated(); 
     $user_id = $request->user()->id;  
 
     $post = $this->inappropriateRepository->findByUUID($data["uuid"]);
     if (!$post) {
       abort(404, "Post does not exist.");
-    }
-
-    $post_by_user = $this->inappropriateRepository->findByUserID($data["uuid"], $user_id);
-    if (!$post_by_user) {
-      abort(404, "Post does not exist valid user.");
     }
  
     DB::beginTransaction();
@@ -44,11 +39,26 @@ class InappropriateOrDeletePost extends BaseChannelController
         $post->save();
 
         $message  = "Inappropriate post successfully created.";
-      } else if ($data["type"] == "delete") {
 
-        // Delete a post - only if the particular user has created it 
-        $this->inappropriateRepository->deleteByUUID($data["uuid"]);
-        $message  = "Post successfully deleted.";
+      } else if ($data["type"] == "delete") {
+ 
+        if($user->userRole->role_id == 1 || $user->userRole->role_id == 2 ){
+
+          //Admin so delete post
+          $this->inappropriateRepository->deleteByUUID($data["uuid"]);
+          $message  = "Post successfully deleted.";
+
+        } else {
+
+          $post_by_user = $this->inappropriateRepository->findByUserID($data["uuid"], $user_id);
+          if (!$post_by_user) {
+            abort(404, "Post does not exist valid user.");
+          }
+
+          $this->inappropriateRepository->deleteByUUID($data["uuid"]);
+          $message  = "Post successfully deleted.";
+          
+        }
 
       } else {
 
