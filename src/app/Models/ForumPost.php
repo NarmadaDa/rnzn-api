@@ -7,7 +7,7 @@ use App\Models\Channel;
 use App\Models\Comment;
 use App\Models\User;
 use App\Models\Profile; 
-use App\Models\ForumPostReactionCount;
+use App\Models\ForumPostReaction;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 
@@ -47,9 +47,9 @@ class ForumPost extends UUIDModel
   
   public function reactions()
   {  
-    return $this->hasOne(ForumPostReactionCount::class, "post_id", "id"); 
+    return $this->hasOne(ForumPostReaction::class, "post_id", "id"); 
   } 
-   
+    
   public function profile()
   {
     return $this->hasOne(Profile::class, "id", "user_id");

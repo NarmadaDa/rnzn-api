@@ -44,5 +44,6 @@ class Profile extends Model
   public function channels()
   {
     return $this->belongsTo(Channel::class, "user_id");
-  } 
+  }  
+   
 }
