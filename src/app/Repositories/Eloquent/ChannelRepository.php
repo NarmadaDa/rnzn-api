@@ -63,13 +63,12 @@ ChannelRepositoryInterface
       ->where("id", $id) 
       ->first();
   }
-
  
   /**
  * @param int $id
  * @return App\Models\Channel
  */
-  public function findByPost(int $id)
+  public function findByPost2(int $id)
   {       
     $post_data = $this->model    
             ->select("id", "name", "image", "uuid as channelUuid", "created_at as createdAt", "updated_at as updatedAt")
@@ -80,6 +79,22 @@ ChannelRepositoryInterface
     $post_data['posts'] = $post_data->posts($id);  
 
     return $post_data;
+  }  
+  
+  
+  /**
+ * @param int $id
+ * @return App\Models\Channel
+ */
+  public function findByPost(int $id)
+  {       
+    return $this->model 
+    ->with(["profile", "posts", "posts.user", "posts.profile", "posts.reactions"]) 
+    ->where("id", $id)
+    // ->where("post_pin", 1)
+    ->where("channel_active", 1)
+    ->first(); 
   }    
+
 
 }
