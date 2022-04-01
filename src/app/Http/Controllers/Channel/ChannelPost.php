@@ -43,7 +43,7 @@ class ChannelPost extends BaseChannelController
     foreach ($cPost as $key =>$val )
     {
       $channelByPost =  [
-        'channel' => $val];
+        'channel' => $val ];
     }
    
     return   $channelByPost;
