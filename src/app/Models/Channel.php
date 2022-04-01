@@ -39,7 +39,7 @@ class Channel extends UUIDModel
 
   public function posts()
   { 
-    return $this->hasMany(ForumPost::class, "channel_id"); 
+    return $this->hasMany(ForumPost::class, "channel_id")->orderBy('pin_post', 'desc'); 
   }   
   
 } 
