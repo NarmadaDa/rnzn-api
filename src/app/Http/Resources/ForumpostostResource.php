@@ -18,7 +18,7 @@ class ForumpostostResource extends JsonResource
      * @return array
      */
     public function toArray($request)
-    {   
+    {    
 
         $like   = DB::table('forum_post_reactions')->select(DB::raw('GROUP_CONCAT(uuid) as likes'))->where('post_id', '=', $this->id)->where('likes', '=', 1)->first();  
         $haha   = DB::table('forum_post_reactions')->select(DB::raw('GROUP_CONCAT(uuid) as haha'))->where('post_id', '=', $this->id)->where('haha', '=', 1)->first();  
@@ -71,12 +71,12 @@ class ForumpostostResource extends JsonResource
         }
 
         $data   = ProfileResource::collection(Profile::where("user_id", $this->user_id)->get());
-
+ 
         return [ 
             'id'            => $this->id,
             'channelId'     => $this->channel_id, 
             'post'          => $this->post,
-            'pinPost'       => $this->pin_post,
+            'pinPost'       => $this->pin_post ,
             'inappropriate' => $this->inappropriate, 
             'postUuid'      => $this->uuid, 
             'userId'        => $this->user_id,
