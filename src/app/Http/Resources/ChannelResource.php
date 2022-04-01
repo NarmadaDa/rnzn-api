@@ -15,8 +15,7 @@ class ChannelResource extends JsonResource
     public function toArray($request)
     { 
 
-        return [ 
-            'channel'   => [
+        return [  
                 'id'            => $this->id,
                 'name'          => $this->name, 
                 'channelActive' => $this->channel_active,
@@ -26,8 +25,7 @@ class ChannelResource extends JsonResource
                 'createdAt'     => $this->created_at,
                 'updatedAt'     => $this->updated_at,
                 'profile'       => $this->profile,
-                'posts'         => ForumpostostResource::collection($this->whenLoaded('posts')),
-            ]
+                'posts'         => ForumpostostResource::collection($this->whenLoaded('posts')), 
 
         ];
     }
