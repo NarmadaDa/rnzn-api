@@ -35,30 +35,12 @@ class Channel extends UUIDModel
   public function profile()
   {
     return $this->belongsTo(Profile::class, "user_id");
-  }
-  
-  public function posts(int $id)
-  {   
-    $posts = DB::table('channels AS c')
-      ->join('forum_posts AS fp', 'c.id', '=', 'fp.channel_id')  
-      ->join('profiles AS p', 'p.user_id', '=', 'fp.user_id')
-      ->join('users AS u', 'fp.user_id', '=', 'u.id') 
+  }  
 
-      ->select('fp.id', 'fp.channel_id AS channelId', 'fp.uuid AS postUuid','fp.post', 'fp.pin_post AS pinPost', "fp.created_at AS createdAt", "fp.updated_at AS updatedAt",
-      'p.first_name AS firstName', 'p.middle_name AS middleName', 'p.last_name AS lastName', 'p.image', 'u.uuid AS userUUID'
-      )  
-
-      ->where('c.id', '=', $id)
-      // ->where('fp.inappropriate', '=', 0)
-      ->where('c.channel_active', '=', 1)
-      ->where('fp.deleted_at', '=', null)
-      ->orderBy('pinPost', 'desc')
-      ->orderBy('createdAt', 'asc') 
-      ->get();   
- 
-      return $posts;
- 
-  }     
+  public function posts()
+  { 
+    return $this->hasMany(ForumPost::class, "channel_id"); 
+  }   
   
 } 
  
