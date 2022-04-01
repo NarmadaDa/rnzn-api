@@ -34,12 +34,19 @@ class ChannelPost extends BaseChannelController
       abort(404, "Pined post does not exist.");
     }  
  
-    $channelByPost = ChannelResource::collection(Channel::where("id", $data["id"])
+    $cPost = ChannelResource::collection(Channel::where("id", $data["id"])
     ->where("channel_active", 1)
     ->with(["posts"])
     ->get()); 
-     
-    return  $channelByPost;
+
+ 
+    foreach ($cPost as $key =>$val )
+    {
+      $channelByPost =  [
+        'channel' => $val ];
+    }
+   
+    return   $channelByPost;
  
   }
 
